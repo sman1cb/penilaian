@@ -1,0 +1,130 @@
+{
+  "title": "UJI COBA SOAL",
+  "description": "TATA CARA MENGGUNAKAN APLIKASI SEKOLAH SAAT PENILAIAN :\n1. Sebelum memulai ujian marilah membaca doa menurut agama dan kepercayaan masing-masing.\n2. Penilaian dapat dikerjakan menggunakan smartphone.\n3. Pastikan kalian memiliki aplikasi sekolah terbaru\n4. Lengkapi isian biodata diri seperti nama lengkap, kelas ( TELITI SAAT MEMILIH KELAS), dan nomor peserta penilaian, gunakan huruf KAPITAL. Lalu klik menu berikutnya.\n5. Silahkan kerjakan soal penilaian.\n6. Link soal akan ditutup sesuai dengan waktu yang telah ditentukan.\n7. Jika sudah selesai mengerjakan, jangan lupa untuk klik tombol kirim.\n8. Selamat mengerjakan.",
+  "formAction": "https://docs.google.com/forms/d/e/1FAIpQLScTy7m0ew7SnfBK2F_o1SkeXH263yRuGf-3uvrZFtYfDrfhXA/formResponse",
+  "pageHistory": "0,1,2,3",
+  "identitas": [
+    {
+      "title": "NAMA",
+      "description": "",
+      "type": "TEXT",
+      "entryId": "entry.145244069",
+      "required": true
+    },
+    {
+      "title": "KELAS",
+      "description": "",
+      "type": "LIST",
+      "entryId": "entry.1864412444",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "required": true
+    },
+    {
+      "title": "NOMOR PESERTA ( ISI SAJA 123)",
+      "description": "",
+      "type": "TEXT",
+      "entryId": "entry.1634631215",
+      "required": true
+    }
+  ],
+  "soal": [
+    {
+      "title": "1.  Siapa saja di bawah ini yang merupakan Presiden Republik Indonesia? ",
+      "description": "",
+      "type": "CHECKBOX",
+      "entryId": "entry.1862985211",
+      "choices": [
+        "Joko Widodo (Jokowi)",
+        "Barack Obama",
+        "Soekarno",
+        "Susilo Bambang Yudhoyono (SBY)",
+        "Cristiano Ronaldo"
+      ],
+      "required": true,
+      "sectionTitle": "KOTAK CENTANG"
+    },
+    {
+      "title": " 2. Mana saja yang termasuk nama Presiden Amerika Serikat  ",
+      "description": "",
+      "type": "CHECKBOX",
+      "entryId": "entry.1859329235",
+      "choices": [
+        "Abraham Lincoln",
+        "Donald Trump",
+        "Raffi Ahmad",
+        "Joe Biden",
+        "George Washington"
+      ],
+      "required": true,
+      "sectionTitle": "KOTAK CENTANG"
+    },
+    {
+      "title": "3.  Pasangkan Provinsi dengan Ibu Kota yang Tepat!  ",
+      "description": "",
+      "type": "GRID",
+      "columns": [
+        "Semarang",
+        "Surabaya",
+        "Bandung"
+      ],
+      "rows": [
+        {
+          "label": "Jawa Barat",
+          "entryId": "entry.271576446"
+        },
+        {
+          "label": "Jawa tengah",
+          "entryId": "entry.128958504"
+        },
+        {
+          "label": "Jawa Timur",
+          "entryId": "entry.466761502"
+        }
+      ],
+      "required": true,
+      "sectionTitle": "KISI PILIHAN GANDA ( MENJODOHKAN )"
+    },
+    {
+      "title": "4. Pasangkan mata uang dengan negara yang Tepat! ",
+      "description": "",
+      "type": "GRID",
+      "columns": [
+        "dollar",
+        "yen",
+        "rupiah"
+      ],
+      "rows": [
+        {
+          "label": "indonesia",
+          "entryId": "entry.1100214516"
+        },
+        {
+          "label": "amerika serikat",
+          "entryId": "entry.1495219137"
+        },
+        {
+          "label": "Singapura",
+          "entryId": "entry.915824987"
+        },
+        {
+          "label": "jepang",
+          "entryId": "entry.826320888"
+        }
+      ],
+      "required": true,
+      "sectionTitle": "KISI PILIHAN GANDA ( MENJODOHKAN )"
+    }
+  ]
+}
