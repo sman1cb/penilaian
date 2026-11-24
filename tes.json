@@ -125,6 +125,67 @@
       ],
       "required": true,
       "sectionTitle": "KISI PILIHAN GANDA ( MENJODOHKAN )"
+    },
+    {
+      "title": "5.  Tandai Semua Hal yang Menjadi Ciri Khas dari Provinsi Berikut! ",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Monas",
+        "Rendang",
+        "Gedung Sate",
+        "Kerak Telor"
+      ],
+      "rows": [
+        {
+          "label": "DKI Jakarta",
+          "entryId": "entry.1375574572"
+        },
+        {
+          "label": "Jawa Barat",
+          "entryId": "entry.351891377"
+        },
+        {
+          "label": "Sumatera Barat",
+          "entryId": "entry.461609681"
+        }
+      ],
+      "required": true,
+      "sectionTitle": "PETAK KOTAK CENTANG"
+    },
+    {
+      "title": "6. Tandai semua nama kota yang ada di Provinsi berikut",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Bandung",
+        "Garut",
+        "Brebes",
+        "Kediri",
+        "Solo",
+        "Jakarta Barat",
+        "Jakarta Tenggara"
+      ],
+      "rows": [
+        {
+          "label": "Jawa Barat",
+          "entryId": "entry.832507146"
+        },
+        {
+          "label": "Jawa Tengah",
+          "entryId": "entry.1670681950"
+        },
+        {
+          "label": "DKI Jakarta",
+          "entryId": "entry.602058813"
+        },
+        {
+          "label": "Jawa Timur",
+          "entryId": "entry.138050013"
+        }
+      ],
+      "required": true,
+      "sectionTitle": "PETAK KOTAK CENTANG"
     }
   ]
 }
