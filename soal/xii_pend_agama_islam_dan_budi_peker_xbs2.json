@@ -484,6 +484,9 @@
     {
       "title": "Pasangkan konsep dasar trilogi ajaran Islam (Iman, Islam, Ihsan) dengan deskripsi intinya yang paling tepat!",
       "description": "",
+      "validation": {
+        "onePerCol": true
+      },
       "type": "GRID",
       "columns": [
         "Iman",
@@ -510,6 +513,9 @@
     {
       "title": "Cocokkan prinsip-prinsip moderasi beragama (wasathiyah) dengan terjemahan istilah yang tepat!",
       "description": "",
+      "validation": {
+        "onePerCol": true
+      },
       "type": "GRID",
       "columns": [
         "At-Tasamuh",
@@ -541,6 +547,9 @@
     {
       "title": "Berdasarkan tafsir Ibnu Katsir terhadap Q.S. Fatir/35: 32, pasangkan karakteristik perilaku umat Islam dengan golongan pengamalnya yang sesuai!  ",
       "description": "",
+      "validation": {
+        "onePerCol": true
+      },
       "type": "GRID",
       "columns": [
         "Zalim ala Nafsih",
@@ -567,6 +576,9 @@
     {
       "title": "Pasangkan kosakata Arab dari teks asbabun nuzul Q.S. al-Baqarah/2: 143 dengan terjemahan bahasa Indonesia yang tepat!  ",
       "description": "",
+      "validation": {
+        "onePerCol": true
+      },
       "type": "GRID",
       "columns": [
         "أُمَّةً وَسَطًا",
@@ -619,6 +631,9 @@
     {
       "title": "Pasangkan indikator perilaku harian berikut dengan sifat pembentuk Insan Kamil yang melandasinya!",
       "description": "",
+      "validation": {
+        "onePerCol": true
+      },
       "type": "GRID",
       "columns": [
         "Sabar",
