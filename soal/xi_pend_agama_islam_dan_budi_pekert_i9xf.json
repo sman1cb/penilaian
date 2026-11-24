@@ -421,6 +421,9 @@
     {
       "title": "Pasangkan kosa kata Arab (mufradat) dari Q.S. Ali 'Imran/3: 190-191 berikut dengan makna bahasa Indonesianya yang tepat!",
       "description": "",
+      "validation": {
+        "onePerCol": true
+      },
       "type": "GRID",
       "columns": [
         "Penciptaan",
@@ -528,6 +531,9 @@
     {
       "title": "Cocokkan istilah penyebaran syariat Islam dengan pengertian khususnya!  ",
       "description": "",
+      "validation": {
+        "onePerCol": true
+      },
       "type": "GRID",
       "columns": [
         "Dakwah",
@@ -580,6 +586,9 @@
     {
       "title": "Narkoba terbagi menjadi beberapa kelompok besar. Cocokkan nama kelompok narkoba tersebut dengan definisinya!",
       "description": "",
+      "validation": {
+        "onePerCol": true
+      },
       "type": "GRID",
       "columns": [
         "Narkotika",
@@ -631,6 +640,9 @@
     {
       "title": "Tingkatan penerimaan informasi di dalam otak memiliki istilah khusus dalam bahasa Arab. Pasangkan istilah berpikir tersebut dengan definisinya! ",
       "description": "",
+      "validation": {
+        "onePerCol": true
+      },
       "type": "GRID",
       "columns": [
         "Ilm",
@@ -769,6 +781,9 @@
     {
       "title": "Berdasarkan jenis pembagian narkoba (Narkotika, Psikotropika, Zat Adiktif), centanglah nama zat yang sesuai dengan golongannya!  ",
       "description": "",
+      "validation": {
+        "onePerCol": true
+      },
       "type": "CHECKBOX_GRID",
       "columns": [
         "Golongan Narkotika",
