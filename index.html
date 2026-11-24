@@ -106,11 +106,26 @@
     }
     .q-title { font-size: var(--q-size); font-weight: 600; color: var(--text); margin: 0 0 12px; word-wrap: break-word; }
     .q-desc { font-size: 13.5px; color: var(--text-sec); margin: -4px 0 14px; word-wrap: break-word; }
-    .q-img {
-      max-width: 100%; height: auto; border-radius: 12px;
-      margin: 10px 0 16px; border: 1px solid var(--border); display: block;
-    }
     .req { color: var(--danger); margin-left: 3px; }
+
+    /* Gambar Soal & Opsi */
+    .q-img-wrap {
+      margin: 8px 0 14px; text-align: center;
+      background: #f8fafc; border: 1px solid var(--border);
+      border-radius: 12px; padding: 10px; cursor: pointer;
+    }
+    .q-img-cap {
+      font-size: 13.5px; font-weight: 600; color: var(--text-sec);
+      margin-bottom: 8px; text-align: left;
+    }
+    .q-img {
+      max-width: 100%; max-height: 320px; width: auto; height: auto;
+      border-radius: 8px; display: block; margin: 0 auto;
+    }
+    .img-zoom-hint {
+      display: inline-block; margin-top: 6px;
+      font-size: 11.5px; font-weight: 600; color: var(--primary);
+    }
 
     /* Opsi Pilihan Ganda & Checkbox */
     .opt-item {
@@ -128,7 +143,19 @@
       font-size: 13px; font-weight: 700; margin-top: 1px;
     }
     .opt-item.selected .opt-marker { background: var(--primary); color: #fff; }
-    .opt-text { font-size: var(--opt-size); flex: 1; padding-top: 2px; word-wrap: break-word; }
+    .opt-body { flex: 1; min-width: 0; }
+    .opt-text { font-size: var(--opt-size); padding-top: 2px; word-wrap: break-word; }
+    .opt-img-wrap { margin-top: 8px; }
+    .opt-img {
+      max-width: 100%; max-height: 170px; width: auto; height: auto;
+      border-radius: 8px; border: 1px solid var(--border);
+      background: #fff; display: block;
+    }
+    .opt-zoom-btn {
+      margin-top: 6px; padding: 4px 10px; border-radius: 6px;
+      border: 1px solid var(--primary-border); background: #fff;
+      color: var(--primary); font-size: 12px; font-weight: 600; cursor: pointer;
+    }
 
     /* Input Teks */
     input[type="text"], textarea {
@@ -290,6 +317,36 @@
       background: #ffe4e6; color: #be123c; font-weight: 600;
     }
 
+    /* Modal Zoom Gambar */
+    #zoomModal {
+      z-index: 65; background: rgba(15, 23, 42, 0.94);
+      padding: 0; flex-direction: column; align-items: stretch; justify-content: flex-start;
+    }
+    .zoom-bar {
+      display: flex; justify-content: space-between; align-items: center; gap: 8px;
+      padding: 12px 14px; background: var(--app-card);
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+      flex-shrink: 0;
+    }
+    .zoom-controls { display: flex; gap: 8px; align-items: center; }
+    .zoom-btn {
+      background: #334155; color: #f8fafc; border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 8px; padding: 7px 13px; font-size: 13.5px; font-weight: 700; cursor: pointer;
+    }
+    .zoom-close {
+      background: var(--app-maroon); color: #fff;
+      border: 1px solid rgba(250, 204, 21, 0.35);
+      border-radius: 8px; padding: 7px 14px; font-size: 13.5px; font-weight: 700; cursor: pointer;
+    }
+    .zoom-stage {
+      flex: 1; overflow: auto; -webkit-overflow-scrolling: touch;
+      padding: 16px; text-align: center;
+    }
+    #zoomImg {
+      display: inline-block; border-radius: 10px; background: #fff;
+      width: 100%; max-width: none; height: auto;
+    }
+
     /* Notifikasi Kustom Tema Aplikasi */
     #notifModal { z-index: 70; background: rgba(15, 23, 42, 0.74); }
     .notif-box {
@@ -422,6 +479,20 @@
   </div>
 </div>
 
+<!-- Modal Zoom Gambar -->
+<div class="modal-bg" id="zoomModal">
+  <div class="zoom-bar">
+    <div class="zoom-controls">
+      <button type="button" class="zoom-btn" onclick="stepZoom(-1)">− Perkecil</button>
+      <button type="button" class="zoom-btn" onclick="stepZoom(1)">+ Perbesar</button>
+    </div>
+    <button type="button" class="zoom-close" onclick="closeZoom()">Tutup ✕</button>
+  </div>
+  <div class="zoom-stage" id="zoomStage" onclick="if(event.target===this) closeZoom()">
+    <img id="zoomImg" src="" alt="Perbesar Gambar">
+  </div>
+</div>
+
 <!-- Modal Notifikasi Kustom -->
 <div class="modal-bg" id="notifModal" onclick="if(event.target===this) closeNotif()">
   <div class="notif-box">
@@ -445,7 +516,9 @@
   let fontStep = 0;
   let saveTimer = null;
   let isSubmitting = false;
+  let zoomLevel = 0;
 
+  const ZOOM_WIDTHS = ['100%', '160%', '230%'];
   const HURUF = ['A','B','C','D','E','F','G','H','I','J'];
   const FONT_PRESETS = [
     { q: '16px', opt: '15px' },
@@ -487,6 +560,28 @@
 
   function closeNotif() {
     document.getElementById('notifModal').classList.remove('open');
+    syncModalBodyLock();
+  }
+
+  function openZoom(url) {
+    zoomLevel = 0;
+    const img = document.getElementById('zoomImg');
+    img.src = url;
+    img.style.width = ZOOM_WIDTHS[zoomLevel];
+    const stage = document.getElementById('zoomStage');
+    if (stage) { stage.scrollTop = 0; stage.scrollLeft = 0; }
+    document.getElementById('zoomModal').classList.add('open');
+    syncModalBodyLock();
+  }
+
+  function stepZoom(delta) {
+    zoomLevel = Math.max(0, Math.min(ZOOM_WIDTHS.length - 1, zoomLevel + delta));
+    document.getElementById('zoomImg').style.width = ZOOM_WIDTHS[zoomLevel];
+  }
+
+  function closeZoom() {
+    document.getElementById('zoomModal').classList.remove('open');
+    document.getElementById('zoomImg').src = '';
     syncModalBodyLock();
   }
 
@@ -845,6 +940,26 @@
     return { cls, html };
   }
 
+  function renderQuestionImages(q) {
+    const imgs = [];
+    if (Array.isArray(q.images)) {
+      q.images.forEach(item => {
+        if (typeof item === 'string' && item) imgs.push({ url: item, caption: '' });
+        else if (item && item.url) imgs.push({ url: item.url, caption: item.caption || '' });
+      });
+    } else if (q.image) {
+      imgs.push({ url: q.image, caption: '' });
+    }
+    if (!imgs.length) return '';
+
+    return imgs.map(im => `
+      <div class="q-img-wrap" onclick="openZoom('${escPlain(im.url)}')">
+        ${im.caption ? `<div class="q-img-cap">${esc(im.caption)}</div>` : ''}
+        <img class="q-img" loading="lazy" decoding="async" src="${escPlain(im.url)}" alt="Gambar Soal">
+        <span class="img-zoom-hint">Ketuk gambar untuk memperbesar</span>
+      </div>`).join('');
+  }
+
   function render() {
     document.body.classList.remove('kb-open');
     const app = document.getElementById('app');
@@ -897,23 +1012,32 @@
         <span class="badge-type">${TYPE_LABELS[q.type] || 'Soal'}</span>
       </div>
       ${q.sectionTitle ? `<div class="sec-banner">${esc(q.sectionTitle)}</div>` : ''}
-      ${q.image ? `<img class="q-img" loading="lazy" src="${escPlain(q.image)}" alt="Gambar Soal">` : ''}
+      ${renderQuestionImages(q)}
       <div class="q-title">${esc(q.title)}${q.required ? '<span class="req">*</span>' : ''}</div>
       ${q.description ? `<div class="q-desc">${esc(q.description)}</div>` : ''}`;
 
     if (q.type === 'MULTIPLE_CHOICE') {
       const cur = answers[q.entryId] || '';
+      const cImgs = Array.isArray(q.choiceImages) ? q.choiceImages : [];
       html += `<div id="qOptions">`;
       q.choices.forEach((c, i) => {
         const sel = cur === c ? 'selected' : '';
+        const optImg = cImgs[i] || '';
         html += `<div class="opt-item ${sel}" data-idx="${i}" onclick="pickMC(${step}, ${i})">
           <div class="opt-marker">${HURUF[i] || (i+1)}</div>
-          <div class="opt-text">${esc(c)}</div>
+          <div class="opt-body">
+            <div class="opt-text">${esc(c)}</div>
+            ${optImg ? `<div class="opt-img-wrap">
+              <img class="opt-img" loading="lazy" decoding="async" src="${escPlain(optImg)}" alt="Gambar Opsi">
+              <button type="button" class="opt-zoom-btn" onclick="event.stopPropagation(); openZoom('${escPlain(optImg)}')">Perbesar Gambar</button>
+            </div>` : ''}
+          </div>
         </div>`;
       });
       html += `</div>`;
     } else if (q.type === 'CHECKBOX') {
       const cur = Array.isArray(answers[q.entryId]) ? answers[q.entryId] : [];
+      const cImgs = Array.isArray(q.choiceImages) ? q.choiceImages : [];
       const hState = getCBHintState(q);
       html += `<div id="cbHint" class="${hState.cls}">
         <span>${hState.ruleTxt}</span>
@@ -921,9 +1045,16 @@
       </div><div id="qOptions">`;
       q.choices.forEach((c, i) => {
         const sel = cur.includes(c) ? 'selected' : '';
+        const optImg = cImgs[i] || '';
         html += `<div class="opt-item ${sel}" data-idx="${i}" onclick="pickCB(${step}, ${i})">
           <div class="opt-marker">${sel ? '✓' : ''}</div>
-          <div class="opt-text">${esc(c)}</div>
+          <div class="opt-body">
+            <div class="opt-text">${esc(c)}</div>
+            ${optImg ? `<div class="opt-img-wrap">
+              <img class="opt-img" loading="lazy" decoding="async" src="${escPlain(optImg)}" alt="Gambar Opsi">
+              <button type="button" class="opt-zoom-btn" onclick="event.stopPropagation(); openZoom('${escPlain(optImg)}')">Perbesar Gambar</button>
+            </div>` : ''}
+          </div>
         </div>`;
       });
       html += `</div>`;
@@ -1013,7 +1144,7 @@
     window.scrollTo(0, 0);
   }
 
-  /* Update DOM terarah (tanpa rebuild HTML -> nol scroll jump) */
+  /* Update DOM terarah */
   function updateMCUI(q) {
     const cur = answers[q.entryId] || '';
     const opts = document.querySelectorAll('#qOptions .opt-item');
@@ -1105,7 +1236,7 @@
     });
   }
 
-  /* Bottom Sheet Pengganti Dropdown Native (100% di dalam WebView, aman dari anti-floating) */
+  /* Bottom Sheet Pengganti Dropdown Native */
   function openSelectSheet(mode, idx) {
     const item = mode === 'id' ? quiz.identitas[idx] : orderedSoal[idx];
     const cur = answers[item.entryId] || '';
@@ -1447,7 +1578,7 @@
         return;
       }
       if (quiz.tokenField.hash && tokenVal) {
-        const matched = await matchTokenHash(val = tokenVal, quiz.tokenField.hash);
+        const matched = await matchTokenHash(tokenVal, quiz.tokenField.hash);
         if (matched === null) {
           errEl.textContent = 'Token salah.';
           errEl.style.display = 'block';
