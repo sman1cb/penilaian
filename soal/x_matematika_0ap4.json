@@ -45,6 +45,12 @@
     {
       "title": "",
       "description": "",
+      "images": [
+        {
+          "url": "img/c17aaaadecfc4fcc.jpg",
+          "caption": ""
+        }
+      ],
       "type": "MULTIPLE_CHOICE",
       "entryId": "entry.763751292",
       "choices": [
@@ -60,6 +66,12 @@
     {
       "title": "",
       "description": "",
+      "images": [
+        {
+          "url": "img/fed183c01dd91892.jpg",
+          "caption": ""
+        }
+      ],
       "type": "MULTIPLE_CHOICE",
       "entryId": "entry.2027092600",
       "choices": [
@@ -75,6 +87,12 @@
     {
       "title": "",
       "description": "",
+      "images": [
+        {
+          "url": "img/b4e594c9d9687cc1.jpg",
+          "caption": ""
+        }
+      ],
       "type": "MULTIPLE_CHOICE",
       "entryId": "entry.283240104",
       "choices": [
@@ -90,6 +108,12 @@
     {
       "title": "",
       "description": "",
+      "images": [
+        {
+          "url": "img/c8a7c1af107fccc4.jpg",
+          "caption": ""
+        }
+      ],
       "type": "MULTIPLE_CHOICE",
       "entryId": "entry.702181912",
       "choices": [
@@ -105,6 +129,12 @@
     {
       "title": "",
       "description": "",
+      "images": [
+        {
+          "url": "img/f6b6f395acc2229d.jpg",
+          "caption": ""
+        }
+      ],
       "type": "MULTIPLE_CHOICE",
       "entryId": "entry.15452534",
       "choices": [
@@ -123,6 +153,12 @@
       "validation": {
         "onePerCol": true
       },
+      "images": [
+        {
+          "url": "img/288789e026702bc9.jpg",
+          "caption": ""
+        }
+      ],
       "type": "CHECKBOX_GRID",
       "columns": [
         "-2",
@@ -158,6 +194,12 @@
     {
       "title": "",
       "description": "",
+      "images": [
+        {
+          "url": "img/e45696a06ae1b249.jpg",
+          "caption": ""
+        }
+      ],
       "type": "CHECKBOX",
       "entryId": "entry.1916587349",
       "choices": [
@@ -205,6 +247,12 @@
       "validation": {
         "onePerCol": true
       },
+      "images": [
+        {
+          "url": "img/ed99e7b4c894e12e.jpg",
+          "caption": ""
+        }
+      ],
       "type": "GRID",
       "columns": [
         "4/5",
@@ -250,6 +298,12 @@
     {
       "title": "Dari gambar berikut, hitunglah tinggi pohon dengan menggunakan konsep trigonometri",
       "description": "",
+      "images": [
+        {
+          "url": "img/25327d091383dbe2.jpg",
+          "caption": ""
+        }
+      ],
       "type": "MULTIPLE_CHOICE",
       "entryId": "entry.2053283565",
       "choices": [
@@ -304,6 +358,12 @@
     {
       "title": "",
       "description": "",
+      "images": [
+        {
+          "url": "img/75baf491e2ec4337.jpg",
+          "caption": ""
+        }
+      ],
       "type": "MULTIPLE_CHOICE",
       "entryId": "entry.1231508535",
       "choices": [
@@ -319,6 +379,12 @@
     {
       "title": "Nilai x yang tepat adalah",
       "description": "",
+      "images": [
+        {
+          "url": "img/a37073b4f4b75944.jpg",
+          "caption": ""
+        }
+      ],
       "type": "TEXT",
       "entryId": "entry.828474629",
       "required": true,
@@ -327,6 +393,12 @@
     {
       "title": "perhatikan gambar berikut",
       "description": "",
+      "images": [
+        {
+          "url": "img/675d3eda85baa38e.jpg",
+          "caption": ""
+        }
+      ],
       "type": "MULTIPLE_CHOICE",
       "entryId": "entry.1771966159",
       "choices": [
