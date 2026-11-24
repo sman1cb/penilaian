@@ -28,6 +28,7 @@
       --opt-size: 15px;
     }
     * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    html, body { touch-action: manipulation; }
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -36,13 +37,14 @@
       line-height: 1.55;
       padding-bottom: 88px;
     }
+    body.modal-open { overflow: hidden; }
 
     /* Header */
     header {
       position: sticky; top: 0; z-index: 30;
       background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
       color: #fff;
-      box-shadow: 0 4px 12px rgba(30, 58, 138, 0.18);
+      box-shadow: 0 2px 8px rgba(30, 58, 138, 0.16);
     }
     .hdr-inner {
       max-width: 780px; margin: 0 auto;
@@ -65,14 +67,14 @@
     }
     .btn-hdr:active { background: rgba(255,255,255,0.28); }
     .progress-track { width: 100%; height: 4px; background: rgba(255,255,255,0.2); }
-    .progress-fill { height: 100%; width: 0%; background: #34d399; transition: width 0.3s ease; }
+    .progress-fill { height: 100%; width: 0%; background: #34d399; transition: width 0.25s ease; }
 
     /* Container & Card */
     .container { max-width: 780px; margin: 16px auto; padding: 0 14px; }
     .card {
       background: var(--card); border-radius: 16px; padding: 20px;
       border: 1px solid var(--border);
-      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+      box-shadow: 0 1px 4px rgba(15, 23, 42, 0.04);
       margin-bottom: 14px;
     }
     .card-top-bar {
@@ -95,8 +97,12 @@
       font-size: 13px; font-weight: 600; color: var(--text-sec);
       margin-bottom: 14px;
     }
-    .q-title { font-size: var(--q-size); font-weight: 600; color: var(--text); margin: 0 0 12px; }
-    .q-desc { font-size: 13.5px; color: var(--text-sec); margin: -4px 0 14px; }
+    .q-title { font-size: var(--q-size); font-weight: 600; color: var(--text); margin: 0 0 12px; word-wrap: break-word; }
+    .q-desc { font-size: 13.5px; color: var(--text-sec); margin: -4px 0 14px; word-wrap: break-word; }
+    .q-img {
+      max-width: 100%; height: auto; border-radius: 12px;
+      margin: 10px 0 16px; border: 1px solid var(--border); display: block;
+    }
     .req { color: var(--danger); margin-left: 3px; }
 
     /* Opsi Pilihan Ganda & Checkbox */
@@ -104,12 +110,9 @@
       display: flex; align-items: flex-start; gap: 12px;
       padding: 13px 15px; border: 1.5px solid var(--border); border-radius: 12px;
       margin-bottom: 10px; cursor: pointer; background: #fff;
-      transition: all 0.15s ease;
     }
-    .opt-item:active { transform: scale(0.99); }
     .opt-item.selected {
       border-color: var(--primary); background: var(--primary-soft);
-      box-shadow: 0 2px 6px rgba(37, 99, 235, 0.08);
     }
     .opt-marker {
       width: 26px; height: 26px; flex-shrink: 0; border-radius: 8px;
@@ -118,7 +121,7 @@
       font-size: 13px; font-weight: 700; margin-top: 1px;
     }
     .opt-item.selected .opt-marker { background: var(--primary); color: #fff; }
-    .opt-text { font-size: var(--opt-size); flex: 1; padding-top: 2px; }
+    .opt-text { font-size: var(--opt-size); flex: 1; padding-top: 2px; word-wrap: break-word; }
 
     /* Input Teks & Dropdown */
     input[type="text"], textarea, select {
@@ -127,7 +130,6 @@
     }
     input[type="text"]:focus, textarea:focus, select:focus {
       outline: none; border-color: var(--primary);
-      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
     }
 
     /* Hint & Validation Banner */
@@ -143,12 +145,13 @@
       background: var(--success-soft); border-color: var(--success-border); color: #065f46;
     }
 
-    /* Kisi Pilihan Ganda */
+    /* Kisi Pilihan Ganda & Petak Centang */
     .grid-card {
       border: 1.5px solid var(--border); border-radius: 12px;
       padding: 14px; margin-bottom: 12px; background: #fff;
     }
     .grid-card.answered { border-color: var(--success-border); background: #fcfffe; }
+    .grid-card.conflict { border-color: var(--warning); background: var(--warning-soft); }
     .grid-row-head { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; }
     .grid-row-num {
       min-width: 24px; height: 24px; border-radius: 6px;
@@ -157,7 +160,8 @@
       display: flex; align-items: center; justify-content: center; margin-top: 2px;
     }
     .grid-card.answered .grid-row-num { background: var(--success); color: #fff; }
-    .grid-row-label { font-size: var(--opt-size); font-weight: 600; color: var(--text); flex: 1; }
+    .grid-card.conflict .grid-row-num { background: var(--warning); color: #fff; }
+    .grid-row-label { font-size: var(--opt-size); font-weight: 600; color: var(--text); flex: 1; word-wrap: break-word; }
 
     .inline-pills { display: flex; flex-wrap: wrap; gap: 8px; }
     .inline-pill {
@@ -181,6 +185,9 @@
       border-style: solid; border-color: var(--success);
       background: var(--success-soft); color: #065f46; font-weight: 600;
     }
+    .grid-card.conflict .match-trigger.filled {
+      border-color: var(--warning); background: #fff; color: #92400e;
+    }
     .match-trigger-badge {
       font-size: 12px; font-weight: 700; padding: 3px 8px; border-radius: 6px;
       background: rgba(255,255,255,0.85); color: var(--primary); flex-shrink: 0;
@@ -192,18 +199,22 @@
     .cb-pill {
       padding: 9px 14px; border: 1.5px solid var(--border); border-radius: 10px;
       font-size: 14px; background: #f8fafc; color: var(--text); cursor: pointer;
-      display: inline-flex; align-items: center; gap: 7px; user-select: none;
+      display: inline-flex; align-items: center; gap: 6px; user-select: none;
     }
+    .cb-pill .cb-tick { display: none; font-weight: 800; }
     .cb-pill.selected {
       border-color: var(--primary); background: var(--primary-soft);
       color: var(--primary-dark); font-weight: 600;
     }
+    .cb-pill.selected .cb-tick { display: inline; }
 
-    /* Footer */
+    /* Footer Solid (Ringan di GPU HP spek rendah) */
     .footer-bar {
       position: fixed; bottom: 0; left: 0; right: 0; z-index: 30;
-      background: rgba(255,255,255,0.96); backdrop-filter: blur(8px);
-      border-top: 1px solid var(--border); padding: 10px 14px;
+      background: #ffffff;
+      border-top: 1px solid var(--border);
+      box-shadow: 0 -2px 8px rgba(15, 23, 42, 0.05);
+      padding: 10px 14px;
     }
     .footer-inner {
       max-width: 780px; margin: 0 auto;
@@ -214,9 +225,8 @@
       font-size: 14px; font-weight: 600; cursor: pointer;
       display: inline-flex; align-items: center; justify-content: center; gap: 6px;
     }
-    .btn:active:not(:disabled) { transform: scale(0.98); }
-    .btn-primary { background: var(--primary); color: #fff; box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25); }
-    .btn-success { background: var(--success); color: #fff; box-shadow: 0 2px 6px rgba(5, 150, 105, 0.25); }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-success { background: var(--success); color: #fff; }
     .btn-warning { background: var(--warning-soft); color: #b45309; border: 1.5px solid var(--warning-border); }
     .btn-warning.active { background: var(--warning); border-color: var(--warning); color: #fff; }
     .btn-outline { background: #fff; color: var(--text); border: 1.5px solid var(--border); }
@@ -224,15 +234,15 @@
 
     /* Modal & Bottom Sheet */
     .modal-bg {
-      position: fixed; inset: 0; background: rgba(15, 23, 42, 0.55); z-index: 50;
+      position: fixed; inset: 0; background: rgba(15, 23, 42, 0.58); z-index: 50;
       display: none; align-items: center; justify-content: center; padding: 16px;
     }
     .modal-bg.open { display: flex; }
     .modal-bg.sheet-mode { align-items: flex-end; padding: 0; }
     .modal-box {
       background: #fff; border-radius: 18px; width: 100%; max-width: 460px;
-      max-height: 85vh; overflow-y: auto; padding: 20px;
-      box-shadow: 0 20px 25px -5px rgba(0,0,0,0.15);
+      max-height: 85vh; overflow-y: auto; -webkit-overflow-scrolling: touch; padding: 20px;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.18);
     }
     .sheet-mode .modal-box {
       max-width: 780px; border-radius: 20px 20px 0 0;
@@ -260,6 +270,9 @@
       display: inline-block; font-size: 11px; color: var(--muted);
       background: #f1f5f9; padding: 2px 7px; border-radius: 5px; margin-top: 3px;
     }
+    .used-tag.strict {
+      background: var(--warning-soft); color: #92400e; font-weight: 600;
+    }
 
     /* Navigasi Nomor */
     .nav-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 12px 0; text-align: center; }
@@ -282,7 +295,7 @@
     }
     .token-input {
       text-align: center; font-size: 18px !important; font-weight: 700;
-      letter-spacing: 2px; text-transform: uppercase;
+      letter-spacing: 2px;
     }
     .err-msg {
       color: var(--danger); background: var(--danger-soft);
@@ -368,10 +381,13 @@
   let ragu = {};
   let orderIndices = [];
   let step = 0;
+  let savedStep = null;
   let storageKey = '';
-  let isDemo = false;
   let fontStep = 0;
+  let saveTimer = null;
+  let isSubmitting = false;
 
+  const HURUF = ['A','B','C','D','E','F','G','H','I','J'];
   const FONT_PRESETS = [
     { q: '16px', opt: '15px' },
     { q: '18px', opt: '16.5px' },
@@ -415,7 +431,6 @@
     return false;
   }
 
-  // SHA-256 dengan WebCrypto + fallback murni JS agar jalan di semua HP/WebView
   async function sha256(str) {
     if (window.crypto && window.crypto.subtle) {
       const buf = new TextEncoder().encode(str);
@@ -423,6 +438,15 @@
       return Array.from(new Uint8Array(hashBuf)).map(b => b.toString(16).padStart(2, '0')).join('');
     }
     return sha256Fallback(str);
+  }
+
+  async function matchTokenHash(rawVal, targetHash) {
+    if (!targetHash) return rawVal;
+    const candidates = [rawVal, rawVal.toUpperCase(), rawVal.toLowerCase()];
+    for (const c of candidates) {
+      if ((await sha256(c)) === targetHash) return c;
+    }
+    return null;
   }
 
   function sha256Fallback(ascii) {
@@ -498,7 +522,6 @@
     storageKey = 'cbt_session_' + soalFile;
     try { localStorage.removeItem('cbt_save_' + soalFile); } catch (e) {}
 
-    // Jika masuk baru (bukan refresh di dalam halaman ujian), hapus sisa jawaban sebelumnya
     if (!isPageReload()) {
       try { sessionStorage.removeItem(storageKey); } catch (e) {}
     }
@@ -530,7 +553,7 @@
     if (!validSavedOrder) {
       const base = Array.from({ length: total }, (_, i) => i);
       orderIndices = quiz.shuffleQuestions ? shuffleArray(base) : base;
-      saveSession();
+      saveSession(true);
     }
     orderedSoal = orderIndices.map(i => quiz.soal[i]);
   }
@@ -538,13 +561,26 @@
   function startQuiz() {
     document.title = quiz.title || 'Penilaian CBT';
     document.getElementById('hdrTitle').textContent = quiz.title || 'Penilaian CBT';
-    step = (quiz.identitas && quiz.identitas.length > 0) ? -1 : 0;
+    const hasIdentitas = quiz.identitas && quiz.identitas.length > 0;
+
+    if (typeof savedStep === 'number' && savedStep >= 0 && savedStep < orderedSoal.length) {
+      step = savedStep;
+    } else {
+      step = hasIdentitas ? -1 : 0;
+    }
     render();
   }
 
-  function saveSession() {
-    if (isDemo || !storageKey) return;
-    try { sessionStorage.setItem(storageKey, JSON.stringify({ answers, ragu, order: orderIndices })); } catch(e) {}
+  function saveSession(immediate = true) {
+    if (!storageKey) return;
+    const write = () => {
+      try {
+        sessionStorage.setItem(storageKey, JSON.stringify({ answers, ragu, order: orderIndices, step }));
+      } catch (e) {}
+    };
+    if (saveTimer) { clearTimeout(saveTimer); saveTimer = null; }
+    if (immediate) write();
+    else saveTimer = setTimeout(write, 250);
   }
 
   function loadSaved() {
@@ -555,19 +591,56 @@
         answers = parsed.answers || {};
         ragu = parsed.ragu || {};
         orderIndices = parsed.order || [];
+        savedStep = typeof parsed.step === 'number' ? parsed.step : null;
       }
     } catch(e) {}
   }
 
-  function getQuestionValidationError(q) {
+  // Validasi aturan khusus (untuk ditahan langsung di tombol Lanjut jika siswa sudah mulai mengisi)
+  function getRuleValidationError(q, allowEmpty = false) {
     const v = q.validation || {};
     if (q.type === 'CHECKBOX') {
       const arr = Array.isArray(answers[q.entryId]) ? answers[q.entryId] : [];
-      if (q.required && arr.length === 0) return 'Wajib memilih minimal 1 jawaban.';
+      if (allowEmpty && arr.length === 0) return null;
+      if (v.exact && arr.length !== v.exact) {
+        return `Harus memilih tepat ${v.exact} jawaban (saat ini terpilih ${arr.length}).`;
+      }
+      if (v.min && arr.length < v.min) {
+        return `Harus memilih minimal ${v.min} jawaban (saat ini terpilih ${arr.length}).`;
+      }
+      if (v.max && arr.length > v.max) {
+        return `Maksimal hanya boleh memilih ${v.max} jawaban (saat ini terpilih ${arr.length}).`;
+      }
+    }
+    if (q.type === 'GRID' && v.onePerCol) {
+      const picked = q.rows.map(r => answers[r.entryId]).filter(Boolean);
+      if (new Set(picked).size !== picked.length) {
+        return 'Setiap kolom jawaban hanya boleh dipilih satu kali (tidak boleh kembar antar baris).';
+      }
+    }
+    if (q.type === 'CHECKBOX_GRID' && v.onePerCol) {
+      const seen = new Set();
+      for (const r of q.rows) {
+        const arr = Array.isArray(answers[r.entryId]) ? answers[r.entryId] : [];
+        for (const col of arr) {
+          if (seen.has(col)) {
+            return 'Setiap kolom jawaban hanya boleh dipilih satu kali (tidak boleh kembar antar baris).';
+          }
+          seen.add(col);
+        }
+      }
+    }
+    return null;
+  }
+
+  // Validasi lengkap saat tombol Selesai ditekan (aturan khusus + status wajib diisi)
+  function getQuestionValidationError(q) {
+    if (q.type === 'CHECKBOX') {
+      const arr = Array.isArray(answers[q.entryId]) ? answers[q.entryId] : [];
+      if (q.required && arr.length === 0) return 'Wajib memilih jawaban pada soal ini.';
       if (arr.length > 0 || q.required) {
-        if (v.exact && arr.length !== v.exact) return `Harus memilih tepat ${v.exact} jawaban (saat ini terpilih ${arr.length}).`;
-        if (v.min && arr.length < v.min) return `Harus memilih minimal ${v.min} jawaban (saat ini terpilih ${arr.length}).`;
-        if (v.max && arr.length > v.max) return `Maksimal hanya boleh memilih ${v.max} jawaban (saat ini terpilih ${arr.length}).`;
+        const ruleErr = getRuleValidationError(q, false);
+        if (ruleErr) return ruleErr;
       }
       return null;
     }
@@ -575,19 +648,13 @@
       if (q.required && !q.rows.every(r => answers[r.entryId] && answers[r.entryId].length > 0)) {
         return 'Semua baris harus dipasangkan.';
       }
-      if (v.onePerCol) {
-        const picked = q.rows.map(r => answers[r.entryId]).filter(Boolean);
-        if (new Set(picked).size !== picked.length) {
-          return 'Setiap kolom jawaban hanya boleh dipilih satu kali (tidak boleh kembar).';
-        }
-      }
-      return null;
+      return getRuleValidationError(q, false);
     }
     if (q.type === 'CHECKBOX_GRID') {
       if (q.required && !q.rows.every(r => Array.isArray(answers[r.entryId]) && answers[r.entryId].length > 0)) {
         return 'Setiap baris wajib dipilih minimal satu.';
       }
-      return null;
+      return getRuleValidationError(q, false);
     }
     const val = answers[q.entryId];
     if (q.required && (val === undefined || String(val).trim() === '')) {
@@ -618,6 +685,82 @@
     return q.columns.length <= 3 && q.columns.every(c => String(c).trim().length <= 18);
   }
 
+  function getCBHintState(q) {
+    const cur = Array.isArray(answers[q.entryId]) ? answers[q.entryId] : [];
+    const v = q.validation || {};
+    let ruleTxt = 'Boleh memilih lebih dari satu jawaban.';
+    let cls = 'grid-hint';
+    if (v.exact) {
+      ruleTxt = `Pilih tepat ${v.exact} jawaban.`;
+      cls += cur.length === v.exact ? ' ok' : ' warn';
+    } else if (v.min && v.max) {
+      ruleTxt = `Pilih ${v.min} sampai ${v.max} jawaban.`;
+      cls += (cur.length >= v.min && cur.length <= v.max) ? ' ok' : ' warn';
+    } else if (v.min) {
+      ruleTxt = `Pilih minimal ${v.min} jawaban.`;
+      cls += cur.length >= v.min ? ' ok' : ' warn';
+    } else if (v.max) {
+      ruleTxt = `Pilih maksimal ${v.max} jawaban.`;
+      cls += (cur.length > 0 && cur.length <= v.max) ? ' ok' : ' warn';
+    }
+    return { cls, ruleTxt, count: cur.length };
+  }
+
+  function getGridConflictInfo(q) {
+    const onePerCol = q.validation && q.validation.onePerCol;
+    const colCounts = {};
+    if (q.type === 'GRID') {
+      q.rows.forEach(r => {
+        const val = answers[r.entryId];
+        if (val) colCounts[val] = (colCounts[val] || 0) + 1;
+      });
+    } else if (q.type === 'CHECKBOX_GRID') {
+      q.rows.forEach(r => {
+        const arr = Array.isArray(answers[r.entryId]) ? answers[r.entryId] : [];
+        arr.forEach(val => { colCounts[val] = (colCounts[val] || 0) + 1; });
+      });
+    }
+    const dupCols = new Set();
+    if (onePerCol) {
+      Object.keys(colCounts).forEach(k => { if (colCounts[k] > 1) dupCols.add(k); });
+    }
+    return { onePerCol, dupCols, hasDup: dupCols.size > 0 };
+  }
+
+  function getGridHintState(q) {
+    const { onePerCol, hasDup } = getGridConflictInfo(q);
+    let cls = 'grid-hint';
+    let html = '';
+
+    if (q.type === 'GRID') {
+      const inlineMode = isInlineGrid(q);
+      html = inlineMode
+        ? 'Tap salah satu pilihan di setiap pernyataan.'
+        : 'Tap <strong>"Pilih Pasangan"</strong> di tiap baris.';
+      if (onePerCol) {
+        if (hasDup) {
+          cls += ' warn';
+          html = '⚠️ Ada jawaban kembar! Setiap kolom hanya boleh dipilih 1 kali.';
+        } else {
+          html += ' (1 pilihan per kolom)';
+          if (q.rows.every(r => answers[r.entryId])) cls += ' ok';
+        }
+      }
+    } else {
+      html = 'Tap satu atau beberapa pilihan yang sesuai pada setiap baris.';
+      if (onePerCol) {
+        if (hasDup) {
+          cls += ' warn';
+          html = '⚠️ Ada kolom yang terpilih lebih dari 1 kali! Setiap kolom hanya boleh dipilih 1 kali.';
+        } else {
+          html += ' (maksimal 1 per kolom)';
+        }
+      }
+    }
+    return { cls, html };
+  }
+
+  // Render halaman (hanya dipanggil saat masuk atau pindah nomor soal)
   function render() {
     const app = document.getElementById('app');
     const footer = document.getElementById('footerBar');
@@ -641,12 +784,12 @@
         html += `<div class="field-group">
           <label class="field-label">${esc(f.title)}${f.required ? '<span class="req">*</span>' : ''}</label>`;
         if (f.type === 'LIST' || f.type === 'MULTIPLE_CHOICE') {
-          html += `<select onchange="setIdentity(${idx}, this.value)">
+          html += `<select onchange="setIdentity(${idx}, this.value, true)">
             <option value="">-- Pilih ${escPlain(f.title)} --</option>
             ${(f.choices || []).map(c => `<option value="${escPlain(c)}" ${val === c ? 'selected' : ''}>${escPlain(c)}</option>`).join('')}
           </select>`;
         } else {
-          html += `<input type="text" value="${escPlain(val)}" placeholder="Masukkan ${escPlain(f.title)}..." oninput="setIdentity(${idx}, this.value)">`;
+          html += `<input type="text" value="${escPlain(val)}" placeholder="Masukkan ${escPlain(f.title)}..." oninput="setIdentity(${idx}, this.value, false)" onblur="saveSession(true)">`;
         }
         html += `</div>`;
       });
@@ -661,7 +804,6 @@
     footer.style.display = 'block';
     const q = orderedSoal[step];
     const total = orderedSoal.length;
-    const huruf = ['A','B','C','D','E','F','G','H'];
     document.getElementById('hdrSub').textContent = `SOAL ${step + 1} DARI ${total}`;
 
     let html = `<div class="card">
@@ -670,70 +812,59 @@
         <span class="badge-type">${TYPE_LABELS[q.type] || 'Soal'}</span>
       </div>
       ${q.sectionTitle ? `<div class="sec-banner">${esc(q.sectionTitle)}</div>` : ''}
+      ${q.image ? `<img class="q-img" loading="lazy" src="${escPlain(q.image)}" alt="Gambar Soal">` : ''}
       <div class="q-title">${esc(q.title)}${q.required ? '<span class="req">*</span>' : ''}</div>
       ${q.description ? `<div class="q-desc">${esc(q.description)}</div>` : ''}`;
 
     if (q.type === 'MULTIPLE_CHOICE') {
       const cur = answers[q.entryId] || '';
+      html += `<div id="qOptions">`;
       q.choices.forEach((c, i) => {
         const sel = cur === c ? 'selected' : '';
-        html += `<div class="opt-item ${sel}" onclick="pickMC(${step}, ${i})">
-          <div class="opt-marker">${huruf[i] || (i+1)}</div>
+        html += `<div class="opt-item ${sel}" data-idx="${i}" onclick="pickMC(${step}, ${i})">
+          <div class="opt-marker">${HURUF[i] || (i+1)}</div>
           <div class="opt-text">${esc(c)}</div>
         </div>`;
       });
+      html += `</div>`;
     } else if (q.type === 'CHECKBOX') {
       const cur = Array.isArray(answers[q.entryId]) ? answers[q.entryId] : [];
-      const v = q.validation || {};
-      let ruleTxt = 'Boleh memilih lebih dari satu jawaban.';
-      let hintCls = 'grid-hint';
-      if (v.exact) {
-        ruleTxt = `Pilih tepat ${v.exact} jawaban.`;
-        hintCls += cur.length === v.exact ? ' ok' : ' warn';
-      } else if (v.min && v.max) {
-        ruleTxt = `Pilih ${v.min} sampai ${v.max} jawaban.`;
-        hintCls += (cur.length >= v.min && cur.length <= v.max) ? ' ok' : ' warn';
-      } else if (v.min) {
-        ruleTxt = `Pilih minimal ${v.min} jawaban.`;
-        hintCls += cur.length >= v.min ? ' ok' : ' warn';
-      } else if (v.max) {
-        ruleTxt = `Pilih maksimal ${v.max} jawaban.`;
-        hintCls += (cur.length > 0 && cur.length <= v.max) ? ' ok' : ' warn';
-      }
-      html += `<div class="${hintCls}">
-        <span>${ruleTxt}</span>
-        <strong>Terpilih: ${cur.length}</strong>
-      </div>`;
-
+      const hState = getCBHintState(q);
+      html += `<div id="cbHint" class="${hState.cls}">
+        <span>${hState.ruleTxt}</span>
+        <strong id="cbCount">Terpilih: ${hState.count}</strong>
+      </div><div id="qOptions">`;
       q.choices.forEach((c, i) => {
         const sel = cur.includes(c) ? 'selected' : '';
-        html += `<div class="opt-item ${sel}" onclick="pickCB(${step}, ${i})">
+        html += `<div class="opt-item ${sel}" data-idx="${i}" onclick="pickCB(${step}, ${i})">
           <div class="opt-marker">${sel ? '✓' : ''}</div>
           <div class="opt-text">${esc(c)}</div>
         </div>`;
       });
+      html += `</div>`;
     } else if (q.type === 'LIST') {
       const cur = answers[q.entryId] || '';
-      html += `<select onchange="pickText(${step}, this.value)">
+      html += `<select onchange="pickText(${step}, this.value, true)">
         <option value="">-- Pilih Jawaban --</option>
         ${q.choices.map(c => `<option value="${escPlain(c)}" ${cur === c ? 'selected' : ''}>${escPlain(c)}</option>`).join('')}
       </select>`;
     } else if (q.type === 'TEXT') {
       const cur = answers[q.entryId] || '';
-      html += `<input type="text" value="${escPlain(cur)}" placeholder="Ketik jawaban singkat Anda..." oninput="pickText(${step}, this.value)">`;
+      html += `<input type="text" value="${escPlain(cur)}" placeholder="Ketik jawaban singkat Anda..." oninput="pickText(${step}, this.value, false)" onblur="saveSession(true)">`;
     } else if (q.type === 'PARAGRAPH_TEXT') {
       const cur = answers[q.entryId] || '';
-      html += `<textarea rows="5" placeholder="Ketik jawaban uraian Anda..." oninput="pickText(${step}, this.value)">${escPlain(cur)}</textarea>`;
+      html += `<textarea rows="5" placeholder="Ketik jawaban uraian Anda..." oninput="pickText(${step}, this.value, false)" onblur="saveSession(true)">${escPlain(cur)}</textarea>`;
     } else if (q.type === 'GRID') {
       const inlineMode = isInlineGrid(q);
-      const onePerCol = q.validation && q.validation.onePerCol;
-      html += `<div class="grid-hint"><span>${inlineMode
-        ? 'Tap salah satu pilihan di setiap pernyataan.'
-        : 'Tap <strong>"Pilih Pasangan"</strong> di tiap baris.'}${onePerCol ? ' (1 pilihan per kolom)' : ''}</span></div>`;
+      const hint = getGridHintState(q);
+      const { dupCols } = getGridConflictInfo(q);
+      html += `<div id="gridHint" class="${hint.cls}"><span>${hint.html}</span></div>`;
 
       q.rows.forEach((r, ri) => {
         const cur = answers[r.entryId] || '';
-        html += `<div class="grid-card ${cur ? 'answered' : ''}">
+        const isConflict = cur && dupCols.has(cur);
+        const cardCls = `grid-card${cur ? ' answered' : ''}${isConflict ? ' conflict' : ''}`;
+        html += `<div id="gridCard_${ri}" class="${cardCls}">
           <div class="grid-row-head">
             <div class="grid-row-num">${ri + 1}</div>
             <div class="grid-row-label">${esc(r.label)}</div>
@@ -742,24 +873,29 @@
         if (inlineMode) {
           html += `<div class="inline-pills">
             ${q.columns.map((col, ci) => `
-              <div class="inline-pill ${cur === col ? 'selected' : ''}" onclick="pickGridOption(${step}, ${ri}, ${ci})">${esc(col)}</div>
+              <div class="inline-pill ${cur === col ? 'selected' : ''}" data-ci="${ci}" onclick="pickGridOption(${step}, ${ri}, ${ci})">${esc(col)}</div>
             `).join('')}
           </div>`;
         } else {
           const colIdx = cur ? q.columns.indexOf(cur) : -1;
-          const badgeTxt = colIdx >= 0 ? `Opsi ${huruf[colIdx] || (colIdx + 1)}` : 'Pilih ▾';
-          html += `<button type="button" class="match-trigger ${cur ? 'filled' : ''}" onclick="openGridSheet(${step}, ${ri})">
-            <span>${cur ? esc(cur) : 'Pilih pasangan jawaban...'}</span>
-            <span class="match-trigger-badge">${badgeTxt}</span>
+          const badgeTxt = colIdx >= 0 ? `Opsi ${HURUF[colIdx] || (colIdx + 1)}` : 'Pilih ▾';
+          html += `<button type="button" id="gridTrig_${ri}" class="match-trigger ${cur ? 'filled' : ''}" onclick="openGridSheet(${step}, ${ri})">
+            <span id="gridTrigTxt_${ri}">${cur ? esc(cur) : 'Pilih pasangan jawaban...'}</span>
+            <span id="gridTrigBadge_${ri}" class="match-trigger-badge">${badgeTxt}</span>
           </button>`;
         }
         html += `</div>`;
       });
     } else if (q.type === 'CHECKBOX_GRID') {
-      html += `<div class="grid-hint"><span>Tap satu atau beberapa pilihan yang sesuai pada setiap baris.</span></div>`;
+      const hint = getGridHintState(q);
+      const { dupCols } = getGridConflictInfo(q);
+      html += `<div id="gridHint" class="${hint.cls}"><span>${hint.html}</span></div>`;
+
       q.rows.forEach((r, ri) => {
         const curArr = Array.isArray(answers[r.entryId]) ? answers[r.entryId] : [];
-        html += `<div class="grid-card ${curArr.length ? 'answered' : ''}">
+        const isConflict = curArr.some(v => dupCols.has(v));
+        const cardCls = `grid-card${curArr.length ? ' answered' : ''}${isConflict ? ' conflict' : ''}`;
+        html += `<div id="gridCard_${ri}" class="${cardCls}">
           <div class="grid-row-head">
             <div class="grid-row-num">${ri + 1}</div>
             <div class="grid-row-label">${esc(r.label)}</div>
@@ -767,7 +903,7 @@
           <div class="cb-grid-opts">
             ${q.columns.map((col, ci) => {
               const sel = curArr.includes(col) ? 'selected' : '';
-              return `<div class="cb-pill ${sel}" onclick="toggleCBGrid(${step}, ${ri}, ${ci})">${sel ? '✓ ' : ''}${esc(col)}</div>`;
+              return `<div class="cb-pill ${sel}" data-ci="${ci}" onclick="toggleCBGrid(${step}, ${ri}, ${ci})"><span class="cb-tick">✓</span><span>${esc(col)}</span></div>`;
             }).join('')}
           </div>
         </div>`;
@@ -781,7 +917,7 @@
     const isLast = step === total - 1;
     footerInner.innerHTML = `
       <button class="btn btn-outline" onclick="prevStep()" ${step === 0 && !(quiz.identitas && quiz.identitas.length) ? 'disabled' : ''}>← Kembali</button>
-      <button class="btn btn-warning ${isRagu ? 'active' : ''}" onclick="toggleRagu()">⚑ Ragu</button>
+      <button id="btnRagu" class="btn btn-warning ${isRagu ? 'active' : ''}" onclick="toggleRagu()">⚑ Ragu</button>
       ${isLast
         ? `<button class="btn btn-success" onclick="confirmSubmit()">Selesai ✓</button>`
         : `<button class="btn btn-primary" onclick="nextStep()">Lanjut →</button>`
@@ -789,11 +925,98 @@
     window.scrollTo(0, 0);
   }
 
+  /* Update DOM terarah (tanpa rebuild HTML -> nol scroll jump & ringan di HP spek rendah) */
+  function updateMCUI(q) {
+    const cur = answers[q.entryId] || '';
+    const opts = document.querySelectorAll('#qOptions .opt-item');
+    opts.forEach((el, i) => {
+      el.classList.toggle('selected', cur === q.choices[i]);
+    });
+  }
+
+  function updateCBUI(q) {
+    const cur = Array.isArray(answers[q.entryId]) ? answers[q.entryId] : [];
+    const opts = document.querySelectorAll('#qOptions .opt-item');
+    opts.forEach((el, i) => {
+      const sel = cur.includes(q.choices[i]);
+      el.classList.toggle('selected', sel);
+      const marker = el.querySelector('.opt-marker');
+      if (marker) marker.textContent = sel ? '✓' : '';
+    });
+    const hState = getCBHintState(q);
+    const hintEl = document.getElementById('cbHint');
+    const countEl = document.getElementById('cbCount');
+    if (hintEl) hintEl.className = hState.cls;
+    if (countEl) countEl.textContent = 'Terpilih: ' + hState.count;
+  }
+
+  function updateGridUI(q) {
+    const inlineMode = isInlineGrid(q);
+    const hint = getGridHintState(q);
+    const { dupCols } = getGridConflictInfo(q);
+
+    const hintEl = document.getElementById('gridHint');
+    if (hintEl) {
+      hintEl.className = hint.cls;
+      hintEl.innerHTML = `<span>${hint.html}</span>`;
+    }
+
+    q.rows.forEach((r, ri) => {
+      const cur = answers[r.entryId] || '';
+      const isConflict = Boolean(cur && dupCols.has(cur));
+      const card = document.getElementById('gridCard_' + ri);
+      if (!card) return;
+      card.classList.toggle('answered', Boolean(cur));
+      card.classList.toggle('conflict', isConflict);
+
+      if (inlineMode) {
+        const pills = card.querySelectorAll('.inline-pill');
+        pills.forEach((p, ci) => {
+          p.classList.toggle('selected', cur === q.columns[ci]);
+        });
+      } else {
+        const trig = document.getElementById('gridTrig_' + ri);
+        const txt = document.getElementById('gridTrigTxt_' + ri);
+        const badge = document.getElementById('gridTrigBadge_' + ri);
+        const colIdx = cur ? q.columns.indexOf(cur) : -1;
+        if (trig) trig.classList.toggle('filled', Boolean(cur));
+        if (txt) txt.innerHTML = cur ? esc(cur) : 'Pilih pasangan jawaban...';
+        if (badge) badge.textContent = colIdx >= 0 ? `Opsi ${HURUF[colIdx] || (colIdx + 1)}` : 'Pilih ▾';
+      }
+    });
+  }
+
+  function updateCBGridUI(q) {
+    const hint = getGridHintState(q);
+    const { dupCols } = getGridConflictInfo(q);
+
+    const hintEl = document.getElementById('gridHint');
+    if (hintEl) {
+      hintEl.className = hint.cls;
+      hintEl.innerHTML = `<span>${hint.html}</span>`;
+    }
+
+    q.rows.forEach((r, ri) => {
+      const curArr = Array.isArray(answers[r.entryId]) ? answers[r.entryId] : [];
+      const isConflict = curArr.some(v => dupCols.has(v));
+      const card = document.getElementById('gridCard_' + ri);
+      if (!card) return;
+      card.classList.toggle('answered', curArr.length > 0);
+      card.classList.toggle('conflict', isConflict);
+
+      const pills = card.querySelectorAll('.cb-pill');
+      pills.forEach((p, ci) => {
+        p.classList.toggle('selected', curArr.includes(q.columns[ci]));
+      });
+    });
+  }
+
+  /* Bottom Sheet Menjodohkan */
   function openGridSheet(qIdx, rIdx) {
     const q = orderedSoal[qIdx];
     const row = q.rows[rIdx];
     const cur = answers[row.entryId] || '';
-    const huruf = ['A','B','C','D','E','F','G','H','I','J'];
+    const onePerCol = q.validation && q.validation.onePerCol;
 
     const usedElsewhere = new Set();
     q.rows.forEach((otherRow, idx) => {
@@ -808,10 +1031,12 @@
       const sel = cur === col ? 'selected' : '';
       const isUsed = usedElsewhere.has(col);
       return `<div class="sheet-opt ${sel}" onclick="pickGridOption(${qIdx}, ${rIdx}, ${ci}); closeGridSheet();">
-        <div class="sheet-opt-key">${sel ? '✓' : (huruf[ci] || (ci + 1))}</div>
+        <div class="sheet-opt-key">${sel ? '✓' : (HURUF[ci] || (ci + 1))}</div>
         <div class="sheet-opt-body">
           <div>${esc(col)}</div>
-          ${isUsed && !sel ? '<span class="used-tag">Sudah dipilih di baris lain</span>' : ''}
+          ${isUsed && !sel
+            ? `<span class="used-tag ${onePerCol ? 'strict' : ''}">${onePerCol ? 'Sudah dipakai (1 jawaban per kolom)' : 'Sudah dipilih di baris lain'}</span>`
+            : ''}
         </div>
       </div>`;
     }).join('');
@@ -822,27 +1047,33 @@
 
     document.getElementById('sheetOptions').innerHTML = optsHtml;
     document.getElementById('gridSheet').classList.add('open');
+    document.body.classList.add('modal-open');
   }
 
-  function closeGridSheet() { document.getElementById('gridSheet').classList.remove('open'); }
+  function closeGridSheet() {
+    document.getElementById('gridSheet').classList.remove('open');
+    document.body.classList.remove('modal-open');
+  }
 
   function pickGridOption(qIdx, rIdx, cIdx) {
     const q = orderedSoal[qIdx];
     answers[q.rows[rIdx].entryId] = q.columns[cIdx];
-    saveSession();
-    render();
+    updateGridUI(q);
+    updateProgressUI();
+    saveSession(true);
   }
 
   function clearGridOption(qIdx, rIdx) {
     const q = orderedSoal[qIdx];
     delete answers[q.rows[rIdx].entryId];
-    saveSession();
-    render();
+    updateGridUI(q);
+    updateProgressUI();
+    saveSession(true);
   }
 
-  function setIdentity(idx, val) {
+  function setIdentity(idx, val, immediate) {
     answers[quiz.identitas[idx].entryId] = val;
-    saveSession();
+    saveSession(immediate);
   }
 
   async function finishIdentity() {
@@ -853,23 +1084,25 @@
         return;
       }
       if (f.tokenHash && val) {
-        const h = await sha256(val);
-        const hUpper = await sha256(val.toUpperCase());
-        if (h !== f.tokenHash && hUpper !== f.tokenHash) {
+        const matched = await matchTokenHash(val, f.tokenHash);
+        if (matched === null) {
           alert('Token tidak sesuai. Silakan periksa kembali.');
           return;
         }
+        answers[f.entryId] = matched;
       }
     }
     step = 0;
+    saveSession(true);
     render();
   }
 
   function pickMC(qIdx, cIdx) {
     const q = orderedSoal[qIdx];
     answers[q.entryId] = q.choices[cIdx];
-    saveSession();
-    render();
+    updateMCUI(q);
+    updateProgressUI();
+    saveSession(true);
   }
 
   function pickCB(qIdx, cIdx) {
@@ -879,14 +1112,15 @@
     if (arr.includes(val)) arr = arr.filter(x => x !== val);
     else arr.push(val);
     answers[q.entryId] = arr;
-    saveSession();
-    render();
+    updateCBUI(q);
+    updateProgressUI();
+    saveSession(true);
   }
 
-  function pickText(qIdx, val) {
+  function pickText(qIdx, val, immediate) {
     answers[orderedSoal[qIdx].entryId] = val;
-    saveSession();
     updateProgressUI();
+    saveSession(immediate);
   }
 
   function toggleCBGrid(qIdx, rIdx, cIdx) {
@@ -897,13 +1131,39 @@
     if (arr.includes(colVal)) arr = arr.filter(x => x !== colVal);
     else arr.push(colVal);
     answers[row.entryId] = arr;
-    saveSession();
-    render();
+    updateCBGridUI(q);
+    updateProgressUI();
+    saveSession(true);
   }
 
-  function toggleRagu() { ragu[step] = !ragu[step]; saveSession(); render(); }
-  function prevStep() { if (step > 0) { step--; render(); } else if (quiz.identitas && quiz.identitas.length) { step = -1; render(); } }
-  function nextStep() { if (step < orderedSoal.length - 1) { step++; render(); } }
+  function toggleRagu() {
+    ragu[step] = !ragu[step];
+    const btn = document.getElementById('btnRagu');
+    if (btn) btn.classList.toggle('active', !!ragu[step]);
+    saveSession(true);
+  }
+
+  function prevStep() {
+    if (step > 0) { step--; saveSession(true); render(); }
+    else if (quiz.identitas && quiz.identitas.length) { step = -1; saveSession(true); render(); }
+  }
+
+  function nextStep() {
+    const q = orderedSoal[step];
+    const ruleErr = getRuleValidationError(q, true);
+    if (ruleErr) {
+      alert('Belum sesuai aturan soal:\n' + ruleErr);
+      return;
+    }
+    if (step < orderedSoal.length - 1) { step++; saveSession(true); render(); }
+  }
+
+  function jumpTo(idx) {
+    step = idx;
+    saveSession(true);
+    closeNavModal();
+    render();
+  }
 
   function openNavModal() {
     let terjawab = 0, jumRagu = 0, belum = 0;
@@ -914,7 +1174,7 @@
       else if (isQuestionComplete(q)) { cls += ' answered'; terjawab++; }
       else { belum++; }
       if (i === step) cls += ' current';
-      return `<button class="${cls}" onclick="step=${i}; closeNavModal(); render();">${i + 1}</button>`;
+      return `<button class="${cls}" onclick="jumpTo(${i})">${i + 1}</button>`;
     }).join('');
 
     document.getElementById('navStats').innerHTML = `
@@ -923,8 +1183,12 @@
       <div class="stat-box"><div class="stat-num" style="color:var(--muted);">${belum}</div><div class="stat-lbl">Belum</div></div>
     `;
     document.getElementById('navModal').classList.add('open');
+    document.body.classList.add('modal-open');
   }
-  function closeNavModal() { document.getElementById('navModal').classList.remove('open'); }
+  function closeNavModal() {
+    document.getElementById('navModal').classList.remove('open');
+    document.body.classList.remove('modal-open');
+  }
 
   function confirmSubmit() {
     let terjawab = 0;
@@ -934,11 +1198,16 @@
       if (err) {
         alert(`Periksa Nomor ${i + 1}:\n${err}`);
         step = i;
+        saveSession(true);
         render();
         return;
       }
       if (isQuestionComplete(q)) terjawab++;
     }
+
+    const btn = document.getElementById('btnConfirmSend');
+    btn.disabled = false;
+    btn.textContent = 'Kirim Jawaban ✓';
 
     document.getElementById('submitSummary').textContent =
       `Terjawab ${terjawab} dari ${orderedSoal.length} soal. Pastikan semua jawaban sudah dicek kembali sebelum dikirim.`;
@@ -949,7 +1218,7 @@
         <div class="token-box">
           <label class="field-label" style="color:var(--primary-dark);">${esc(quiz.tokenField.title)}<span class="req">*</span></label>
           <div style="font-size:12.5px; color:var(--text-sec); margin-bottom:8px;">${esc(quiz.tokenField.description)}</div>
-          <input type="text" id="examTokenInput" class="token-input" placeholder="KETIK TOKEN" autocomplete="off">
+          <input type="text" id="examTokenInput" class="token-input" placeholder="Ketik Token" autocomplete="off" onkeydown="if(event.key==='Enter') doSubmit()">
           <div id="tokenErr" class="err-msg" style="display:none;"></div>
         </div>`;
     } else {
@@ -957,10 +1226,15 @@
     }
 
     document.getElementById('submitModal').classList.add('open');
+    document.body.classList.add('modal-open');
   }
-  function closeSubmitModal() { document.getElementById('submitModal').classList.remove('open'); }
+  function closeSubmitModal() {
+    document.getElementById('submitModal').classList.remove('open');
+    document.body.classList.remove('modal-open');
+  }
 
   async function doSubmit() {
+    if (isSubmitting) return;
     const btn = document.getElementById('btnConfirmSend');
     let tokenVal = '';
 
@@ -975,17 +1249,23 @@
         return;
       }
       if (quiz.tokenField.hash && tokenVal) {
-        const hExact = await sha256(tokenVal);
-        const hUpper = await sha256(tokenVal.toUpperCase());
-        if (hExact !== quiz.tokenField.hash && hUpper !== quiz.tokenField.hash) {
+        const matched = await matchTokenHash(tokenVal, quiz.tokenField.hash);
+        if (matched === null) {
           errEl.textContent = 'Token salah! Periksa kembali token yang diberikan panitia.';
           errEl.style.display = 'block';
           return;
         }
+        tokenVal = matched;
       }
       errEl.style.display = 'none';
     }
 
+    if (navigator.onLine === false) {
+      alert('Tidak ada koneksi internet. Periksa sinyal HP Anda lalu tekan kirim kembali.');
+      return;
+    }
+
+    isSubmitting = true;
     btn.disabled = true;
     btn.textContent = 'Mengirim...';
 
@@ -1018,6 +1298,7 @@
       showDone('Jawaban Berhasil Dikirim!', 'Terima kasih telah menyelesaikan penilaian. Silakan tutup halaman atau ikuti arahan pengawas.');
     } catch (e) {
       alert('Gagal mengirim jawaban. Periksa koneksi internet lalu coba klik kirim lagi.');
+      isSubmitting = false;
       btn.disabled = false;
       btn.textContent = 'Kirim Jawaban ✓';
     }
