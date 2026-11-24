@@ -89,7 +89,7 @@
       display: flex; flex-direction: column; gap: 8px;
       padding: 12px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 10px; background: #fff;
     }
-    .match-label { font-size: 14px; font-weight: 500; }
+    .match-label { font-size: 14px; font-weight: 600; }
     .match-slot {
       padding: 10px 12px; border: 1.5px dashed #9aa0a6; border-radius: 6px;
       font-size: 14px; color: var(--muted); background: #f8f9fa; cursor: pointer;
@@ -99,6 +99,17 @@
       border-style: solid; border-color: var(--success); background: #e6f4ea; color: #137333; font-weight: 600;
     }
     .match-clear { font-size: 12px; color: var(--danger); font-weight: 700; margin-left: 8px; }
+
+    /* Petak Kotak Centang (Checkbox Grid) */
+    .cb-grid-opts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2px; }
+    .cb-pill {
+      padding: 8px 13px; border: 1.5px solid var(--border); border-radius: 8px;
+      font-size: 14px; background: #f8f9fa; color: var(--text); cursor: pointer;
+      display: inline-flex; align-items: center; gap: 6px; user-select: none;
+    }
+    .cb-pill.selected {
+      border-color: var(--primary); background: #e8f0fe; color: var(--primary-dark); font-weight: 600;
+    }
 
     /* Footer Navigasi */
     .footer-bar {
@@ -182,10 +193,10 @@
 
 <script>
   let quiz = null;
-  let answers = {}; // entryId -> string atau array (checkbox)
-  let ragu = {};    // index soal -> boolean
-  let step = 0;     // -1 = halaman identitas, 0..N-1 = indeks soal
-  let activeChip = null; // { qIdx, colText }
+  let answers = {};
+  let ragu = {};
+  let step = 0;
+  let activeChip = null;
   let storageKey = '';
   let isDemo = false;
 
@@ -306,6 +317,12 @@
     if (q.type === 'GRID') {
       return q.rows.every(r => answers[r.entryId] && answers[r.entryId].length > 0);
     }
+    if (q.type === 'CHECKBOX_GRID') {
+      if (q.required) {
+        return q.rows.every(r => Array.isArray(answers[r.entryId]) && answers[r.entryId].length > 0);
+      }
+      return q.rows.some(r => Array.isArray(answers[r.entryId]) && answers[r.entryId].length > 0);
+    }
     const val = answers[q.entryId];
     if (Array.isArray(val)) return val.length > 0;
     return val !== undefined && String(val).trim() !== '';
@@ -406,6 +423,20 @@
           </div>
         </div>`;
       });
+    } else if (q.type === 'CHECKBOX_GRID') {
+      html += `<div style="font-size:12px; color:var(--muted); margin-bottom:10px;">Tap satu atau beberapa pilihan yang sesuai pada setiap baris</div>`;
+      q.rows.forEach((r, ri) => {
+        const curArr = Array.isArray(answers[r.entryId]) ? answers[r.entryId] : [];
+        html += `<div class="match-row">
+          <div class="match-label">${esc(r.label)}</div>
+          <div class="cb-grid-opts">
+            ${q.columns.map((col, ci) => {
+              const sel = curArr.includes(col) ? 'selected' : '';
+              return `<div class="cb-pill ${sel}" onclick="toggleCBGrid(${step}, ${ri}, ${ci})">${sel ? '✓ ' : ''}${esc(col)}</div>`;
+            }).join('')}
+          </div>
+        </div>`;
+      });
     }
 
     html += `</div>`;
@@ -490,6 +521,18 @@
       const guide = document.getElementById('tapGuide');
       guide.textContent = 'Pilih salah satu tombol jawaban biru di atas dulu, lalu tap kotak ini.';
     }
+  }
+
+  function toggleCBGrid(qIdx, rIdx, cIdx) {
+    const q = quiz.soal[qIdx];
+    const row = q.rows[rIdx];
+    const colVal = q.columns[cIdx];
+    let arr = Array.isArray(answers[row.entryId]) ? [...answers[row.entryId]] : [];
+    if (arr.includes(colVal)) arr = arr.filter(x => x !== colVal);
+    else arr.push(colVal);
+    answers[row.entryId] = arr;
+    saveLocal();
+    render();
   }
 
   function toggleRagu() { ragu[step] = !ragu[step]; saveLocal(); render(); }
