@@ -419,6 +419,9 @@
     {
       "title": "*Di tengah arus budaya serba instan dan maraknya fenomena procrastination (kebiasaan menunda-nunda tugas) di kalangan generasi muda, ajaran Islam menanamkan konsep etos kerja Islami sebagai karakter fundamental sejak usia remaja. Bagi seorang pelajar atau remaja muslim, \"bekerja\" tidak selalu identik dengan mencari uang di kantor, melainkan mencakup kesungguhan dalam menuntut ilmu, menjalankan amanah organisasi, serta berkarya secara produktif.\nEtos kerja Islami bertumpu pada kesadaran bahwa setiap aktivitas bernilai ibadah apabila diniatkan karena Allah Swt. Nilai-nilai utamanya tercermin dalam sikap disiplin menghargai waktu (al-waqtu kassaif), bekerja tuntas dan berkualitas tinggi (itqan), tidak mudah menyerah saat menghadapi kegagalan (mujahadah), serta menjunjung tinggi kejujuran dan integritas tanpa bergantung pada pengawasan guru maupun orang tua (muraqabah).\nBerdasarkan teks bacaan dan prinsip etos kerja Islami dalam kehidupan remaja, pasangkanlah Pernyataan/Kasus Perilaku Remaja (Kolom A) dengan Nilai Etos Kerja Islami yang Tepat (Kolom B)!",
       "description": "",
+      "validation": {
+        "onePerCol": true
+      },
       "type": "CHECKBOX_GRID",
       "columns": [
         "Itqan (Profesional dan Berkualitas)",
@@ -440,6 +443,9 @@
     {
       "title": "*Keimanan yang sejati tidak berhenti pada pengakuan teologis semata, melainkan bekerja sebagai kekuatan internal yang membentuk ketangguhan karakter (mental toughness) seseorang. Ketika menghadapi tekanan hidup, rasa takut akan masa depan, atau godaan untuk menyimpang, iman hadir memberi arah dan ketenangan. Seseorang yang beriman memiliki sandaran vertikal yang kokoh kepada Allah Swt., sehingga ia mampu mengelola emosi negatif, memiliki keberanian moral untuk membela kebenaran, bersabar dalam ujian, serta tidak mudah goyah oleh penilaian maupun tekanan lingkungan sosial.\nBerdasarkan teks bacaan dan pemahaman mengenai fungsi iman dalam menguatkan diri, pasangkanlah Situasi / Tantangan Diri (Kolom A) dengan Fungsi Penguatan Iman yang Tepat (Kolom B)!",
       "description": "",
+      "validation": {
+        "onePerCol": true
+      },
       "type": "CHECKBOX_GRID",
       "columns": [
         "Menumbuhkan ketenangan batin (tuma'ninah) dan tawakal",
@@ -471,6 +477,9 @@
     {
       "title": "*Dalam ajaran Islam, membersihkan jiwa (tazkiyatun nafs) dari akhlak mazmumah (perilaku tercela) seperti hasad (iri dengki), ghibah (menggunjing), gadab (marah berlebihan), riya (pamer), dan takabur (sombong) bukan sekadar tuntutan ibadah ritual, melainkan kebutuhan mendasar demi kesehatan mental dan keharmonisan sosial. Akhlak tercela ibarat racun yang pertama kali merusak ketenangan pemiliknya sendiri sebelum berdampak buruk bagi orang lain. Ketika seseorang mampu mengendalikan hawa nafsu dan menjauhi sifat-sifat tersebut, ia akan merasakan kelapangan hati, memperoleh kepercayaan penuh dari lingkungan sekitar, serta menjaga kualitas amal salehnya agar tetap bernilai di sisi Allah Swt.\nBerdasarkan teks bacaan dan pemahaman mengenai manfaat menghindari akhlak mazmumah, pasangkanlah Upaya Menghindari Akhlak Mazmumah (Kolom A) dengan Manfaat Positif yang Diperoleh (Kolom B)!",
       "description": "",
+      "validation": {
+        "onePerCol": true
+      },
       "type": "CHECKBOX_GRID",
       "columns": [
         "terjaganya keikhlasan hati dan nilai pahala amal di sisi Allah Swt.",
@@ -502,6 +511,9 @@
     {
       "title": "*Lembaga Keuangan Syariah (LKS)—baik berupa perbankan syariah, asuransi syariah (takaful), pegadaian syariah (rahn), maupun koperasi simpan pinjam berbasis syariah (BMT)—hadir untuk menggerakkan roda perekonomian umat sesuai prinsip-prinsip syariat Islam. Berbeda dengan sistem konvensional yang bertumpu pada bunga (riba), LKS mengedepankan prinsip keadilan, transparansi, kemitraan bagi hasil (mudharabah dan musyarakah), serta tolong-menolong (ta'awun).\nMelalui berbagai instrumen akad yang bebas dari unsur riba (bunga), gharar (ketidakjelasan), dan maysir (spekulasi/judi), lembaga keuangan syariah berperan strategis dalam menghimpun dana masyarakat secara aman, menyalurkan pembiayaan produktif bagi pelaku UMKM, serta memberikan perlindungan risiko berbasis solidaritas bersama. \nBerdasarkan teks bacaan dan pemahaman mengenai peran lembaga keuangan syariah dalam perekonomian masyarakat, pasangkanlah Kebutuhan / Studi Kasus Ekonomi Masyarakat (Kolom A) dengan Peran dan Solusi Lembaga Keuangan Syariah yang Tepat (Kolom B)!",
       "description": "",
+      "validation": {
+        "onePerCol": true
+      },
       "type": "CHECKBOX_GRID",
       "columns": [
         "Menyediakan layanan rahn (gadai syariah) dengan biaya pemeliharaan barang jaminan (ujrah) yang transparan dan bebas bunga.",
@@ -533,6 +545,9 @@
     {
       "title": "*Dalam perjalanan sejarah Islam, khususnya di Nusantara, para ulama memegang peranan sentral tidak hanya sebagai penyampai ajaran agama, tetapi juga sebagai pelopor peradaban, pendidik masyarakat, sekaligus pejuang kemerdekaan. Para ulama seperti Wali Songo, Syekh Yusuf Al-Makassari, Syekh Nawawi Al-Bantani, hingga KH. Hasyim Asy'ari dan KH. Ahmad Dahlan menunjukkan keteladanan luar biasa dalam berdakwah.\nMereka menyampaikan nilai-nilai Islam dengan pendekatan yang bijaksana (bil hikmah), menghargai kearifan lokal tanpa mengorbankan prinsip akidah, gigih menuntut dan menulis ilmu hingga kancah internasional, serta berani mengorbankan jiwa raga demi membela keadilan dan martabat bangsa dari penjajahan. Dari perjuangan mereka, generasi muda dapat memetik banyak pelajaran berharga (ibrah) untuk diterapkan dalam tantangan zaman modern.\nBerdasarkan teks bacaan dan analisis ibrah (pelajaran) dari perjuangan para ulama, pasangkanlah Bentuk Keteladanan / Perjuangan Ulama (Kolom A) dengan Implementasi Ibrah dalam Kehidupan Pelajar Masa Kini (Kolom B)!",
       "description": "",
+      "validation": {
+        "onePerCol": true
+      },
       "type": "CHECKBOX_GRID",
       "columns": [
         "Rajin membaca, menulis karya ilmiah, dan terus meningkatkan literasi agar mampu berkontribusi di tingkat global.",
@@ -564,6 +579,9 @@
     {
       "title": "*Perkembangan teknologi digital, arus informasi media sosial yang tak terbendung, serta kompleksitas persoalan sosial-ekonomi menuntut strategi dakwah ulama masa kini untuk terus beradaptasi tanpa kehilangan substansi ajaran Islam. Jika pada masa lalu dakwah banyak bertumpu pada mimbar masjid dan majelis taklim konvensional, ulama kontemporer perlu merambah ruang-ruang digital, mengangkat isu-isu aktual—seperti kesehatan mental, literasi keuangan syariah, krisis lingkungan, hingga etika bermedia sosial—serta mengedepankan narasi Islam yang moderat (wasathiyah), sejuk, dan mencerahkan.\nBerdasarkan teks bacaan dan evaluasi terhadap relevansi dakwah ulama di era modern, pasangkanlah Tantangan Zaman Masa Kini (Kolom A) dengan Strategi Dakwah Ulama yang Relevan (Kolom B)!",
       "description": "",
+      "validation": {
+        "onePerCol": true
+      },
       "type": "CHECKBOX_GRID",
       "columns": [
         "Memanfaatkan platform digital seperti siniar (podcast) dan video pendek dengan bahasa komunikatif serta visual menarik.",
@@ -595,6 +613,9 @@
     {
       "title": "*Meneladani perjuangan dan akhlak para ulama tidak cukup hanya berhenti pada kekaguman sejarah atau hafalan biografi semata, melainkan perlu diwujudkan dalam aksi nyata yang terencana sesuai kapasitas masing-masing. Di lingkungan sekolah maupun masyarakat, peserta didik dapat merancang gerakan keteladanan ulama—seperti semangat berbagi ilmu, menjaga kerukunan antarumat, kepedulian sosial terhadap kaum duafa, serta integritas moral dalam berkata dan bertindak. Melalui aksi nyata yang berkelanjutan, nilai-nilai luhur para ulama akan tetap hidup dan menjadi solusi atas persoalan di sekitar kita.\nBerdasarkan teks bacaan dan prinsip merancang aksi keteladanan ulama dalam kehidupan sehari-hari, pasangkanlah Nilai Keteladanan Utama Ulama (Kolom A) dengan Rancangan Aksi Nyata Pelajar yang Tepat (Kolom B)!",
       "description": "",
+      "validation": {
+        "onePerCol": true
+      },
       "type": "CHECKBOX_GRID",
       "columns": [
         "Menginisiasi program \"Jumat Berbagi\" dan penggalangan donasi bagi warga sekitar sekolah yang membutuhkan.",
