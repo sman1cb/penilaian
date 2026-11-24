@@ -128,12 +128,12 @@
     .opt-item.selected .opt-marker { background: var(--primary); color: #fff; }
     .opt-text { font-size: var(--opt-size); flex: 1; padding-top: 2px; word-wrap: break-word; }
 
-    /* Input Teks & Dropdown */
-    input[type="text"], textarea, select {
+    /* Input Teks */
+    input[type="text"], textarea {
       width: 100%; padding: 13px 14px; border: 1.5px solid var(--border); border-radius: 12px;
       font-size: 15px; font-family: inherit; background: #fff; color: var(--text);
     }
-    input[type="text"]:focus, textarea:focus, select:focus {
+    input[type="text"]:focus, textarea:focus {
       outline: none; border-color: var(--primary);
     }
 
@@ -182,12 +182,16 @@
       opacity: 0.45; border-style: dashed;
     }
 
+    /* Tombol Picker (untuk Menjodohkan & Pengganti Dropdown Native) */
     .match-trigger {
-      width: 100%; padding: 11px 14px; border-radius: 10px;
+      width: 100%; padding: 12px 14px; border-radius: 12px;
       border: 1.5px dashed #94a3b8; background: #f8fafc;
-      color: var(--muted); font-size: 14px; font-weight: 500;
+      color: var(--muted); font-size: 14.5px; font-weight: 500;
       display: flex; justify-content: space-between; align-items: center; gap: 8px;
       cursor: pointer; text-align: left;
+    }
+    .match-trigger.select-style {
+      border-style: solid; border-color: var(--border); background: #fff;
     }
     .match-trigger.filled {
       border-style: solid; border-color: var(--success);
@@ -284,7 +288,7 @@
       background: #ffe4e6; color: #be123c; font-weight: 600;
     }
 
-    /* Notifikasi Kustom Tema Aplikasi (Dark Slate + Crimson + Maroon + Gold) */
+    /* Notifikasi Kustom Tema Aplikasi */
     #notifModal { z-index: 70; background: rgba(15, 23, 42, 0.74); }
     .notif-box {
       background: var(--app-card);
@@ -377,13 +381,13 @@
   <div class="footer-inner" id="footerInner"></div>
 </div>
 
-<!-- Bottom Sheet Picker Menjodohkan -->
+<!-- Bottom Sheet Picker (Menjodohkan & Dropdown Dalam WebView) -->
 <div class="modal-bg sheet-mode" id="gridSheet" onclick="if(event.target===this) closeGridSheet()">
-  <div class="modal-box">
+  <div class="modal-box" id="sheetScrollBox">
     <div class="sheet-handle"></div>
-    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-      <strong style="font-size:15px;">Pilih Pasangan Jawaban</strong>
-      <button class="btn btn-outline" style="padding:5px 10px; font-size:12px;" onclick="closeGridSheet()">Tutup ✕</button>
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; gap:8px;">
+      <strong id="sheetTitle" style="font-size:15px;">Pilih Jawaban</strong>
+      <button class="btn btn-outline" style="padding:5px 10px; font-size:12px; flex-shrink:0;" onclick="closeGridSheet()">Tutup ✕</button>
     </div>
     <div class="sheet-context" id="sheetContext"></div>
     <div id="sheetOptions"></div>
@@ -416,7 +420,7 @@
   </div>
 </div>
 
-<!-- Modal Notifikasi Kustom (Pengganti alert browser) -->
+<!-- Modal Notifikasi Kustom -->
 <div class="modal-bg" id="notifModal" onclick="if(event.target===this) closeNotif()">
   <div class="notif-box">
     <div class="notif-icon">
@@ -488,15 +492,6 @@
     fontStep = (fontStep + 1) % FONT_PRESETS.length;
     document.documentElement.style.setProperty('--q-size', FONT_PRESETS[fontStep].q);
     document.documentElement.style.setProperty('--opt-size', FONT_PRESETS[fontStep].opt);
-  }
-
-  function isPageReload() {
-    try {
-      const nav = performance.getEntriesByType && performance.getEntriesByType('navigation');
-      if (nav && nav.length > 0) return nav[0].type === 'reload';
-      if (performance.navigation) return performance.navigation.type === 1;
-    } catch (e) {}
-    return false;
   }
 
   async function sha256(str) {
@@ -660,7 +655,6 @@
     } catch(e) {}
   }
 
-  // Validasi saat tombol Lanjut ditekan (tahan jika aturan dilanggar atau baris kisi baru diisi sebagian)
   function getRuleValidationError(q, allowEmpty = false) {
     const v = q.validation || {};
     if (q.type === 'CHECKBOX') {
@@ -707,7 +701,6 @@
     return null;
   }
 
-  // Validasi lengkap saat tombol Selesai ditekan
   function getQuestionValidationError(q) {
     if (q.type === 'CHECKBOX') {
       const arr = Array.isArray(answers[q.entryId]) ? answers[q.entryId] : [];
@@ -783,7 +776,7 @@
   }
 
   function getGridConflictInfo(q) {
-    const onePerCol = q.validation && q.validation.onePerCol;
+    const onePerCol = Boolean(q.validation && q.validation.onePerCol);
     const colOwner = {};
     const colCounts = {};
     if (q.type === 'GRID') {
@@ -873,10 +866,10 @@
         html += `<div class="field-group">
           <label class="field-label">${esc(f.title)}${f.required ? '<span class="req">*</span>' : ''}</label>`;
         if (f.type === 'LIST' || f.type === 'MULTIPLE_CHOICE') {
-          html += `<select onchange="setIdentity(${idx}, this.value, true)">
-            <option value="">-- Pilih ${escPlain(f.title)} --</option>
-            ${(f.choices || []).map(c => `<option value="${escPlain(c)}" ${val === c ? 'selected' : ''}>${escPlain(c)}</option>`).join('')}
-          </select>`;
+          html += `<button type="button" id="idTrig_${idx}" class="match-trigger select-style ${val ? 'filled' : ''}" onclick="openSelectSheet('id', ${idx})">
+            <span id="idTrigTxt_${idx}">${val ? esc(val) : '-- Pilih ' + esc(f.title) + ' --'}</span>
+            <span id="idTrigBadge_${idx}" class="match-trigger-badge">${val ? 'Ubah ▾' : 'Pilih ▾'}</span>
+          </button>`;
         } else {
           html += `<input type="text" value="${escPlain(val)}" placeholder="Masukkan ${escPlain(f.title)}..." oninput="setIdentity(${idx}, this.value, false)" onblur="saveSession(true)">`;
         }
@@ -933,10 +926,10 @@
       html += `</div>`;
     } else if (q.type === 'LIST') {
       const cur = answers[q.entryId] || '';
-      html += `<select onchange="pickText(${step}, this.value, true)">
-        <option value="">-- Pilih Jawaban --</option>
-        ${q.choices.map(c => `<option value="${escPlain(c)}" ${cur === c ? 'selected' : ''}>${escPlain(c)}</option>`).join('')}
-      </select>`;
+      html += `<button type="button" id="listTrig" class="match-trigger select-style ${cur ? 'filled' : ''}" onclick="openSelectSheet('q', ${step})">
+        <span id="listTrigTxt">${cur ? esc(cur) : '-- Pilih Jawaban --'}</span>
+        <span id="listTrigBadge" class="match-trigger-badge">${cur ? 'Ubah ▾' : 'Pilih ▾'}</span>
+      </button>`;
     } else if (q.type === 'TEXT') {
       const cur = answers[q.entryId] || '';
       html += `<input type="text" value="${escPlain(cur)}" placeholder="Ketik jawaban singkat Anda..." oninput="pickText(${step}, this.value, false)" onblur="saveSession(true)">`;
@@ -1109,12 +1102,75 @@
     });
   }
 
+  /* Bottom Sheet Pengganti Dropdown Native (100% di dalam WebView, aman dari anti-floating) */
+  function openSelectSheet(mode, idx) {
+    const item = mode === 'id' ? quiz.identitas[idx] : orderedSoal[idx];
+    const cur = answers[item.entryId] || '';
+    const choices = item.choices || [];
+    const titleStr = String(item.title || '').trim();
+
+    const titleEl = document.getElementById('sheetTitle');
+    const ctxEl = document.getElementById('sheetContext');
+
+    if (mode === 'id' && titleStr && titleStr.length <= 28) {
+      titleEl.textContent = 'Pilih ' + titleStr;
+      ctxEl.style.display = 'none';
+    } else {
+      titleEl.textContent = 'Pilih Jawaban';
+      ctxEl.style.display = 'block';
+      ctxEl.innerHTML = esc(titleStr);
+    }
+
+    const optsHtml = choices.map((c, ci) => {
+      const sel = cur === c;
+      return `<div class="sheet-opt ${sel ? 'selected' : ''}" onclick="pickSelectOption('${mode}', ${idx}, ${ci}); closeGridSheet();">
+        <div class="sheet-opt-key">${sel ? '✓' : (ci + 1)}</div>
+        <div class="sheet-opt-body"><div>${esc(c)}</div></div>
+      </div>`;
+    }).join('');
+
+    document.getElementById('sheetOptions').innerHTML = optsHtml;
+    const scrollBox = document.getElementById('sheetScrollBox');
+    if (scrollBox) scrollBox.scrollTop = 0;
+    document.getElementById('gridSheet').classList.add('open');
+    syncModalBodyLock();
+  }
+
+  function pickSelectOption(mode, idx, cIdx) {
+    if (mode === 'id') {
+      const f = quiz.identitas[idx];
+      const val = (f.choices || [])[cIdx] || '';
+      answers[f.entryId] = val;
+      saveSession(true);
+
+      const trig = document.getElementById('idTrig_' + idx);
+      const txt = document.getElementById('idTrigTxt_' + idx);
+      const badge = document.getElementById('idTrigBadge_' + idx);
+      if (trig) trig.classList.toggle('filled', Boolean(val));
+      if (txt) txt.innerHTML = val ? esc(val) : '-- Pilih ' + esc(f.title) + ' --';
+      if (badge) badge.textContent = val ? 'Ubah ▾' : 'Pilih ▾';
+    } else {
+      const q = orderedSoal[idx];
+      const val = (q.choices || [])[cIdx] || '';
+      answers[q.entryId] = val;
+      updateProgressUI();
+      saveSession(true);
+
+      const trig = document.getElementById('listTrig');
+      const txt = document.getElementById('listTrigTxt');
+      const badge = document.getElementById('listTrigBadge');
+      if (trig) trig.classList.toggle('filled', Boolean(val));
+      if (txt) txt.innerHTML = val ? esc(val) : '-- Pilih Jawaban --';
+      if (badge) badge.textContent = val ? 'Ubah ▾' : 'Pilih ▾';
+    }
+  }
+
   /* Bottom Sheet Menjodohkan */
   function openGridSheet(qIdx, rIdx) {
     const q = orderedSoal[qIdx];
     const row = q.rows[rIdx];
     const cur = answers[row.entryId] || '';
-    const onePerCol = q.validation && q.validation.onePerCol;
+    const onePerCol = Boolean(q.validation && q.validation.onePerCol);
 
     const usedByRow = {};
     q.rows.forEach((otherRow, idx) => {
@@ -1123,7 +1179,10 @@
       }
     });
 
-    document.getElementById('sheetContext').innerHTML = `<span style="color:var(--muted); font-size:12px; display:block;">Pernyataan ${rIdx + 1}:</span>${esc(row.label)}`;
+    document.getElementById('sheetTitle').textContent = 'Pilih Pasangan Jawaban';
+    const ctxEl = document.getElementById('sheetContext');
+    ctxEl.style.display = 'block';
+    ctxEl.innerHTML = `<span style="color:var(--muted); font-size:12px; display:block;">Pernyataan ${rIdx + 1}:</span>${esc(row.label)}`;
 
     let optsHtml = q.columns.map((col, ci) => {
       const sel = cur === col;
@@ -1145,6 +1204,8 @@
     }
 
     document.getElementById('sheetOptions').innerHTML = optsHtml;
+    const scrollBox = document.getElementById('sheetScrollBox');
+    if (scrollBox) scrollBox.scrollTop = 0;
     document.getElementById('gridSheet').classList.add('open');
     syncModalBodyLock();
   }
