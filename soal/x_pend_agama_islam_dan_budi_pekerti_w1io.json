@@ -1,0 +1,858 @@
+{
+  "title": "PENILAIAN SUMATIF AKHIR SEMESTER ",
+  "description": "MATA PELAJARAN      : PENDIDIKAN AGAMA DAN BUDI PEKERTI\nKELAS                               : X\nTAHUN PELAJARAN   : 2026-2027\n\nTATA CARA MENGERJAKAN PSAT ONLINE:\n1. Sebelum memulai ujian marilah membaca doa menurut agama dan kepercayaan masing-masing.\n2. PSAJ dapat dikerjakan menggunakan smartphone.\n3. Pastikan kalian memiliki Aplikasi Sekolah terbaru\n4. Lengkapi isian biodata diri seperti nama lengkap, kelas dan nomor peserta PSAT (sesuai kartu peserta), gunakan huruf KAPITAL. ( TELITI SAAT MEMILIH KELAS )\n5. Silahkan kerjakan soal PSAT.\n6. Link soal akan ditutup sesuai dengan waktu yang telah ditentukan.\n7. Jika sudah selesai mengerjakan, jangan lupa untuk klik tombol kirim.\n8. Selamat mengerjakan.\n\n\"Menyontek akan membawamu semakin dalam ke jurang kebodohan, jadi kalian harus malu jika mendapat nilai tinggi tapi hasil menyontek\".",
+  "formAction": "https://docs.google.com/forms/d/e/1FAIpQLSfl1LdugOx__1pRyMq3OWrIISewQkk3Oh6nzZD69W6xC9dhgw/formResponse",
+  "pageHistory": "0,1,2,3,4",
+  "shuffleQuestions": true,
+  "identitas": [
+    {
+      "title": "NAMA",
+      "description": "",
+      "type": "TEXT",
+      "entryId": "entry.1195107567",
+      "required": true
+    },
+    {
+      "title": "KELAS",
+      "description": "",
+      "type": "LIST",
+      "entryId": "entry.986576949",
+      "choices": [
+        "X. A",
+        "X. B",
+        "X. C",
+        "X. D",
+        "X. E",
+        "X. F",
+        "X. G",
+        "X. H",
+        "X. I",
+        "X. J",
+        "X. K",
+        "X. L"
+      ],
+      "required": true
+    },
+    {
+      "title": "NOMOR PESERTA",
+      "description": "",
+      "type": "TEXT",
+      "entryId": "entry.942463908",
+      "required": true
+    }
+  ],
+  "soal": [
+    {
+      "title": "*Farhan memiliki akun media sosial yang cukup ramai. Ia sering membuat unggahan tentang kegiatan berbagi makanan kepada pekerja jalanan dan warga yang membutuhkan. Banyak orang memujinya sebagai remaja yang peduli. Lama-kelamaan, Farhan merasa gelisah. Ia khawatir kegiatan baiknya berubah menjadi cara mencari perhatian. Namun, ia juga menyadari bahwa unggahan tersebut kadang membuat orang lain ikut berdonasi. Beberapa temannya menyarankan agar ia tetap mengunggah kegiatan sosial, tetapi dengan bahasa yang tidak menonjolkan diri. Teman lain menyarankan agar semua kegiatan kebaikan dilakukan secara diam-diam saja. Farhan ingin menempatkan amal, niat, dan tanggung jawab secara seimbang. Ia teringat bahwa manusia diperintahkan untuk beramal, dan Allah Swt. mengetahui apa yang dikerjakan. Ia ingin memahami cara menjaga amal agar tetap bermanfaat tanpa kehilangan keikhlasan.\nPemahaman paling utuh tentang hubungan amal, niat, dan tanggung jawab berdasarkan stimulus adalah ....",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1784464276",
+      "choices": [
+        "Amal sosial sebaiknya dilakukan dengan hati-hati agar tidak menimbulkan kesalahpahaman dari orang lain.",
+        "Kebaikan yang diunggah di media sosial dapat memberi inspirasi selama tidak digunakan untuk menyombongkan diri.",
+        "Keikhlasan perlu dijaga karena amal yang baik tidak hanya dilihat dari bentuk luarnya, tetapi juga dari niat dan dampaknya.",
+        "Setiap kegiatan kebaikan memiliki manfaat jika dilakukan dengan cara yang santun dan tidak merugikan penerimanya.",
+        "Amal perlu dijalankan dengan niat ikhlas, cara yang bijak, serta kesadaran bahwa Allah Swt. mengetahui proses dan tujuan manusia."
+      ],
+      "required": true,
+      "sectionTitle": "Pilihan ganda, Memilih semua jawaban yang benar,  Menjodohkan dan Benar Salah."
+    },
+    {
+      "title": "*Dina dan dua saudaranya mencoba membuat usaha kecil menjual makanan rumahan melalui aplikasi pesan antar. Mereka membagi tugas: Dina membuat desain promosi, kakaknya mengatur pesanan, dan adiknya membantu mencatat bahan. Pada bulan pertama, pesanan tidak sebanyak yang diharapkan. Beberapa makanan bahkan harus dibagikan kepada tetangga karena tidak terjual. Dina merasa kecewa dan mulai berpikir untuk berhenti. Ibunya menasihati agar mereka mengevaluasi rasa, harga, cara promosi, dan pelayanan sebelum menyerah. Dalam keluarga itu, muncul pembicaraan bahwa Islam mengajarkan manusia untuk berusaha sungguh-sungguh, mengambil sebab yang baik, berdoa, dan tidak mudah putus asa. Dina mulai memahami bahwa kegagalan awal bukan tanda bahwa usaha harus dihentikan, melainkan bahan untuk memperbaiki langkah. Ia ingin mendapat nasihat yang sesuai dengan semangat hadis tentang ikhtiar.\nNasihat yang paling sesuai dengan pesan hadis tentang semangat berusaha adalah ....",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1441751833",
+      "choices": [
+        "Kebiasaan baik perlu dilakukan secara bertahap agar seseorang tidak merasa terbebani dalam memperbaiki diri.",
+        "Setiap usaha yang baik harus dilakukan dengan sungguh-sungguh, bertanggung jawab, dan disadari sebagai amal yang diketahui Allah Swt.",
+        "Kedisiplinan harian dapat membantu seseorang menjadi pribadi yang lebih produktif dan teratur dalam berbagai kegiatan.",
+        "Perubahan diri membutuhkan dukungan keluarga agar seseorang lebih mudah menjaga kebiasaan positif.",
+        "Penggunaan media sosial perlu dibatasi agar waktu seseorang tidak habis untuk hal yang kurang bermanfaat."
+      ],
+      "required": true,
+      "sectionTitle": "Pilihan ganda, Memilih semua jawaban yang benar,  Menjodohkan dan Benar Salah."
+    },
+    {
+      "title": "*Dalam sebuah komunitas kreator remaja, para anggota diminta membuat konten positif tentang kepedulian lingkungan. Setiap orang memiliki gaya berbeda. Ada yang membuat video edukatif, ada yang menulis cerita singkat, ada pula yang membuat desain poster. Saat hasil karya mulai diunggah, muncul perbandingan jumlah suka dan komentar. Beberapa anggota merasa bangga karena karyanya mendapat perhatian besar. Sebagian lainnya merasa kurang dihargai karena karyanya tidak terlalu ramai dilihat. Situasi menjadi kurang nyaman ketika ada anggota yang mulai menyindir karya temannya. Ketua komunitas kemudian mengajak semua anggota kembali mengingat tujuan awal kegiatan, yaitu menyebarkan kebaikan dan mengajak masyarakat menjaga lingkungan. Ia menegaskan bahwa perbedaan hasil bukan alasan untuk saling merendahkan. Setiap karya yang dibuat dengan niat baik, cara benar, dan pesan bermanfaat tetap bernilai. Komunitas itu ingin memahami makna fastabiqul khairat secara lebih utuh.\nMakna fastabiqul khairat yang paling sesuai dengan stimulus adalah ....",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.732224389",
+      "choices": [
+        "Menghasilkan karya positif yang mampu menarik perhatian masyarakat luas melalui media digital.",
+        "Menjadikan kegiatan kreatif sebagai sarana mengembangkan bakat, kemampuan komunikasi, dan kepercayaan diri.",
+        "Berlomba memperbanyak kebaikan tanpa merendahkan orang lain, dengan menjaga niat, proses, dan manfaat karya.",
+        "Menghargai setiap karya teman karena semua orang memiliki kemampuan dan gaya penyampaian yang berbeda.",
+        "Menggunakan media sosial untuk menyampaikan pesan baik agar masyarakat semakin peduli terhadap lingkungan."
+      ],
+      "required": true,
+      "sectionTitle": "Pilihan ganda, Memilih semua jawaban yang benar,  Menjodohkan dan Benar Salah."
+    },
+    {
+      "title": "*Raka adalah remaja yang dikenal tenang dalam mengambil keputusan. Ketika teman-temannya membicarakan berbagai tren yang sedang ramai, ia tidak langsung mengikuti semuanya. Ia biasanya mempertimbangkan apakah kebiasaan itu membawa manfaat atau justru membuatnya lalai dari tanggung jawab. Di rumah, ia berusaha menjaga salat, membantu orang tua, dan tidak mudah mengeluh ketika diminta melakukan pekerjaan sederhana. Di media sosial, ia memilih tidak menulis komentar yang menyakiti orang lain, meskipun berbeda pendapat. Beberapa temannya menilai Raka terlalu hati-hati. Namun, Raka merasa bahwa keyakinan kepada Allah Swt. seharusnya membuat seseorang lebih bertanggung jawab dalam bersikap. Ia belum merasa sempurna, tetapi ia ingin agar keyakinannya tidak hanya menjadi ucapan. Baginya, kehidupan sehari-hari adalah tempat untuk membuktikan apakah seseorang benar-benar menjaga hubungan dengan Allah Swt. melalui perilaku yang baik.\nBerdasarkan stimulus tersebut, pernyataan yang paling tepat untuk mengingat makna iman adalah ...",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.261567085",
+      "choices": [
+        "Iman adalah kesadaran untuk melakukan kebaikan sosial dan menjaga hubungan baik dengan sesama manusia.",
+        "Iman adalah sikap hati-hati dalam memilih tindakan agar seseorang tidak mudah mengikuti kebiasaan buruk.",
+        "Iman adalah keyakinan dalam hati, diucapkan dengan lisan, dan dibuktikan melalui amal perbuatan.",
+        "Iman adalah dorongan untuk menjalankan ibadah pribadi serta membantu keluarga dengan penuh tanggung jawab.",
+        "Iman adalah kemampuan menjaga diri dari pengaruh negatif dan memilih perilaku yang bermanfaat."
+      ],
+      "required": true,
+      "sectionTitle": "Pilihan ganda, Memilih semua jawaban yang benar,  Menjodohkan dan Benar Salah."
+    },
+    {
+      "title": "*Di rumah, Nabila memiliki kebiasaan kecil yang sering tidak diperhatikan orang lain. Ia mematikan lampu jika tidak digunakan, menepati janji kepada adiknya, meminta maaf ketika salah bicara, dan berusaha tidak membantah orang tua dengan nada tinggi. Ia juga menjaga pesan yang diterimanya agar tidak disebarkan tanpa izin. Suatu hari, sepupunya bertanya mengapa ia begitu memperhatikan hal-hal kecil. Nabila menjawab bahwa kebaikan tidak selalu berbentuk tindakan besar. Menurutnya, keyakinan kepada Allah Swt. dapat terlihat dari cara seseorang menjaga amanah, ucapan, kebersihan, dan hubungan dengan orang lain. Sepupunya kemudian menyadari bahwa perilaku beriman tidak hanya tampak ketika seseorang melakukan ibadah ritual, tetapi juga tampak dalam kebiasaan harian yang sederhana. Nabila belum mengetahui semua istilah dalam akidah, tetapi ia memahami bahwa iman memiliki banyak bentuk pengamalan.\nKonsep yang paling tepat untuk menggambarkan banyaknya bentuk pengamalan iman dalam stimulus tersebut adalah ...",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1018938031",
+      "choices": [
+        "Tauhid, karena semua perilaku baik harus diarahkan hanya untuk memperoleh rida Allah Swt.",
+        "Ihsan, karena seseorang berusaha berbuat baik seolah-olah selalu diawasi oleh Allah Swt.",
+        "Akhlak mahmudah, karena perilaku baik mencerminkan keluhuran budi dalam kehidupan sehari-hari.",
+        "Amanah, karena menjaga tanggung jawab menjadi bagian penting dari perilaku seorang muslim.",
+        "Syu‘ab al-Īmān, karena iman memiliki banyak cabang yang terwujud dalam hati, lisan, dan perbuatan."
+      ],
+      "required": true,
+      "sectionTitle": "Pilihan ganda, Memilih semua jawaban yang benar,  Menjodohkan dan Benar Salah."
+    },
+    {
+      "title": "*Sekelompok remaja sedang membicarakan gaya hidup yang dianggap populer. Sebagian dari mereka berpendapat bahwa kebahagiaan diukur dari banyaknya barang bermerek, jumlah pengikut di media sosial, dan pujian dari orang lain. Farhan sempat merasa tertarik karena ia ingin diterima dalam pergaulan. Namun, ia juga merasa gelisah karena mulai membandingkan hidupnya dengan orang lain dan menjadi kurang bersyukur. Ketika merenung, Farhan menyadari bahwa dirinya sering lupa bahwa nilai manusia tidak ditentukan oleh penampilan luar atau pengakuan manusia, melainkan oleh kedekatan kepada Allah Swt. dan kualitas amalnya. Ia mulai belajar membatasi diri, memperbaiki niat, serta menggunakan waktunya untuk kegiatan yang lebih bermanfaat. Ia tetap bergaul dengan teman-temannya, tetapi tidak lagi menjadikan penilaian manusia sebagai pusat hidupnya.\n\nMakna tauhid yang paling tepat berdasarkan stimulus tersebut adalah ...",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1291478643",
+      "choices": [
+        "Menjadikan Allah Swt. sebagai pusat keyakinan, tujuan hidup, dan pertimbangan utama dalam bersikap.",
+        "Menjaga diri dari gaya hidup berlebihan agar seseorang tidak mudah terpengaruh oleh lingkungan.",
+        "Mengutamakan rasa syukur karena setiap orang memiliki keadaan hidup dan rezeki yang berbeda.",
+        "Menghindari kebiasaan membandingkan diri agar hati menjadi lebih tenang dan tidak gelisah.",
+        "Menggunakan waktu untuk kegiatan bermanfaat agar hidup tidak dikuasai oleh tren pergaulan."
+      ],
+      "required": true,
+      "sectionTitle": "Pilihan ganda, Memilih semua jawaban yang benar,  Menjodohkan dan Benar Salah."
+    },
+    {
+      "title": " *Raka aktif dalam komunitas remaja di lingkungan tempat tinggalnya. Pada suatu akhir pekan, ia ikut membantu membagikan paket makanan kepada warga yang membutuhkan. Kegiatan itu sebenarnya dilakukan bersama banyak teman, tetapi Raka meminta salah seorang temannya merekam saat ia menyerahkan paket bantuan. Setelah itu, ia memilih beberapa foto yang memperlihatkan dirinya sedang tersenyum dan membantu warga. Ia mengunggah foto tersebut dengan keterangan yang cukup panjang tentang pentingnya peduli kepada sesama. Banyak orang memberi tanda suka dan komentar pujian. Raka merasa sangat senang, tetapi ketika unggahannya tidak seramai biasanya, ia merasa kecewa dan menganggap kebaikannya kurang dihargai. Beberapa teman mengingatkan agar ia menjaga niat dalam berbuat baik. Raka tidak menolak nasihat itu, tetapi ia masih merasa bahwa kebaikan akan lebih bermakna jika banyak orang melihat dan memujinya.\n\nBerdasarkan stimulus tersebut, konsep akhlak mazmumah yang paling tepat untuk dikenali adalah ....",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.896871994",
+      "choices": [
+        "Riya’, karena kebaikan mulai diarahkan untuk memperoleh perhatian dan pujian manusia, bukan semata-mata karena Allah Swt.",
+        "Sum‘ah, karena amal baik dapat menjadi kurang tulus ketika terlalu sering diceritakan kepada orang lain.",
+        "Takabur, karena seseorang yang mendapat pujian perlu berhati-hati agar tidak merasa lebih mulia dari orang lain.",
+        "Berfoya-foya, karena penggunaan media sosial yang berlebihan dapat mengurangi kesederhanaan dalam hidup.",
+        "Hasad, karena perhatian terhadap penilaian orang lain dapat membuat hati gelisah dan kurang bersyukur."
+      ],
+      "required": true,
+      "sectionTitle": "Pilihan ganda, Memilih semua jawaban yang benar,  Menjodohkan dan Benar Salah."
+    },
+    {
+      "title": "*Nisa memiliki teman sebaya bernama Laras yang baru saja berhasil membuka usaha kecil secara daring. Laras sering membagikan proses usahanya, mulai dari belajar membuat produk, melayani pelanggan, sampai menyisihkan sebagian keuntungan untuk membantu kegiatan sosial di lingkungannya. Banyak teman merasa terinspirasi. Nisa sebenarnya mengakui bahwa Laras bekerja keras. Namun, setiap kali melihat Laras mendapat banyak dukungan, hati Nisa terasa tidak nyaman. Ia mulai membandingkan hidupnya dengan Laras. Ia tidak secara langsung menghina Laras, tetapi sering berkata kepada orang lain bahwa keberhasilan Laras hanya karena beruntung dan dibantu keluarga. Ketika ada teman yang memuji Laras, Nisa tersenyum, tetapi dalam hati berharap usaha Laras tidak lagi terlalu berhasil. Setelah beberapa hari, Nisa merasa pikirannya tidak tenang. Ia tahu bahwa perasaan itu tidak baik, tetapi ia belum mampu menata hatinya.\nSikap batin yang paling tepat dikenali berdasarkan stimulus tersebut adalah ....",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.879901330",
+      "choices": [
+        "Berfoya-foya, karena seseorang perlu menjaga diri agar tidak berlebihan dalam mengejar pengakuan sosial.",
+        "Takabur, karena merasa lebih baik dari orang lain dapat membuat seseorang sulit melihat kelebihan sesama.",
+        "Hasad, karena muncul rasa tidak senang terhadap nikmat orang lain dan berharap nikmat itu berkurang.",
+        "Riya’, karena kebaikan yang ditampilkan kepada orang lain perlu dijaga agar tidak bercampur keinginan dipuji.",
+        "Sum‘ah, karena menceritakan kelebihan diri secara berlebihan dapat mengganggu ketulusan dalam beramal."
+      ],
+      "required": true,
+      "sectionTitle": "Pilihan ganda, Memilih semua jawaban yang benar,  Menjodohkan dan Benar Salah."
+    },
+    {
+      "title": "* Dalam sebuah grup percakapan keluarga besar, Farhan sering membagikan cerita tentang kegiatan sosial yang ia ikuti. Awalnya keluarga merasa bangga karena Farhan tampak peduli terhadap orang lain. Namun, lama-kelamaan, setiap kali selesai membantu tetangga, mengantar makanan, atau menyumbang untuk kegiatan sosial, Farhan selalu menceritakan secara rinci apa yang ia lakukan. Ia menyebut jumlah uang yang diberikan, waktu yang ia korbankan, dan orang-orang yang memujinya. Ia juga beberapa kali mengatakan bahwa tidak banyak anak muda yang sepeduli dirinya. Pamannya menasihati dengan lembut agar kebaikan tetap dijaga keikhlasannya. Farhan menjawab bahwa ia hanya ingin memberi inspirasi. Sebagian keluarga memahami alasannya, tetapi sebagian lain melihat bahwa cara Farhan bercerita sudah mulai menunjukkan keinginan agar amalnya diketahui dan dinilai hebat oleh banyak orang.\nPemahaman yang paling tepat tentang perbedaan riya’ dan sum‘ah berdasarkan stimulus tersebut adalah ....",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1035346257",
+      "choices": [
+        "Riya’ dan sum‘ah sama-sama berkaitan dengan niat, tetapi keduanya dapat dihindari dengan memperbanyak kegiatan sosial.",
+        "Riya’ lebih tampak ketika amal diperlihatkan, sedangkan sum‘ah lebih tampak ketika amal diceritakan agar terdengar dan dipuji.",
+        "Riya’ dan sum‘ah merupakan peringatan agar seseorang tidak berhenti melakukan kebaikan meskipun mendapat pujian.",
+        "Riya’ terjadi karena seseorang kurang sabar, sedangkan sum‘ah terjadi karena seseorang belum mampu menahan diri saat berbicara.",
+        "Riya’ dan sum‘ah dapat dicegah dengan menjaga keikhlasan, tetapi tetap perlu mempertimbangkan manfaat berbagi inspirasi."
+      ],
+      "required": true,
+      "sectionTitle": "Pilihan ganda, Memilih semua jawaban yang benar,  Menjodohkan dan Benar Salah."
+    },
+    {
+      "title": "*Rafi mulai sering menggunakan dompet digital untuk membeli makanan, membayar langganan aplikasi, dan membantu ibunya membeli kebutuhan rumah secara daring. Ia merasa transaksi digital sangat praktis karena tidak perlu membawa uang tunai. Namun, suatu hari ia menyadari bahwa setiap transaksi sebenarnya melibatkan banyak hal: kesepakatan harga, kejelasan barang, waktu pembayaran, kepercayaan antara penjual dan pembeli, serta tanggung jawab apabila barang tidak sesuai. Kakaknya mengingatkan bahwa dalam Islam, kegiatan ekonomi tidak hanya dinilai dari untung dan praktisnya saja, tetapi juga dari cara memperoleh, menggunakan, dan mempertanggungjawabkan harta. Rafi kemudian berpikir bahwa membeli barang, menabung, meminjam uang, atau bekerja sama dalam usaha ternyata memiliki aturan moral dan agama. Ia ingin memahami istilah yang tepat untuk aturan Islam yang mengatur hubungan manusia dalam kegiatan ekonomi dan sosial.\nBerdasarkan stimulus, pemahaman yang paling tepat tentang fikih muamalah adalah ....",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.230607256",
+      "choices": [
+        "Aturan Islam yang mengatur hubungan antarmanusia dalam kegiatan sosial dan ekonomi agar berlangsung halal, adil, jelas, dan bertanggung jawab.",
+        "Pedoman Islam yang membantu seseorang bersikap baik dalam kehidupan sehari-hari, terutama saat berinteraksi dengan orang lain.",
+        "Ajaran Islam yang mengingatkan manusia agar berhati-hati dalam menggunakan harta dan tidak merugikan sesama.",
+        "Ketentuan agama yang membimbing manusia agar transaksi dilakukan dengan sopan, tertib, dan tidak menimbulkan perselisihan.",
+        "Prinsip hidup Islami yang mengarahkan manusia untuk mencari rezeki secara baik dan menggunakannya secara bermanfaat."
+      ],
+      "required": true,
+      "sectionTitle": "Pilihan ganda, Memilih semua jawaban yang benar,  Menjodohkan dan Benar Salah."
+    },
+    {
+      "title": "* Dalam sebuah keluarga, Dina mendengar pembicaraan orang tuanya tentang rencana membuka usaha kecil menjual makanan rumahan. Ayahnya menekankan pentingnya kualitas bahan, kejelasan harga, dan pelayanan yang ramah. Ibunya menambahkan bahwa keuntungan memang penting, tetapi jangan sampai usaha dilakukan dengan mengurangi timbangan, menyembunyikan kekurangan produk, atau menjanjikan sesuatu yang tidak dapat dipenuhi. Dina bertanya mengapa hal-hal tersebut harus diperhatikan, padahal pembeli mungkin tidak selalu memeriksa secara detail. Orang tuanya menjelaskan bahwa dalam Islam, kegiatan ekonomi adalah bagian dari amanah. Harta yang diperoleh seharusnya berasal dari cara yang baik dan tidak menzalimi pihak lain. Usaha yang benar bukan hanya menghasilkan uang, tetapi juga menumbuhkan kepercayaan, keberkahan, dan manfaat bagi orang banyak. Dina kemudian menyimpulkan bahwa ekonomi syariah memiliki prinsip-prinsip utama yang membedakannya dari sekadar mencari keuntungan.\n\nKesimpulan paling tepat tentang prinsip utama ekonomi syariah berdasarkan stimulus tersebut adalah ....",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1637698364",
+      "choices": [
+        "Ekonomi syariah mengajarkan manusia agar bekerja keras, mengelola usaha dengan baik, dan meningkatkan kesejahteraan keluarga.",
+        "Ekonomi syariah menekankan halal, keadilan, kejujuran, amanah, kejelasan transaksi, dan kemaslahatan bagi semua pihak.",
+        "Ekonomi syariah mendorong seseorang untuk mandiri secara ekonomi dan tidak bergantung kepada bantuan orang lain.",
+        "Ekonomi syariah mengajarkan pentingnya menjaga hubungan baik antara penjual dan pembeli dalam kegiatan usaha.",
+        "Ekonomi syariah membimbing manusia agar menggunakan harta secara bijak dan tidak bersikap boros."
+      ],
+      "required": true,
+      "sectionTitle": "Pilihan ganda, Memilih semua jawaban yang benar,  Menjodohkan dan Benar Salah."
+    },
+    {
+      "title": "* Adit mendapat pesan dari grup media sosial yang menawarkan “program investasi remaja” dengan janji keuntungan tetap setiap minggu. Pesan itu menyebutkan bahwa peserta cukup menyetor sejumlah uang, lalu mengajak dua orang lain agar keuntungan semakin besar. Tidak ada penjelasan rinci tentang jenis usaha yang dijalankan, risiko kerugian, akad kerja sama, atau pihak yang bertanggung jawab apabila dana hilang. Beberapa teman Adit tertarik karena testimoni yang ditampilkan tampak meyakinkan. Namun, Adit merasa ragu karena keuntungan yang dijanjikan terlalu pasti, sementara kegiatan usahanya tidak jelas. Ia juga menyadari bahwa sebagian orang mungkin bergabung karena tergoda imbal hasil cepat, bukan karena memahami usaha yang sebenarnya. Adit ingin menilai tawaran itu dengan prinsip fikih muamalah, terutama terkait kejelasan akad, keadilan, dan larangan mengambil keuntungan dengan cara yang merugikan atau tidak transparan.\nAlasan paling tepat untuk bersikap hati-hati terhadap tawaran tersebut adalah ....",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1020247455",
+      "choices": [
+        "Tawaran investasi perlu dipelajari agar peserta dapat memahami manfaat ekonomi dan peluang keuntungan yang mungkin diperoleh.",
+        "Setiap kegiatan investasi sebaiknya dipertimbangkan bersama keluarga agar keputusan yang diambil lebih matang dan aman.",
+        "Tawaran tersebut mengandung potensi ketidakjelasan akad, risiko gharar, kemungkinan unsur maisir, dan janji keuntungan yang perlu diuji kesesuaiannya dengan prinsip syariah.",
+        "Program investasi sebaiknya diikuti setelah peserta memiliki pengetahuan dasar tentang pengelolaan uang dan risiko usaha.",
+        "Remaja perlu berhati-hati dalam menggunakan media sosial karena banyak informasi keuangan yang belum tentu sesuai dengan kebutuhan mereka."
+      ],
+      "required": true,
+      "sectionTitle": "Pilihan ganda, Memilih semua jawaban yang benar,  Menjodohkan dan Benar Salah."
+    },
+    {
+      "title": "* Sekelompok remaja mengikuti diskusi komunitas budaya di daerahnya. Mereka membahas cara menyampaikan nilai agama kepada generasi muda tanpa membuat orang merasa digurui. Dalam diskusi itu, muncul gagasan menggunakan seni pertunjukan, cerita rakyat, musik tradisional, simbol budaya, dan bahasa yang dekat dengan masyarakat. Sebagian remaja berpendapat bahwa pendekatan seperti ini lebih mudah diterima karena tidak memisahkan agama dari kehidupan masyarakat. Namun, ada juga yang khawatir bahwa penggunaan budaya dapat membuat pesan agama menjadi kurang jelas. Mereka kemudian mencoba menelusuri sejarah penyebaran Islam di Indonesia dan menemukan bahwa beberapa ulama menggunakan pendekatan budaya dengan hati-hati, tetap menjaga nilai tauhid, serta menyampaikan ajaran Islam secara perlahan melalui media yang akrab bagi masyarakat. Dari situ, mereka menyadari bahwa strategi dakwah para ulama tidak hanya berupa ceramah, tetapi juga dapat melalui seni dan kebijaksanaan sosial.\n\nBerdasarkan stimulus tersebut, tokoh ulama penyebar Islam di Indonesia yang paling tepat dikaitkan dengan pendekatan dakwah melalui seni dan budaya adalah ....",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1180103258",
+      "choices": [
+        "Sunan Giri, karena dikenal berperan dalam pendidikan, kaderisasi, dan penguatan masyarakat Islam.",
+        "Sunan Ampel, karena dikenal membina masyarakat melalui pendidikan dan pembentukan akhlak.",
+        "Sunan Kalijaga, karena dikenal menggunakan pendekatan budaya dan seni sebagai media dakwah yang santun.",
+        "Sunan Bonang, karena dikenal menggunakan pendekatan keilmuan dan seni dalam menyampaikan ajaran Islam.",
+        "Syekh Abdul Rauf as-Singkili, karena dikenal berperan dalam pengembangan ilmu keislaman dan tasawuf."
+      ],
+      "required": true,
+      "sectionTitle": "Pilihan ganda, Memilih semua jawaban yang benar,  Menjodohkan dan Benar Salah."
+    },
+    {
+      "title": "*Dalam sebuah keluarga, terjadi diskusi mengenai tradisi masyarakat yang sering diadakan menjelang hari besar keagamaan. Seorang remaja merasa tradisi tersebut tidak perlu dipertahankan karena dianggap tidak langsung berasal dari ajaran agama. Sementara itu, anggota keluarga lain berpendapat bahwa tradisi tersebut selama ini menjadi ruang silaturahmi, berbagi makanan, saling mendoakan, dan menguatkan hubungan antarwarga. Diskusi semakin menarik ketika mereka membandingkannya dengan sejarah penyebaran Islam di Indonesia. Para ulama pada masa lalu tidak selalu menolak budaya masyarakat secara langsung, tetapi menilai, menyaring, dan mengarahkannya agar selaras dengan ajaran Islam. Pendekatan ini membuat masyarakat merasa dihargai dan tidak kehilangan jati diri budaya. Remaja tersebut kemudian menyadari bahwa persoalan budaya tidak cukup dipahami secara hitam-putih, melainkan perlu melihat nilai, tujuan, dan dampaknya bagi kehidupan masyarakat.\nKesimpulan paling tepat berdasarkan stimulus tersebut adalah ....",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1105996406",
+      "choices": [
+        "Dakwah kultural berhasil karena ulama mampu menyaring budaya, menjaga prinsip Islam, dan tetap menghargai kehidupan masyarakat.",
+        "Tradisi masyarakat dapat menjadi sarana kebersamaan apabila dilaksanakan dengan niat baik dan tidak menimbulkan pertentangan.",
+        "Budaya lokal perlu dipahami secara bijak agar masyarakat tetap memiliki identitas dan hubungan sosial yang kuat.",
+        "Ulama penyebar Islam menunjukkan sikap santun ketika berinteraksi dengan masyarakat yang memiliki kebiasaan berbeda.",
+        "Remaja perlu mempelajari sejarah agar tidak mudah menilai tradisi hanya berdasarkan kesan awal."
+      ],
+      "required": true,
+      "sectionTitle": "Pilihan ganda, Memilih semua jawaban yang benar,  Menjodohkan dan Benar Salah."
+    },
+    {
+      "title": "* Seorang remaja aktif membuat konten pendek di media sosial. Ia ingin membuat video tentang sejarah penyebaran Islam di Indonesia agar teman-temannya tertarik mempelajari keteladanan ulama. Namun, ia melihat banyak konten keagamaan di internet yang menggunakan judul provokatif, menertawakan tradisi kelompok lain, atau menyederhanakan sejarah hanya untuk mengejar jumlah penonton. Beberapa temannya menyarankan agar ia memakai cara serupa supaya videonya cepat viral. Di sisi lain, ia merasa bahwa dakwah para ulama di Indonesia dahulu justru dikenal santun, sabar, dan menghargai masyarakat. Ia ingin kontennya menarik, tetapi tetap menjaga adab, akurasi, dan tidak merendahkan kelompok lain. Ia juga ingin mengajak penonton memahami bahwa Islam berkembang di Indonesia melalui proses yang damai dan penuh hikmah.\n\nTindakan paling tepat yang mencerminkan penerapan nilai dakwah ulama berdasarkan stimulus tersebut adalah ....",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.548844113",
+      "choices": [
+        "Membuat konten sejarah Islam dengan bahasa populer agar mudah diterima oleh remaja pengguna media sosial.",
+        "Menampilkan kisah ulama penyebar Islam dalam bentuk video singkat yang menarik dan mudah dipahami.",
+        "Mengajak teman-teman berdiskusi tentang sejarah dakwah ulama sebelum menentukan isi konten yang akan dibuat.",
+        "Menghindari pembahasan budaya lokal yang sensitif agar konten tidak menimbulkan perdebatan di ruang digital.",
+        "Membuat konten kreatif yang akurat, santun, menghargai perbedaan, dan menampilkan keteladanan dakwah damai ulama."
+      ],
+      "required": true,
+      "sectionTitle": "Pilihan ganda, Memilih semua jawaban yang benar,  Menjodohkan dan Benar Salah."
+    },
+    {
+      "title": "* Sebuah organisasi remaja di lingkungan masyarakat hendak mengadakan kegiatan keagamaan dan budaya. Sebagian anggota ingin acara diisi dengan ceramah saja agar pesan agama lebih jelas. Sebagian lain mengusulkan adanya pameran sejarah Islam, pertunjukan seni bernuansa lokal, diskusi tokoh ulama, serta kegiatan sosial. Perbedaan pendapat mulai menimbulkan ketegangan karena setiap kelompok merasa gagasannya paling sesuai. Ketua organisasi berusaha mencari jalan tengah dengan mengingatkan bahwa ulama penyebar Islam di Indonesia tidak hanya menyampaikan ajaran melalui lisan, tetapi juga melalui pendidikan, seni, akhlak, kegiatan sosial, dan penghargaan terhadap masyarakat. Ia ingin kegiatan tersebut tetap bernilai keagamaan, menarik bagi remaja, serta tidak menyinggung warga yang memiliki latar belakang budaya berbeda. Organisasi itu perlu menentukan konsep kegiatan yang paling mencerminkan ibrah sejarah dakwah ulama.\n\nAnalisis sikap paling tepat yang seharusnya diambil organisasi remaja tersebut adalah ....",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1949515411",
+      "choices": [
+        "Mengutamakan ceramah agama sebagai kegiatan utama agar nilai keislaman tersampaikan dengan jelas kepada masyarakat.",
+        "Memasukkan unsur seni dan budaya agar kegiatan lebih menarik serta mampu menjangkau remaja dengan pendekatan yang akrab.",
+        "Menambahkan kegiatan sosial supaya pesan agama tidak berhenti pada pengetahuan, tetapi juga tampak dalam tindakan nyata.",
+        "Menggabungkan ceramah, literasi sejarah, seni budaya, dan aksi sosial secara proporsional agar dakwah bernilai, santun, dan kontekstual.",
+        "Mengadakan diskusi tokoh ulama agar peserta memahami bahwa sejarah Islam di Indonesia kaya dengan keteladanan."
+      ],
+      "required": true,
+      "sectionTitle": "Pilihan ganda, Memilih semua jawaban yang benar,  Menjodohkan dan Benar Salah."
+    },
+    {
+      "title": "*Di era persaingan global yang serba cepat, bekerja tidak sekadar dipandang sebagai rutinitas mencari nafkah, melainkan bagian dari ibadah dan tanggung jawab moral. Dalam Q.S. At-Taubah ayat 105, Allah Swt. memerintahkan umat manusia untuk senantiasa beramal atau bekerja dengan sungguh-sungguh: “Dan katakanlah: ‘Bekerjalah kamu, maka Allah dan Rasul-Nya serta orang-orang mukmin akan melihat pekerjaanmu itu, dan kamu akan dikembalikan kepada (Allah) Yang Mengetahui akan yang gaib dan yang nyata, lalu diberitakan-Nya kepada kamu apa yang telah kamu kerjakan.’”\nAyat ini menegaskan bahwa setiap aktivitas manusia berada dalam pengawasan mutlak Allah Swt. dan akan dipertanggungjawabkan di akhirat kelak. Di sisi lain, pekerjaan yang dilakukan secara profesional, jujur, dan bermanfaat juga akan dinilai oleh sesama manusia (orang-orang mukmin) sebagai bentuk kontribusi sosial.\nBerdasarkan teks bacaan dan kandungan Q.S. At-Taubah ayat 105 di atas, sikap atau perilaku manakah yang mencerminkan penerapan ayat tersebut dalam kehidupan sehari-hari? (Pilihlah lebih dari satu jawaban yang benar dengan memberi tanda centang pada kotak yang tersedia)",
+      "description": "",
+      "validation": {
+        "exact": 3
+      },
+      "type": "CHECKBOX",
+      "entryId": "entry.996715367",
+      "choices": [
+        "Menyelesaikan tugas kantor tepat waktu hanya ketika diawasi langsung oleh atasan agar mendapat penilaian baik.",
+        "Menjaga kualitas dan kejujuran dalam berdagang meskipun tidak ada pembeli yang melihat proses penimbangannya.",
+        "Terus meningkatkan keterampilan dan keahlian kerja agar hasil karya memberikan manfaat nyata bagi masyarakat luas.",
+        "Menyadari bahwa setiap profesi yang halal akan dimintai pertanggungjawaban oleh Allah Swt. di hari akhir nanti."
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    },
+    {
+      "title": "*Di dunia kerja modern, fenomena quiet quitting (bekerja sekadar menggugurkan kewajiban tanpa dedikasi lebih) atau budaya menunda-nunda pekerjaan sering kali menjadi hambatan dalam produktivitas. Padahal, Islam melalui Q.S. At-Taubah ayat 105 menuntut orientasi kualitas dan kesadaran bahwa setiap tindakan—sekecil apa pun—tidak pernah luput dari pengawasan Ilahi serta akan diuji hasilnya.\nMengacu pada pemahaman Q.S. At-Taubah ayat 105 tentang pengawasan mutlak Allah Swt. dan pertanggungjawaban amal, pernyataan manakah yang mencerminkan pengamalan ayat ini secara tepat? (Pilihlah lebih dari satu jawaban yang benar)",
+      "description": "",
+      "validation": {
+        "exact": 2
+      },
+      "type": "CHECKBOX",
+      "entryId": "entry.2036613014",
+      "choices": [
+        "Melakukan pekerjaan dengan penuh tanggung jawab dan ikhlas meskipun atasan sedang tidak berada di tempat.",
+        "Menunda-nunda pekerjaan kantor karena merasa tidak ada rekan kerja yang menegur atau mengawasi.",
+        "Berusaha memberikan hasil kerja terbaik karena meyakini pekerjaan tersebut kelak akan dihisab oleh Allah Swt.",
+        "Menganggap pekerjaan duniawi terpisah dari nilai ibadah sehingga tidak memerlukan standar kualitas yang tinggi."
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    },
+    {
+      "title": "*Iman bukanlah angan-angan kosong atau sekadar status keturunan, melainkan sebuah ikatan suci yang menggerakkan seluruh potensi diri manusia. Ketika seseorang menyatakan \"aku beriman\", maka ketulusan pengakuan itu harus tercermin dalam tiga ranah utama: keyakinan yang mendalam di dalam kalbu, penyuaraan kebenaran melalui lisan, serta pembuktian nyata berupa amal saleh dalam kehidupan sosial. Jika salah satu ranah ini kosong atau saling bertentangan, maka kualitas keimanan seseorang patut dipertanyakan.\nBerdasarkan konsep iman yang mencakup hati, lisan, dan amal, manakah pernyataan berikut yang menunjukkan perwujudan iman yang benar dan seimbang? (Pilihlah lebih dari satu jawaban yang benar)",
+      "description": "",
+      "validation": {
+        "exact": 2
+      },
+      "type": "CHECKBOX",
+      "entryId": "entry.2115790048",
+      "choices": [
+        "seseorang yang meyakini keesaan Allah Swt. dalam hatinya, membuktikannya dengan bertutur kata jujur, serta tekun mendirikan salat berjemaah.",
+        "Seseorang yang rajin bersedekah di hadapan umum semata-mata agar mendapat pujian dan sanjungan dari orang lain.",
+        "Seseorang yang hatinya merasa tenang saat mendengar ayat suci Al-Qur'an dan lisan serta tangannya aktif membantu korban bencana alam.",
+        "Seseorang yang mengaku beriman kepada hari akhir, namun ia mengabaikan hak-hak sesama tetangga karena merasa amalan ibadah ritualnya sudah cukup."
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    },
+    {
+      "title": "*Dalam ajaran Islam, keimanan memiliki banyak dimensi yang dikenal sebagai syu'abul iman (cabang-cabang iman), yang jumlahnya lebih dari 70 cabang. Cabang-cabang ini mencakup keyakinan hati, ucapan lisan, hingga amal perbuatan fisik yang meliputi ibadah ritual maupun amal sosial kemasyarakatan. Salah satu hadis menyebutkan bahwa cabang iman yang paling tinggi adalah ikrar kalimat Lailahaillallah, sedangkan cabang yang paling rendah adalah menyingkirkan gangguan atau duri dari jalan. Hal ini menunjukkan bahwa keimanan seorang mukmin tidak hanya diukur dari seberapa khusyuk ibadahnya di masjid, tetapi juga dari kepekaan sosial dan kepeduliannya terhadap lingkungan sekitar.\nBerdasarkan konsep syu'abul iman (cabang-cabang iman), manakah tindakan dalam kehidupan sehari-hari yang mencerminkan pengamalan dari cabang-cabang iman tersebut? (Pilihlah lebih dari satu jawaban yang benar)",
+      "description": "",
+      "validation": {
+        "exact": 2
+      },
+      "type": "CHECKBOX",
+      "entryId": "entry.294706483",
+      "choices": [
+        "[ ] Membersihkan duri, paku, atau sampah yang berserakan di tengah jalan umum agar tidak membahayakan keselamatan orang lain.",
+        "[ ] Menyebarkan berita yang belum jelas kebenarannya (hoaks) di media sosial demi mencari sensasi dan perhatian publik.",
+        "[ ] Menjaga amanah yang telah dititipkan seseorang kepada kita meskipun tidak ada orang lain yang mengawasi.",
+        "[ ] Bersikap acuh tak acuh dan membiarkan tetangga sekitar mengalami kesusahan karena merasa itu bukan urusan pribadi."
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    },
+    {
+      "title": "*Hidup sederhana (zuhud atau wasathiyah) sering kali disalahartikan sebagai hidup miskin, kikir, atau menolak kemajuan. Padahal, dalam pandangan Islam, hidup sederhana adalah sikap proporsional dalam mengelola harta, waktu, dan gaya hidup—tidak berlebihan (israf), tidak pula bakhil (kikir). Orang yang hidup sederhana selalu mendasarkan pengeluarannya pada skala prioritas antara kebutuhan (haajiyat) dan keinginan semata (kamaliyat), serta gemar menyisihkan kelebihan hartanya untuk berbagi kepada sesama.\nBerdasarkan pemahaman mengenai makna hidup sederhana, perilaku manakah yang mencerminkan penerapan prinsip hidup sederhana secara tepat di era modern? (Pilihlah lebih dari satu jawaban yang benar)",
+      "description": "",
+      "type": "CHECKBOX",
+      "entryId": "entry.1481774780",
+      "choices": [
+        "Membeli gawai keluaran terbaru setiap kali ada model yang rilis demi mengikuti tren dan gengsi pergaulan sosial.",
+        "Menyisihkan sebagian uang saku untuk ditabung dan disedekahkan kepada fakir miskin meskipun jumlahnya tidak terlalu besar.",
+        "Membeli barang-barang berdasarkan tingkat kebutuhan yang mendesak, bukan semata-mata karena dorongan hawa nafsu atau diskon.",
+        "Menggunakan pakaian mewah dengan merek ternama di setiap kesempatan agar mendapatkan pengakuan dan pujian dari orang lain."
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    },
+    {
+      "title": "*Takabur (sombong) merupakan penyakit hati yang sangat dibenci oleh Allah Swt. Rasulullah saw. mendefinisikan kesombongan sebagai dua hal mendasar: batarul haq (menolak kebenaran) dan ghamthun nas (meremehkan manusia). Sifat ini sering kali menyelinap secara halus dalam diri seseorang, misalnya ketika ia meraih kesuksesan akademik, jabatan tinggi, kekayaan berlimpah, atau bahkan ketika merasa ibadahnya paling banyak dibandingkan orang lain. Orang yang takabur cenderung menganggap segala pencapaian adalah murni hasil jerih payahnya sendiri, bukan karunia Allah Swt., serta sulit menerima kritik dan nasihat.\nBerdasarkan pemahaman mengenai ciri-ciri sifat takabur di atas, perilaku manakah yang menunjukkan adanya indikasi kesombongan pada diri seseorang? (Pilihlah lebih dari satu jawaban yang benar)",
+      "description": "",
+      "validation": {
+        "exact": 4
+      },
+      "type": "CHECKBOX",
+      "entryId": "entry.978660029",
+      "choices": [
+        "Menolak nasihat atau masukan dari teman sebaya karena merasa diri sendiri jauh lebih pintar dan berpengalaman.",
+        "Memamerkan kekayaan atau prestasi di media sosial disertai ucapan yang merendahkan pencapaian orang lain.",
+        "Merasa yakin bahwa keberhasilan masuk ke universitas favorit semata-mata karena kecerdasan otaknya sendiri tanpa campur tangan Tuhan.",
+        "Mengakui kesalahan secara terbuka dan meminta maaf dengan tulus ketika keliru mengambil keputusan dalam kerja kelompok."
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    },
+    {
+      "title": "*Sifat zuhud adalah sikap tidak berlebihan terhadap dunia dan lebih mengutamakan akhirat. sifat zuhud memberikan manfaat luar biasa. Berikut yang merupakan manfaat sifat zuhud adalah. . . . (Pilih semua yang sesuai)",
+      "description": "",
+      "validation": {
+        "exact": 4
+      },
+      "type": "CHECKBOX",
+      "entryId": "entry.1911456683",
+      "choices": [
+        "Mendapatkan Cinta Allah dan Manusia",
+        "Mendapatkan popularitas di dunia.",
+        "Fokus Beribadah",
+        "Kestabilan Emosi",
+        "Terhindar dari Penyakit Hati"
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    },
+    {
+      "title": "*Dalam fikih muamalah, akad (perikatan atau perjanjian) merupakan fondasi utama yang menentukan sah atau tidaknya suatu transaksi ekonomi. Akad bukan sekadar ucapan formalitas, melainkan pertemuan antara ijab (pernyataan penyerahan dari satu pihak) dan kabul (pernyataan penerimaan dari pihak lain) yang menimbulkan akibat hukum berupa perpindahan hak dan kewajiban.\nDi era transaksi modern—baik di pasar tradisional maupun lokapasar (marketplace) digital—akad dapat berlangsung secara lisan, tulisan, isyarat, hingga tindakan saling memberi dan menerima (mu'athah). Namun, agar akad tersebut sah secara syariat dan terhindar dari sengketa di kemudian hari, transaksi harus didasari kerelaan kedua belah pihak (antaradhin), kejelasan objek barang dan harga, serta bebas dari unsur penipuan (gharar).\nBerdasarkan pemahaman mengenai konsep akad dalam transaksi ekonomi Islam di atas, pernyataan manakah yang paling tepat menggambarkan syarat sah dan praktik akad? (Pilihlah lebih dari satu jawaban yang benar)",
+      "description": "",
+      "validation": {
+        "exact": 4
+      },
+      "type": "CHECKBOX",
+      "entryId": "entry.653180680",
+      "choices": [
+        "Akad dianggap sah apabila terjadi kesepakatan yang didasari kerelaan kedua belah pihak (antaradhin) tanpa ada unsur paksaan.",
+        "Transaksi jual beli daring (online) tidak sah secara hukum Islam karena penjual dan pembeli tidak mengucapkan ijab dan kabul secara tatap muka.",
+        "Kejelasan mengenai spesifikasi barang, harga, dan cara pembayaran merupakan bagian penting agar akad terhindar dari unsur penipuan (gharar).",
+        "Praktik jual beli langsung di minimarket dengan membayar harga yang tertera tanpa ucapan tawar-menawar termasuk akad yang sah secara perbuatan (mu'athah)."
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    },
+    {
+      "title": "*Di tengah arus budaya serba instan dan maraknya fenomena procrastination (kebiasaan menunda-nunda tugas) di kalangan generasi muda, ajaran Islam menanamkan konsep etos kerja Islami sebagai karakter fundamental sejak usia remaja. Bagi seorang pelajar atau remaja muslim, \"bekerja\" tidak selalu identik dengan mencari uang di kantor, melainkan mencakup kesungguhan dalam menuntut ilmu, menjalankan amanah organisasi, serta berkarya secara produktif.\nEtos kerja Islami bertumpu pada kesadaran bahwa setiap aktivitas bernilai ibadah apabila diniatkan karena Allah Swt. Nilai-nilai utamanya tercermin dalam sikap disiplin menghargai waktu (al-waqtu kassaif), bekerja tuntas dan berkualitas tinggi (itqan), tidak mudah menyerah saat menghadapi kegagalan (mujahadah), serta menjunjung tinggi kejujuran dan integritas tanpa bergantung pada pengawasan guru maupun orang tua (muraqabah).\nBerdasarkan teks bacaan dan prinsip etos kerja Islami dalam kehidupan remaja, pasangkanlah Pernyataan/Kasus Perilaku Remaja (Kolom A) dengan Nilai Etos Kerja Islami yang Tepat (Kolom B)!",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Itqan (Profesional dan Berkualitas)",
+        "Muraqabah (Kesadaran Diawasi Allah Swt.)"
+      ],
+      "rows": [
+        {
+          "label": "Dinda tetap mengerjakan tugas makalahnya dengan jujur tanpa melakukan plagiarisme dari internet meskipun guru tidak memeriksa sumber kutipannya secara detail.",
+          "entryId": "entry.672535436"
+        },
+        {
+          "label": "Farhan membuat jadwal belajar harian dan membatasi waktu bermain gim agar seluruh tugas sekolah selesai sebelum tenggat waktu (deadline).",
+          "entryId": "entry.1247348486"
+        }
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    },
+    {
+      "title": "*Keimanan yang sejati tidak berhenti pada pengakuan teologis semata, melainkan bekerja sebagai kekuatan internal yang membentuk ketangguhan karakter (mental toughness) seseorang. Ketika menghadapi tekanan hidup, rasa takut akan masa depan, atau godaan untuk menyimpang, iman hadir memberi arah dan ketenangan. Seseorang yang beriman memiliki sandaran vertikal yang kokoh kepada Allah Swt., sehingga ia mampu mengelola emosi negatif, memiliki keberanian moral untuk membela kebenaran, bersabar dalam ujian, serta tidak mudah goyah oleh penilaian maupun tekanan lingkungan sosial.\nBerdasarkan teks bacaan dan pemahaman mengenai fungsi iman dalam menguatkan diri, pasangkanlah Situasi / Tantangan Diri (Kolom A) dengan Fungsi Penguatan Iman yang Tepat (Kolom B)!",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Menumbuhkan ketenangan batin (tuma'ninah) dan tawakal",
+        "Melahirkan keberanian moral dan integritas prinsip",
+        "Membentuk daya lenting (resiliensi) dan sikap optimis (raja')",
+        "Menjaga keseimbangan diri dan kerendahan hati (tawadhu)"
+      ],
+      "rows": [
+        {
+          "label": "Aisyah diajak teman-temannya memanipulasi laporan keuangan kegiatan kelas, namun ia menolak tegas meski terancam dikucilkan.",
+          "entryId": "entry.603863327"
+        },
+        {
+          "label": "Ketika usaha orang tuanya bangkrut, Rizal tetap tabah, menyemangati keluarganya, dan yakin bahwa di balik kesulitan pasti ada jalan keluar.",
+          "entryId": "entry.799101438"
+        },
+        {
+          "label": "Menjelang pengumuman hasil seleksi beasiswa yang sangat kompetitif, Nadia menenangkan kecemasannya dengan memperbanyak zikir dan menyerahkan hasil terbaik kepada Allah Swt.",
+          "entryId": "entry.1547990439"
+        },
+        {
+          "label": "Meski meraih peringkat pertama tingkat nasional, Bima tetap bersikap santun kepada teman-temannya karena sadar prestasi tersebut adalah titipan Allah Swt.",
+          "entryId": "entry.1470037064"
+        }
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    },
+    {
+      "title": "*Dalam ajaran Islam, membersihkan jiwa (tazkiyatun nafs) dari akhlak mazmumah (perilaku tercela) seperti hasad (iri dengki), ghibah (menggunjing), gadab (marah berlebihan), riya (pamer), dan takabur (sombong) bukan sekadar tuntutan ibadah ritual, melainkan kebutuhan mendasar demi kesehatan mental dan keharmonisan sosial. Akhlak tercela ibarat racun yang pertama kali merusak ketenangan pemiliknya sendiri sebelum berdampak buruk bagi orang lain. Ketika seseorang mampu mengendalikan hawa nafsu dan menjauhi sifat-sifat tersebut, ia akan merasakan kelapangan hati, memperoleh kepercayaan penuh dari lingkungan sekitar, serta menjaga kualitas amal salehnya agar tetap bernilai di sisi Allah Swt.\nBerdasarkan teks bacaan dan pemahaman mengenai manfaat menghindari akhlak mazmumah, pasangkanlah Upaya Menghindari Akhlak Mazmumah (Kolom A) dengan Manfaat Positif yang Diperoleh (Kolom B)!",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "terjaganya keikhlasan hati dan nilai pahala amal di sisi Allah Swt.",
+        "Terhindar dari penyesalan akibat keputusan emosional dan terjalinnya komunikasi yang sehat.",
+        "Terciptanya ketenangan batin (qana'ah) dan hilangnya rasa gelisah melihat nikmat orang lain.",
+        "Terpeliharanya kehormatan sesama dan tumbuhnya rasa saling percaya (ukhuwah) dalam pergaulan."
+      ],
+      "rows": [
+        {
+          "label": "Menjauhi sifat hasad (iri dengki) atas keberhasilan teman dan ikut bersyukur atas pencapaiannya.",
+          "entryId": "entry.518798353"
+        },
+        {
+          "label": "Menahan lisan dari perilaku ghibah (menggunjing) serta tidak menyebarkan aib orang lain di media sosial.",
+          "entryId": "entry.627241062"
+        },
+        {
+          "label": "Melatih kesabaran untuk meredam sifat gadab (amarah yang meledak-ledak) saat menghadapi perbedaan pendapat.",
+          "entryId": "entry.589292462"
+        },
+        {
+          "label": "Membersihkan niat dari sifat riya (pamer) dan sum'ah (ingin didengar) saat bersedekah maupun beribadah.Membersihkan niat dari sifat riya (pamer) dan sum'ah (ingin didengar) saat bersedekah maupun beribadah.",
+          "entryId": "entry.504444010"
+        }
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    },
+    {
+      "title": "*Lembaga Keuangan Syariah (LKS)—baik berupa perbankan syariah, asuransi syariah (takaful), pegadaian syariah (rahn), maupun koperasi simpan pinjam berbasis syariah (BMT)—hadir untuk menggerakkan roda perekonomian umat sesuai prinsip-prinsip syariat Islam. Berbeda dengan sistem konvensional yang bertumpu pada bunga (riba), LKS mengedepankan prinsip keadilan, transparansi, kemitraan bagi hasil (mudharabah dan musyarakah), serta tolong-menolong (ta'awun).\nMelalui berbagai instrumen akad yang bebas dari unsur riba (bunga), gharar (ketidakjelasan), dan maysir (spekulasi/judi), lembaga keuangan syariah berperan strategis dalam menghimpun dana masyarakat secara aman, menyalurkan pembiayaan produktif bagi pelaku UMKM, serta memberikan perlindungan risiko berbasis solidaritas bersama. \nBerdasarkan teks bacaan dan pemahaman mengenai peran lembaga keuangan syariah dalam perekonomian masyarakat, pasangkanlah Kebutuhan / Studi Kasus Ekonomi Masyarakat (Kolom A) dengan Peran dan Solusi Lembaga Keuangan Syariah yang Tepat (Kolom B)!",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Menyediakan layanan rahn (gadai syariah) dengan biaya pemeliharaan barang jaminan (ujrah) yang transparan dan bebas bunga.",
+        "Menghimpun dana masyarakat melalui akad titipan (wadi'ah) atau investasi halal (mudharabah) yang terbebas dari unsur riba.",
+        "Menyalurkan pembiayaan modal kerja produktif berbasis kemitraan dan sistem bagi hasil (mudharabah atau musyarakah).",
+        "Mengelola dana kebajikan (tabarru') sebagai wujud solidaritas dan saling menanggung risiko antarpeserta (takaful)"
+      ],
+      "rows": [
+        {
+          "label": "Ibu Sari, seorang pelaku UMKM kuliner, membutuhkan tambahan modal usaha tanpa terbebani bunga pinjaman tetap saat omzet sedang turun.",
+          "entryId": "entry.1178967394"
+        },
+        {
+          "label": "Pak Hendra membutuhkan dana darurat untuk biaya pengobatan keluarga dengan menjaminkan perhiasan emas miliknya agar tidak terjual murah.",
+          "entryId": "entry.736521584"
+        },
+        {
+          "label": "Keluarga Pak Ridwan ingin memiliki perlindungan finansial bersama apabila sewaktu-waktu tertimpa musibah kecelakaan atau sakit berat.",
+          "entryId": "entry.168212897"
+        },
+        {
+          "label": "Mahasiswa dan pekerja muda ingin menabung sekaligus berinvestasi pada instrumen keuangan yang terjamin kehalalannya oleh Dewan Pengawas Syariah.",
+          "entryId": "entry.21250544"
+        }
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    },
+    {
+      "title": "*Dalam perjalanan sejarah Islam, khususnya di Nusantara, para ulama memegang peranan sentral tidak hanya sebagai penyampai ajaran agama, tetapi juga sebagai pelopor peradaban, pendidik masyarakat, sekaligus pejuang kemerdekaan. Para ulama seperti Wali Songo, Syekh Yusuf Al-Makassari, Syekh Nawawi Al-Bantani, hingga KH. Hasyim Asy'ari dan KH. Ahmad Dahlan menunjukkan keteladanan luar biasa dalam berdakwah.\nMereka menyampaikan nilai-nilai Islam dengan pendekatan yang bijaksana (bil hikmah), menghargai kearifan lokal tanpa mengorbankan prinsip akidah, gigih menuntut dan menulis ilmu hingga kancah internasional, serta berani mengorbankan jiwa raga demi membela keadilan dan martabat bangsa dari penjajahan. Dari perjuangan mereka, generasi muda dapat memetik banyak pelajaran berharga (ibrah) untuk diterapkan dalam tantangan zaman modern.\nBerdasarkan teks bacaan dan analisis ibrah (pelajaran) dari perjuangan para ulama, pasangkanlah Bentuk Keteladanan / Perjuangan Ulama (Kolom A) dengan Implementasi Ibrah dalam Kehidupan Pelajar Masa Kini (Kolom B)!",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Rajin membaca, menulis karya ilmiah, dan terus meningkatkan literasi agar mampu berkontribusi di tingkat global.",
+        "Menumbuhkan jiwa patriotisme dan kepedulian sosial untuk membela kebenaran serta keutuhan bangsa.",
+        "Menyampaikan dakwah atau ajakan kebaikan dengan santun, toleran, serta memanfaatkan media kreatif yang relevan dengan zaman.",
+        "Berperan aktif berbagi ilmu melalui kelompok belajar atau kegiatan sosial kemasyarakatan secara ikhlas."
+      ],
+      "rows": [
+        {
+          "label": "Metode dakwah Wali Songo yang merangkul budaya dan seni lokal sebagai sarana menyebarkan pesan damai Islam secara bertahap.",
+          "entryId": "entry.1849822636"
+        },
+        {
+          "label": "Kegigihan Syekh Nawawi Al-Bantani dalam menuntut ilmu hingga menjadi ulama besar di Makkah dan menulis puluhan kitab rujukan.",
+          "entryId": "entry.1367200506"
+        },
+        {
+          "label": "Keberanian para ulama mengeluarkan fatwa jihad dan memimpin perlawanan rakyat demi membela tanah air dari penjajahan.",
+          "entryId": "entry.1520813158"
+        },
+        {
+          "label": "Ketulusan para ulama mendirikan pesantren dan lembaga pendidikan untuk mencerdaskan masyarakat tanpa pamrih.",
+          "entryId": "entry.864239678"
+        }
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    },
+    {
+      "title": "*Perkembangan teknologi digital, arus informasi media sosial yang tak terbendung, serta kompleksitas persoalan sosial-ekonomi menuntut strategi dakwah ulama masa kini untuk terus beradaptasi tanpa kehilangan substansi ajaran Islam. Jika pada masa lalu dakwah banyak bertumpu pada mimbar masjid dan majelis taklim konvensional, ulama kontemporer perlu merambah ruang-ruang digital, mengangkat isu-isu aktual—seperti kesehatan mental, literasi keuangan syariah, krisis lingkungan, hingga etika bermedia sosial—serta mengedepankan narasi Islam yang moderat (wasathiyah), sejuk, dan mencerahkan.\nBerdasarkan teks bacaan dan evaluasi terhadap relevansi dakwah ulama di era modern, pasangkanlah Tantangan Zaman Masa Kini (Kolom A) dengan Strategi Dakwah Ulama yang Relevan (Kolom B)!",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Memanfaatkan platform digital seperti siniar (podcast) dan video pendek dengan bahasa komunikatif serta visual menarik.",
+        "Mengintegrasikan pesan pelestarian alam (ekoteologi) dan tanggung jawab menjaga bumi ke dalam materi ceramah maupun aksi nyata.",
+        "Menggaungkan narasi Islam moderat (wasathiyah), tabayun (klarifikasi informasi), dan etika berinteraksi di dunia maya.",
+        "Memberikan edukasi fikih muamalah kontemporer mengenai pengelolaan harta halal dan bahaya transaksi ribawi."
+      ],
+      "rows": [
+        {
+          "label": "Maraknya penyebaran berita bohong (hoaks), ujaran kebencian, dan polarisasi di media sosial.",
+          "entryId": "entry.2032611000"
+        },
+        {
+          "label": "Generasi muda (Gen Z dan Milenial) cenderung menyukai konten visual singkat dan berdiskusi secara interaktif di ruang maya.",
+          "entryId": "entry.68271159"
+        },
+        {
+          "label": "Meningkatnya krisis lingkungan, perubahan iklim, serta kerusakan ekosistem akibat eksploitasi berlebihan.",
+          "entryId": "entry.817707943"
+        },
+        {
+          "label": "Banyaknya masyarakat yang terjerat pinjaman daring (pinjol) ilegal dan praktik investasi bodong akibat rendahnya literasi ekonomi.",
+          "entryId": "entry.1219630824"
+        }
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    },
+    {
+      "title": "*Meneladani perjuangan dan akhlak para ulama tidak cukup hanya berhenti pada kekaguman sejarah atau hafalan biografi semata, melainkan perlu diwujudkan dalam aksi nyata yang terencana sesuai kapasitas masing-masing. Di lingkungan sekolah maupun masyarakat, peserta didik dapat merancang gerakan keteladanan ulama—seperti semangat berbagi ilmu, menjaga kerukunan antarumat, kepedulian sosial terhadap kaum duafa, serta integritas moral dalam berkata dan bertindak. Melalui aksi nyata yang berkelanjutan, nilai-nilai luhur para ulama akan tetap hidup dan menjadi solusi atas persoalan di sekitar kita.\nBerdasarkan teks bacaan dan prinsip merancang aksi keteladanan ulama dalam kehidupan sehari-hari, pasangkanlah Nilai Keteladanan Utama Ulama (Kolom A) dengan Rancangan Aksi Nyata Pelajar yang Tepat (Kolom B)!",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Menginisiasi program \"Jumat Berbagi\" dan penggalangan donasi bagi warga sekitar sekolah yang membutuhkan.",
+        "Membentuk kelompok belajar sebaya (peer tutoring) dan pojok baca digital untuk membantu teman yang kesulitan memahami pelajaran.",
+        "Membuat kampanye antikebohongan (anti-hoaks) dan gerakan kejujuran akademik saat pelaksanaan ujian sekolah.",
+        "Mengadakan forum dialog lintas budaya atau kerja bakti bersama tanpa membeda-bedakan latar belakang suku dan agama."
+      ],
+      "rows": [
+        {
+          "label": "Semangat keilmuan, budaya literasi, dan mencerdaskan umat tanpa pamrih.",
+          "entryId": "entry.742056439"
+        },
+        {
+          "label": "Kepedulian sosial (filantropi) dan keberpihakan kepada kaum lemah (mustadh'afin).",
+          "entryId": "entry.2049203077"
+        },
+        {
+          "label": "Sikap moderat (wasathiyah), ramah, serta menjunjung tinggi toleransi dalam keberagaman.",
+          "entryId": "entry.489787838"
+        },
+        {
+          "label": "Integritas moral, kejujuran (shiddiq), dan Konsistensi antara ucapan serta perbuatan.",
+          "entryId": "entry.1469017219"
+        }
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    },
+    {
+      "title": "*Dalam kehidupan modern yang penuh persaingan, Islam tidak melarang umatnya untuk berkompetisi. Sebaliknya, Al-Qur'an secara tegas memerintahkan kaum mukmin untuk berlomba-lomba dalam kebaikan (fastabiqul khairat), sebagaimana termaktub dalam Q.S. Al-Baqarah ayat 148 dan Q.S. Al-Ma'idah ayat 48.\nNamun, kompetisi dalam Islam memiliki karakter yang sangat berbeda dengan persaingan duniawi yang sering kali menghalalkan segala cara. Dalam fastabiqul khairat, tujuan utamanya bukanlah menjatuhkan orang lain atau sekadar mengejar pengakuan manusia, melainkan meraih rida Allah Swt. dan menebar manfaat seluas-luasnya. Seseorang yang menerapkan nilai kompetisi dalam kebaikan akan tetap mengedepankan kejujuran, sportivitas, saling mendukung sesama dalam ketaatan, serta ikhlas ketika melihat orang lain lebih unggul dalam berbuat amal saleh.\nBerdasarkan teks bacaan dan pemahaman mengenai penerapan nilai kompetisi dalam kebaikan (fastabiqul khairat), tentukan apakah pernyataan-pernyataan berikut Benar atau Salah dengan memberi tanda centang pada kolom yang sesuai!",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "BENAR",
+        "SALAH"
+      ],
+      "rows": [
+        {
+          "label": "Seseorang yang berlomba-lomba dalam kebaikan akan merasa senang dan termotivasi apabila melihat temannya lebih dulu bersedekah atau meraih prestasi.",
+          "entryId": "entry.315687584"
+        },
+        {
+          "label": "Menyembunyikan informasi penting terkait lomba karya tulis ilmiah agar teman satu kelas tidak bisa ikut bersaing merupakan bentuk strategi fastabiqul khairat yang cerdas.",
+          "entryId": "entry.976379114"
+        },
+        {
+          "label": "Kompetisi dalam kebaikan menuntut seseorang untuk segera melaksanakan amal saleh tanpa menunda-nunda waktu selama kesempatan masih ada.",
+          "entryId": "entry.2129685881"
+        },
+        {
+          "label": "Orientasi utama dari penerapan nilai fastabiqul khairat di sekolah adalah memperoleh pujian dari guru serta gelar sebagai siswa paling religius.",
+          "entryId": "entry.1326881682"
+        },
+        {
+          "label": "Mengajak teman sebaya untuk bersama-sama menghafal Al-Qur'an dan saling menyimak bacaan merupakan wujud kompetisi yang sehat dan bernilai ibadah.",
+          "entryId": "entry.289388608"
+        }
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    },
+    {
+      "title": "*Dalam ajaran Islam, etos kerja bukan sekadar tuntutan profesionalitas agar terlihat baik di mata atasan atau guru, melainkan manifestasi dari keimanan dan tanggung jawab moral kepada Allah Swt. Seseorang yang memiliki etos kerja tinggi akan memandang setiap aktivitas—baik belajar, membantu orang tua, berorganisasi, maupun bekerja—sebagai ladang ibadah.\nNilai-nilai etos kerja Islami dalam aktivitas sehari-hari tercermin melalui kedisiplinan dalam mengatur waktu, ketekunan dan kesungguhan dalam menyelesaikan tugas hingga tuntas (itqan), menjaga kejujuran meskipun tidak ada yang mengawasi (muraqabah), serta sikap pantang menyerah ketika menghadapi hambatan.\nBerdasarkan teks bacaan dan pemahaman mengenai penerapan nilai etos kerja dalam aktivitas sehari-hari, tentukan apakah pernyataan-pernyataan berikut Benar atau Salah dengan memberi tanda centang  pada kolom yang sesuai!",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Benar",
+        "Salah"
+      ],
+      "rows": [
+        {
+          "label": "Mengerjakan tugas sekolah jauh-jauh hari sebelum tenggat waktu (deadline) agar hasilnya maksimal mencerminkan penerapan nilai disiplin dan tanggung jawab.",
+          "entryId": "entry.929243432"
+        },
+        {
+          "label": "Menyelesaikan pekerjaan piket kelas dengan asal-asalan karena merasa tidak ada guru yang sedang memeriksa kebersihan ruangan adalah sikap yang wajar dalam etos kerja.",
+          "entryId": "entry.2056149396"
+        },
+        {
+          "label": "Ketika mengalami kegagalan dalam sebuah proyek kelompok, sikap yang mencerminkan etos kerja Islami adalah mengevaluasi kesalahan dan segera memperbaikinya.",
+          "entryId": "entry.885682543"
+        },
+        {
+          "label": "Nilai etos kerja Islami hanya berlaku bagi orang dewasa yang sudah bekerja mencari nafkah di kantor, sedangkan pelajar cukup fokus pada ibadah ritual saja.",
+          "entryId": "entry.15560737"
+        }
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    },
+    {
+      "title": "*Keluarga merupakan lingkungan terdekat tempat pembuktian kualitas keimanan seseorang diuji setiap hari. Dalam konsep syu‘ab al-īmān (cabang-cabang iman), keimanan mencakup puluhan perilaku terpuji yang meliputi keyakinan hati, ucapan lisan, dan tindakan nyata anggota badan. Di dalam kehidupan keluarga, cabang-cabang iman tersebut diwujudkan melalui berbakti kepada kedua orang tua (birrul walidain), saling menyayangi antaranggota keluarga, menjaga amanah, berkata jujur dan santun, memuliakan tamu, hingga menyambung tali silaturahmi dengan kerabat. Pengamalan cabang-cabang iman di rumah tidak hanya bernilai ibadah di sisi Allah Swt., tetapi juga menjadi fondasi terciptanya ketenteraman dan keharmonisan rumah tangga.\nBerdasarkan teks bacaan dan pemahaman mengenai pengamalan nilai syu‘ab al-īmān dalam kehidupan keluarga, tentukan apakah pernyataan-pernyataan berikut Benar atau Salah dengan memberi tanda centang pada kolom yang sesuai!",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Benar",
+        "Salah"
+      ],
+      "rows": [
+        {
+          "label": "Berbicara dengan nada tinggi atau membentak orang tua ketika berbeda pendapat di rumah merupakan hal yang wajar dan tidak memengaruhi kualitas cabang keimanan seseorang.",
+          "entryId": "entry.959353617"
+        },
+        {
+          "label": "Menyambut kedatangan kerabat atau tamu orang tua di rumah dengan wajah ramah serta menyajikan minuman seadanya dengan tulus termasuk pengamalan cabang iman (ikram adh-dhaif).",
+          "entryId": "entry.1710752732"
+        },
+        {
+          "label": "Menjaga rahasia serta kehormatan anggota keluarga agar tidak menjadi bahan gunjingan orang lain merupakan wujud nyata dari cabang iman berupa sifat amanah.",
+          "entryId": "entry.1775767288"
+        }
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    },
+    {
+      "title": "*Di era digital saat ini, media sosial telah menjadi ruang interaksi utama tempat setiap ucapan, unggahan, dan komentar meninggalkan jejak digital yang abadi. Bagi seorang muslim, beraktivitas di dunia maya tidak terlepas dari pengawasan Allah Swt. (muraqabah) dan pencatatan amal oleh malaikat Raqib dan Atid.\nPengamalan nilai keimanan dalam bermedia sosial menuntut setiap pengguna untuk mengedepankan prinsip tabayun (memverifikasi kebenaran berita sebelum menyebarkannya), menjaga lisan digital dari ujaran kebencian (hate speech), fitnah, serta ghibah daring, menahan diri dari sikap pamer berlebihan (riya/flexing), serta memanfaatkan platform digital sebagai sarana menyebarkan ilmu, kebaikan, dan inspirasi yang bermanfaat bagi sesama.\nBerdasarkan teks bacaan dan pemahaman mengenai pengamalan nilai iman dalam penggunaan media sosial, tentukan apakah pernyataan-pernyataan berikut Benar atau Salah dengan memberi tanda centang pada kolom yang sesuai!",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Benar",
+        "Salah"
+      ],
+      "rows": [
+        {
+          "label": "Memeriksa kebenaran sumber berita terlebih dahulu (tabayun) sebelum menekan tombol bagikan (share) di grup percakapan merupakan wujud tanggung jawab keimanan di dunia maya.",
+          "entryId": "entry.683879910"
+        },
+        {
+          "label": "Menuliskan komentar bernada mengejek atau merundung (cyberbullying) menggunakan akun anonim tidak akan dicatat sebagai dosa karena identitas asli pemilik akun tidak diketahui orang lain.",
+          "entryId": "entry.457805577"
+        },
+        {
+          "label": "Mengunggah barang-barang mewah dengan niat memamerkan kekayaan dan merendahkan pengguna lain di media sosial bertentangan dengan nilai keimanan karena memicu sifat riya dan takabur.",
+          "entryId": "entry.1415724732"
+        }
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    },
+    {
+      "title": "*Dalam ajaran Islam, ikhlas merupakan ruh dari setiap amal perbuatan. Secara bahasa, ikhlas berarti murni atau bersih dari campuran; sedangkan secara istilah, ikhlas adalah memurnikan niat beramal semata-mata hanya karena Allah Swt. dan mengharap rida-Nya, tanpa mengharapkan pujian, balasan materi, maupun pengakuan dari manusia.\nDalam kehidupan nyata sehari-hari, sikap ikhlas bukan berarti pasif atau tidak peduli terhadap kualitas pekerjaan. Sebaliknya, orang yang ikhlas justru bekerja dan berbuat baik dengan sungguh-sungguh, tetap konsisten berbuat kebajikan baik saat dilihat orang lain maupun ketika sendirian, serta tidak mudah kecewa atau mengungkit-ungkit kebaikannya apabila orang lain tidak berterima kasih kepadanya.\nBerdasarkan teks bacaan dan pemahaman mengenai pengamalan sikap ikhlas dalam kehidupan nyata, tentukan apakah pernyataan-pernyataan berikut Benar atau Salah dengan memberi tanda centang pada kolom yang sesuai!",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Benar",
+        "Salah"
+      ],
+      "rows": [
+        {
+          "label": "Seseorang yang ikhlas akan tetap membantu teman yang sedang kesulitan meskipun tidak ada guru maupun orang lain yang melihat perbuatannya.",
+          "entryId": "entry.443422680"
+        },
+        {
+          "label": "Merasa kecewa berat dan mengungkit-ungkit bantuan yang pernah diberikan ketika teman lupa mengucapkan terima kasih menunjukkan kurangnya keikhlasan hati.",
+          "entryId": "entry.1598210792"
+        },
+        {
+          "label": "Sikap ikhlas menuntut seorang pelajar untuk menerima nilai ujian apa adanya tanpa perlu belajar sungguh-sungguh karena hasil akhir sudah ditentukan Allah Swt.",
+          "entryId": "entry.606512106"
+        },
+        {
+          "label": "Menyembunyikan identitas diri sebagai donatur saat menyumbangkan sejumlah dana untuk pembangunan musala sekolah merupakan salah satu cara menjaga kemurnian niat ikhlas.",
+          "entryId": "entry.2013107523"
+        }
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    },
+    {
+      "title": "*Di tengah budaya konsumtif dan fenomena FOMO (Fear of Missing Out) yang kerap memicu rasa kurang terhadap pencapaian diri, Islam mengajarkan dua akhlak mulia sebagai kunci ketenangan jiwa, yakni syukur dan qanaah.\nSyukur merupakan ungkapan rasa terima kasih kepada Allah Swt. atas segala nikmat yang diberikan, yang diwujudkan melalui tiga dimensi: mengakui nikmat tersebut dengan hati, memuji Allah dengan lisan (alhamdulillah), serta menggunakan nikmat tersebut untuk ketaatan dan kebaikan. Sementara itu, qanaah adalah sikap rela menerima dan merasa cukup atas bagian rezeki yang telah Allah Swt. tetapkan setelah melakukan ikhtiar yang maksimal. Qanaah bukanlah sikap malas berusaha, melainkan perisai hati agar manusia tidak terjerumus pada sifat serakah, iri dengki (hasad), maupun menghalalkan segala cara demi mengejar materi.\nBerdasarkan teks bacaan dan pemahaman mengenai penerapan sikap syukur dan qanaah dalam kehidupan sehari-hari, tentukan apakah pernyataan-pernyataan berikut Benar atau Salah dengan memberi tanda centang pada kolom yang sesuai!",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Benar",
+        "Salah"
+      ],
+      "rows": [
+        {
+          "label": "Menggunakan gawai (smartphone) dan kuota internet untuk mengakses materi pelajaran serta menyebarkan konten positif merupakan wujud syukur dengan anggota badan.",
+          "entryId": "entry.411929255"
+        },
+        {
+          "label": "Sikap qanaah berarti seorang pelajar cukup menerima nilai ujian apa adanya tanpa perlu belajar keras karena prestasi sudah ditakdirkan oleh Allah Swt.",
+          "entryId": "entry.170491204"
+        }
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    },
+    {
+      "title": "*Dalam sistem ekonomi Islam, kejujuran (shiddiq) merupakan fondasi utama yang menentukan keberkahan suatu transaksi jual beli maupun kerja sama usaha. Rasulullah saw. menegaskan bahwa pedagang yang jujur dan amanah akan dikumpulkan bersama para nabi, shiddiqin, dan syuhada pada hari kiamat.\nPenerapan prinsip kejujuran dalam transaksi—baik secara langsung di pasar maupun melalui platform lokapasar (marketplace) digital—menuntut pelaku usaha untuk menyampaikan spesifikasi barang secara apa adanya, tidak menyembunyikan cacat produk (tadlis), menakar dan menimbang secara tepat (tidak mengurangi timbangan), serta tidak memberikan testimoni atau ulasan palsu demi mendongkrak penjualan. Kejujuran inilah yang membangun kepercayaan jangka panjang antara penjual dan pembeli serta menghindarkan kedua belah pihak dari kerugian dan sengketa.\nBerdasarkan teks bacaan dan pemahaman mengenai penerapan prinsip kejujuran dalam transaksi ekonomi Islam, tentukan apakah pernyataan-pernyataan berikut Benar atau Salah dengan memberi tanda centang  pada kolom yang sesuai!",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Benar",
+        "Salah"
+      ],
+      "rows": [
+        {
+          "label": "Seorang penjual daring (online shop) mencantumkan keterangan kondisi barang bekas (preloved) secara jujur beserta bagian yang sedikit tergores sebelum pembeli melakukan pembayaran.",
+          "entryId": "entry.2059063182"
+        },
+        {
+          "label": "Menyembunyikan cacat pada buah-buahan dengan menaruh buah yang busuk di bagian bawah keranjang dan yang bagus di bagian atas diperbolehkan sebagai strategi pemasaran agar dagangan cepat habis.",
+          "entryId": "entry.1617916609"
+        },
+        {
+          "label": "Mengurangi takaran atau timbangan barang dagangan dalam jumlah sedikit tidak termasuk pelanggaran prinsip muamalah selama pembeli tidak menyadarinya.",
+          "entryId": "entry.241601877"
+        },
+        {
+          "label": "Membeli jasa ulasan (review) dan peringkat bintang lima palsu di lokapasar (marketplace) untuk menarik minat calon pembeli bertentangan dengan prinsip kejujuran dalam transaksi.",
+          "entryId": "entry.224039918"
+        },
+        {
+          "label": "Mengembalikan kelebihan uang kembalian kepada kasir saat berbelanja di koperasi sekolah merupakan wujud penerapan kejujuran dari sisi pembeli.",
+          "entryId": "entry.837871897"
+        }
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    },
+    {
+      "title": "*Dalam transaksi ekonomi Islam, akad merupakan ikatan kesepakatan antara dua pihak atau lebih yang melahirkan hak dan kewajiban secara sah menurut syariat. Agar sebuah akad bernilai sah dan berkah, harus terpenuhi prinsip suka sama suka (antaradhin), kejelasan objek dan syarat transaksi (bebas dari gharar atau ketidakjelasan), serta kesetaraan hak dan kewajiban.\nSetelah akad disepakati—baik dalam bentuk perjanjian tertulis maupun kesepakatan digital seperti menekan tombol \"Setuju\" saat bertransaksi daring—setiap pihak terikat oleh prinsip tanggung jawab (amanah dan iltizam). Artinya, penjual bertanggung jawab menyerahkan barang sesuai spesifikasi dan waktu yang dijanjikan, pembeli wajib melunasi pembayaran tepat waktu, serta kedua belah pihak harus menanggung risiko secara adil apabila terjadi kelalaian sesuai klausul kesepakatan.\nBerdasarkan teks bacaan dan pemahaman mengenai penerapan prinsip akad dan tanggung jawab dalam muamalah, tentukan apakah pernyataan-pernyataan berikut Benar atau Salah dengan memberi tanda centang pada kolom yang sesuai!",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Benar",
+        "Salah"
+      ],
+      "rows": [
+        {
+          "label": "Seseorang yang memesan makanan melalui aplikasi daring dan menekan tombol pemesanan telah terikat oleh akad, sehingga wajib membayar dan menerima pesanan tersebut sesuai kesepakatan.",
+          "entryId": "entry.462085249"
+        },
+        {
+          "label": "Mengubah syarat pembayaran secara sepihak setelah akad jual beli disepakati diperbolehkan dalam Islam apabila salah satu pihak ingin memperoleh keuntungan lebih besar.",
+          "entryId": "entry.1532073788"
+        },
+        {
+          "label": "Dalam kerja sama usaha (syirkah atau mudharabah), pengelola modal wajib mengganti kerugian usaha apabila kerugian tersebut terbukti disebabkan oleh kelalaian dan kecurangannya sendiri.",
+          "entryId": "entry.1513769566"
+        },
+        {
+          "label": "Transaksi jual beli yang dilakukan di bawah tekanan, paksaan, atau ancaman tetap dianggap sah secara syariat asalkan barang dan uangnya sudah berpindah tangan.",
+          "entryId": "entry.490857012"
+        }
+      ],
+      "required": true,
+      "sectionTitle": "Bagian Tanpa Judul"
+    }
+  ],
+  "tokenField": {
+    "title": "TOKEN",
+    "description": "Masukkan token dari panitia/pengawas untuk mengirim jawaban.",
+    "entryId": "entry.369844483",
+    "required": true,
+    "hash": "d06d5eafa4782dcb1116f5a3e6c5fc135a1ae23f84842467322b831125aa9256"
+  }
+}
