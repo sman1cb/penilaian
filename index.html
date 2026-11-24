@@ -43,6 +43,8 @@
       padding-bottom: 88px;
     }
     body.modal-open { overflow: hidden; }
+    body.kb-open { padding-bottom: 55vh; }
+    #submitModal.kb-modal { align-items: flex-start; padding-top: 24px; }
 
     /* Header */
     header {
@@ -844,6 +846,7 @@
   }
 
   function render() {
+    document.body.classList.remove('kb-open');
     const app = document.getElementById('app');
     const footer = document.getElementById('footerBar');
     const footerInner = document.getElementById('footerInner');
@@ -1423,7 +1426,8 @@
     syncModalBodyLock();
   }
   function closeSubmitModal() {
-    document.getElementById('submitModal').classList.remove('open');
+    const sm = document.getElementById('submitModal');
+    sm.classList.remove('open', 'kb-modal');
     syncModalBodyLock();
   }
 
@@ -1443,7 +1447,7 @@
         return;
       }
       if (quiz.tokenField.hash && tokenVal) {
-        const matched = await matchTokenHash(tokenVal, quiz.tokenField.hash);
+        const matched = await matchTokenHash(val = tokenVal, quiz.tokenField.hash);
         if (matched === null) {
           errEl.textContent = 'Token salah.';
           errEl.style.display = 'block';
@@ -1509,6 +1513,42 @@
         <p style="color:var(--text-sec); max-width:420px; margin:0 auto;">${esc(msg)}</p>
       </div>`;
   }
+
+  let kbBlurTimer = null;
+  document.addEventListener('focusin', (e) => {
+    const el = e.target;
+    if (!el || (el.tagName !== 'INPUT' && el.tagName !== 'TEXTAREA')) return;
+    if (kbBlurTimer) { clearTimeout(kbBlurTimer); kbBlurTimer = null; }
+
+    const inSubmitModal = el.closest('#submitModal');
+    if (inSubmitModal) {
+      inSubmitModal.classList.add('kb-modal');
+      return;
+    }
+
+    document.body.classList.add('kb-open');
+    const geserKeAtas = () => {
+      if (document.activeElement !== el) return;
+      const rect = el.getBoundingClientRect();
+      const batasAtas = Math.max(120, Math.min(200, window.innerHeight * 0.32));
+      if (rect.top > batasAtas || rect.top < 80) {
+        window.scrollTo(0, Math.max(0, window.scrollY + rect.top - 115));
+      }
+    };
+    setTimeout(geserKeAtas, 200);
+    setTimeout(geserKeAtas, 450);
+  });
+
+  document.addEventListener('focusout', () => {
+    if (kbBlurTimer) clearTimeout(kbBlurTimer);
+    kbBlurTimer = setTimeout(() => {
+      const active = document.activeElement;
+      if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA')) return;
+      document.body.classList.remove('kb-open');
+      const sm = document.getElementById('submitModal');
+      if (sm) sm.classList.remove('kb-modal');
+    }, 250);
+  });
 
   init();
 </script>
