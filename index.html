@@ -6,187 +6,366 @@
   <title>Penilaian CBT</title>
   <style>
     :root {
-      --primary: #1a73e8;
-      --primary-dark: #1557b0;
-      --success: #188038;
-      --warning: #f29900;
-      --danger: #d93025;
-      --bg: #f1f3f4;
+      --primary: #2563eb;
+      --primary-dark: #1e40af;
+      --primary-soft: #eff6ff;
+      --primary-border: #bfdbfe;
+      --success: #059669;
+      --success-soft: #ecfdf5;
+      --success-border: #a7f3d0;
+      --warning: #d97706;
+      --warning-soft: #fffbeb;
+      --warning-border: #fde68a;
+      --danger: #dc2626;
+      --bg: #f1f5f9;
       --card: #ffffff;
-      --text: #202124;
-      --muted: #5f6368;
-      --border: #dadce0;
+      --text: #0f172a;
+      --text-sec: #475569;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --q-size: 16px;
+      --opt-size: 15px;
     }
     * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
     body {
-      margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: var(--bg); color: var(--text); line-height: 1.5;
-      padding-bottom: 84px;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      padding-bottom: 88px;
     }
+
+    /* Header Modern + Progress Bar */
     header {
-      position: sticky; top: 0; z-index: 20;
-      background: var(--primary); color: #fff;
-      padding: 12px 16px; display: flex; justify-content: space-between; align-items: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+      position: sticky; top: 0; z-index: 30;
+      background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(30, 58, 138, 0.18);
     }
-    header h1 { margin: 0; font-size: 16px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 65%; }
-    .btn-nav-list {
-      background: rgba(255,255,255,0.2); color: #fff; border: 1px solid rgba(255,255,255,0.4);
-      padding: 6px 12px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer;
+    .hdr-inner {
+      max-width: 780px; margin: 0 auto;
+      padding: 12px 16px;
+      display: flex; justify-content: space-between; align-items: center; gap: 10px;
     }
-    .container { max-width: 760px; margin: 16px auto; padding: 0 12px; }
+    .hdr-title-wrap { min-width: 0; flex: 1; }
+    .hdr-sub { font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; opacity: 0.8; font-weight: 600; }
+    header h1 {
+      margin: 0; font-size: 16px; font-weight: 700;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .hdr-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+    .btn-hdr {
+      background: rgba(255,255,255,0.16); color: #fff;
+      border: 1px solid rgba(255,255,255,0.28);
+      padding: 7px 11px; border-radius: 8px;
+      font-size: 13px; font-weight: 600; cursor: pointer;
+      display: inline-flex; align-items: center; gap: 5px;
+      transition: background 0.15s;
+    }
+    .btn-hdr:active { background: rgba(255,255,255,0.28); }
+    .progress-track { width: 100%; height: 4px; background: rgba(255,255,255,0.2); }
+    .progress-fill { height: 100%; width: 0%; background: #34d399; transition: width 0.3s ease; }
+
+    /* Container & Card */
+    .container { max-width: 780px; margin: 16px auto; padding: 0 14px; }
     .card {
-      background: var(--card); border-radius: 10px; padding: 18px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08); margin-bottom: 14px;
+      background: var(--card);
+      border-radius: 16px;
+      padding: 20px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+      margin-bottom: 14px;
     }
-    .badge {
-      display: inline-block; background: #e8f0fe; color: var(--primary);
-      font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 20px; margin-bottom: 10px;
+    .card-top-bar {
+      display: flex; justify-content: space-between; align-items: center; gap: 8px;
+      margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid var(--border);
     }
-    .q-title { font-size: 16px; font-weight: 600; margin: 0 0 10px; }
-    .q-desc { font-size: 13px; color: var(--muted); margin: -4px 0 12px; }
-    .q-img { max-width: 100%; height: auto; border-radius: 8px; margin: 10px 0 14px; border: 1px solid var(--border); display: block; }
+    .badge-num {
+      background: var(--primary-soft); color: var(--primary);
+      border: 1px solid var(--primary-border);
+      font-size: 12px; font-weight: 700; padding: 4px 11px; border-radius: 999px;
+    }
+    .badge-type {
+      font-size: 11px; font-weight: 600; color: var(--muted);
+      background: #f8fafc; border: 1px solid var(--border);
+      padding: 4px 10px; border-radius: 999px;
+    }
+    .sec-banner {
+      background: #f8fafc; border-left: 3px solid var(--primary);
+      padding: 8px 12px; border-radius: 0 8px 8px 0;
+      font-size: 13px; font-weight: 600; color: var(--text-sec);
+      margin-bottom: 14px;
+    }
+    .q-title { font-size: var(--q-size); font-weight: 600; color: var(--text); margin: 0 0 12px; }
+    .q-desc { font-size: 13.5px; color: var(--text-sec); margin: -4px 0 14px; }
+    .q-img {
+      max-width: 100%; height: auto; border-radius: 12px;
+      margin: 10px 0 16px; border: 1px solid var(--border); display: block;
+    }
     .req { color: var(--danger); margin-left: 3px; }
 
     /* Opsi Pilihan Ganda & Checkbox */
     .opt-item {
-      display: flex; align-items: flex-start; gap: 10px;
-      padding: 12px 14px; border: 1.5px solid var(--border); border-radius: 8px;
-      margin-bottom: 10px; cursor: pointer; background: #fff; transition: 0.15s;
+      display: flex; align-items: flex-start; gap: 12px;
+      padding: 13px 15px; border: 1.5px solid var(--border); border-radius: 12px;
+      margin-bottom: 10px; cursor: pointer; background: #fff;
+      transition: all 0.15s ease;
     }
-    .opt-item.selected { border-color: var(--primary); background: #e8f0fe; }
+    .opt-item:active { transform: scale(0.99); }
+    .opt-item.selected {
+      border-color: var(--primary); background: var(--primary-soft);
+      box-shadow: 0 2px 6px rgba(37, 99, 235, 0.08);
+    }
     .opt-marker {
-      width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%;
-      border: 2px solid var(--muted); display: flex; align-items: center; justify-content: center;
-      font-size: 12px; font-weight: 700; margin-top: 1px;
+      width: 26px; height: 26px; flex-shrink: 0; border-radius: 8px;
+      background: #f1f5f9; color: var(--text-sec);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px; font-weight: 700; margin-top: 1px;
+      transition: all 0.15s ease;
     }
-    .opt-item.checkbox .opt-marker { border-radius: 4px; }
-    .opt-item.selected .opt-marker { border-color: var(--primary); background: var(--primary); color: #fff; }
-    .opt-text { font-size: 15px; flex: 1; }
+    .opt-item.selected .opt-marker { background: var(--primary); color: #fff; }
+    .opt-text { font-size: var(--opt-size); flex: 1; padding-top: 2px; }
 
     /* Input Teks & Dropdown */
     input[type="text"], textarea, select {
-      width: 100%; padding: 12px; border: 1.5px solid var(--border); border-radius: 8px;
-      font-size: 15px; font-family: inherit; background: #fff;
+      width: 100%; padding: 13px 14px; border: 1.5px solid var(--border); border-radius: 12px;
+      font-size: 15px; font-family: inherit; background: #fff; color: var(--text);
+      transition: border-color 0.15s;
     }
-    input[type="text"]:focus, textarea:focus, select:focus { outline: none; border-color: var(--primary); }
+    input[type="text"]:focus, textarea:focus, select:focus {
+      outline: none; border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+    }
 
-    /* Tap-to-Place (Menjodohkan / Grid) */
-    .tap-guide {
-      font-size: 13px; background: #fef7e0; color: #b06000;
-      padding: 8px 12px; border-radius: 6px; margin-bottom: 12px;
+    /* Kisi Pilihan Ganda (GRID) - Kartu Pernyataan */
+    .grid-hint {
+      font-size: 13px; color: var(--text-sec); background: #f8fafc;
+      border: 1px solid var(--border); padding: 9px 12px; border-radius: 10px;
+      margin-bottom: 14px; display: flex; align-items: center; gap: 8px;
     }
-    .chip-bank {
-      display: flex; flex-wrap: wrap; gap: 8px; padding: 12px;
-      background: #f8f9fa; border: 1px dashed #bdc1c6; border-radius: 8px; margin-bottom: 14px;
+    .grid-card {
+      border: 1.5px solid var(--border); border-radius: 12px;
+      padding: 14px; margin-bottom: 12px; background: #fff;
+      transition: border-color 0.15s;
     }
-    .chip {
-      padding: 8px 14px; background: #fff; border: 1.5px solid var(--primary); color: var(--primary);
-      border-radius: 20px; font-size: 14px; font-weight: 600; cursor: pointer; user-select: none;
+    .grid-card.answered { border-color: var(--success-border); background: #fcfffe; }
+    .grid-row-head {
+      display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px;
     }
-    .chip.active { background: var(--primary); color: #fff; transform: scale(1.03); box-shadow: 0 2px 6px rgba(26,115,232,0.35); }
-    .match-row {
-      display: flex; flex-direction: column; gap: 8px;
-      padding: 12px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 10px; background: #fff;
+    .grid-row-num {
+      min-width: 24px; height: 24px; border-radius: 6px;
+      background: #e2e8f0; color: var(--text-sec);
+      font-size: 12px; font-weight: 700;
+      display: flex; align-items: center; justify-content: center; margin-top: 2px;
     }
-    .match-label { font-size: 14px; font-weight: 600; }
-    .match-slot {
-      padding: 10px 12px; border: 1.5px dashed #9aa0a6; border-radius: 6px;
-      font-size: 14px; color: var(--muted); background: #f8f9fa; cursor: pointer;
-      display: flex; justify-content: space-between; align-items: center;
+    .grid-card.answered .grid-row-num { background: var(--success); color: #fff; }
+    .grid-row-label { font-size: var(--opt-size); font-weight: 600; color: var(--text); flex: 1; }
+
+    /* Mode 1: Inline Segmented Buttons (Benar/Salah, Ya/Tidak, dll) */
+    .inline-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .inline-pill {
+      flex: 1; min-width: 90px; text-align: center;
+      padding: 10px 12px; border-radius: 10px;
+      border: 1.5px solid var(--border); background: #f8fafc;
+      font-size: 14px; font-weight: 600; color: var(--text-sec);
+      cursor: pointer; transition: all 0.15s;
     }
-    .match-slot.filled {
-      border-style: solid; border-color: var(--success); background: #e6f4ea; color: #137333; font-weight: 600;
+    .inline-pill:active { transform: scale(0.98); }
+    .inline-pill.selected {
+      background: var(--primary); border-color: var(--primary); color: #fff;
+      box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);
     }
-    .match-clear { font-size: 12px; color: var(--danger); font-weight: 700; margin-left: 8px; }
+
+    /* Mode 2: Trigger Bottom Sheet (Menjodohkan) */
+    .match-trigger {
+      width: 100%; padding: 11px 14px; border-radius: 10px;
+      border: 1.5px dashed #94a3b8; background: #f8fafc;
+      color: var(--muted); font-size: 14px; font-weight: 500;
+      display: flex; justify-content: space-between; align-items: center; gap: 8px;
+      cursor: pointer; text-align: left; transition: all 0.15s;
+    }
+    .match-trigger:active { transform: scale(0.99); }
+    .match-trigger.filled {
+      border-style: solid; border-color: var(--success);
+      background: var(--success-soft); color: #065f46; font-weight: 600;
+    }
+    .match-trigger-badge {
+      font-size: 12px; font-weight: 700; padding: 3px 8px; border-radius: 6px;
+      background: rgba(255,255,255,0.8); color: var(--primary); flex-shrink: 0;
+    }
+    .match-trigger.filled .match-trigger-badge { color: var(--success); }
 
     /* Petak Kotak Centang (Checkbox Grid) */
-    .cb-grid-opts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2px; }
+    .cb-grid-opts { display: flex; flex-wrap: wrap; gap: 8px; }
     .cb-pill {
-      padding: 8px 13px; border: 1.5px solid var(--border); border-radius: 8px;
-      font-size: 14px; background: #f8f9fa; color: var(--text); cursor: pointer;
-      display: inline-flex; align-items: center; gap: 6px; user-select: none;
+      padding: 9px 14px; border: 1.5px solid var(--border); border-radius: 10px;
+      font-size: 14px; background: #f8fafc; color: var(--text); cursor: pointer;
+      display: inline-flex; align-items: center; gap: 7px; user-select: none;
+      transition: all 0.15s;
     }
     .cb-pill.selected {
-      border-color: var(--primary); background: #e8f0fe; color: var(--primary-dark); font-weight: 600;
+      border-color: var(--primary); background: var(--primary-soft);
+      color: var(--primary-dark); font-weight: 600;
     }
 
     /* Footer Navigasi */
     .footer-bar {
-      position: fixed; bottom: 0; left: 0; right: 0; z-index: 20;
-      background: #fff; border-top: 1px solid var(--border);
-      padding: 10px 12px; display: flex; justify-content: space-between; align-items: center; gap: 8px;
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 30;
+      background: rgba(255,255,255,0.96); backdrop-filter: blur(8px);
+      border-top: 1px solid var(--border);
+      padding: 10px 14px;
+    }
+    .footer-inner {
+      max-width: 780px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: center; gap: 8px;
     }
     .btn {
-      border: none; border-radius: 8px; padding: 11px 16px; font-size: 14px; font-weight: 600;
-      cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
+      border: none; border-radius: 10px; padding: 11px 16px;
+      font-size: 14px; font-weight: 600; cursor: pointer;
+      display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+      transition: all 0.15s;
     }
-    .btn-primary { background: var(--primary); color: #fff; }
-    .btn-success { background: var(--success); color: #fff; }
-    .btn-warning { background: #fef7e0; color: #b06000; border: 1px solid var(--warning); }
-    .btn-warning.active { background: var(--warning); color: #fff; }
-    .btn-outline { background: #fff; color: var(--text); border: 1px solid var(--border); }
-    .btn:disabled { opacity: 0.45; cursor: not-allowed; }
+    .btn:active:not(:disabled) { transform: scale(0.98); }
+    .btn-primary { background: var(--primary); color: #fff; box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25); }
+    .btn-success { background: var(--success); color: #fff; box-shadow: 0 2px 6px rgba(5, 150, 105, 0.25); }
+    .btn-warning { background: var(--warning-soft); color: #b45309; border: 1.5px solid var(--warning-border); }
+    .btn-warning.active { background: var(--warning); border-color: var(--warning); color: #fff; }
+    .btn-outline { background: #fff; color: var(--text); border: 1.5px solid var(--border); }
+    .btn:disabled { opacity: 0.4; cursor: not-allowed; }
 
-    /* Modal Daftar Soal & Konfirmasi */
+    /* Modal & Bottom Sheet */
     .modal-bg {
-      position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 50;
+      position: fixed; inset: 0; background: rgba(15, 23, 42, 0.55); z-index: 50;
       display: none; align-items: center; justify-content: center; padding: 16px;
     }
     .modal-bg.open { display: flex; }
+    .modal-bg.sheet-mode { align-items: flex-end; padding: 0; }
+
     .modal-box {
-      background: #fff; border-radius: 12px; width: 100%; max-width: 440px;
-      max-height: 82vh; overflow-y: auto; padding: 18px;
+      background: #fff; border-radius: 18px; width: 100%; max-width: 460px;
+      max-height: 84vh; overflow-y: auto; padding: 20px;
+      box-shadow: 0 20px 25px -5px rgba(0,0,0,0.15);
     }
+    .sheet-mode .modal-box {
+      max-width: 780px; border-radius: 20px 20px 0 0;
+      max-height: 82vh; padding: 18px 18px 24px;
+      animation: slideUp 0.2s ease-out;
+    }
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0.7; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .sheet-handle {
+      width: 40px; height: 4px; background: #cbd5e1; border-radius: 99px;
+      margin: 0 auto 14px;
+    }
+    .sheet-context {
+      background: #f8fafc; border: 1px solid var(--border); border-radius: 10px;
+      padding: 10px 12px; font-size: 14px; font-weight: 600; color: var(--text);
+      margin-bottom: 14px;
+    }
+    .sheet-opt {
+      display: flex; align-items: center; gap: 12px;
+      padding: 12px 14px; border: 1.5px solid var(--border); border-radius: 12px;
+      margin-bottom: 8px; cursor: pointer; background: #fff;
+    }
+    .sheet-opt.selected { border-color: var(--success); background: var(--success-soft); }
+    .sheet-opt-key {
+      width: 26px; height: 26px; border-radius: 7px; flex-shrink: 0;
+      background: #f1f5f9; color: var(--text-sec); font-weight: 700; font-size: 12px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .sheet-opt.selected .sheet-opt-key { background: var(--success); color: #fff; }
+    .sheet-opt-body { flex: 1; font-size: 14.5px; }
+    .used-tag {
+      display: inline-block; font-size: 11px; color: var(--muted);
+      background: #f1f5f9; padding: 2px 7px; border-radius: 5px; margin-top: 3px;
+    }
+
+    /* Grid Nomor Navigasi */
+    .nav-stats {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;
+      margin: 12px 0; text-align: center;
+    }
+    .stat-box { background: #f8fafc; border: 1px solid var(--border); border-radius: 10px; padding: 8px 4px; }
+    .stat-num { font-size: 16px; font-weight: 800; }
+    .stat-lbl { font-size: 11px; color: var(--muted); }
     .num-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin: 14px 0; }
     .num-btn {
-      padding: 10px 0; border-radius: 8px; border: 1.5px solid var(--border);
+      padding: 11px 0; border-radius: 10px; border: 1.5px solid var(--border);
       background: #fff; font-weight: 700; font-size: 14px; cursor: pointer;
     }
     .num-btn.answered { background: var(--success); border-color: var(--success); color: #fff; }
     .num-btn.ragu { background: var(--warning); border-color: var(--warning); color: #fff; }
-    .num-btn.current { box-shadow: 0 0 0 2.5px var(--primary); }
-    .center-msg { text-align: center; padding: 36px 18px; }
+    .num-btn.current { box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.35); border-color: var(--primary); }
+
+    .center-msg { text-align: center; padding: 40px 20px; }
     .field-group { margin-bottom: 16px; }
-    .field-label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 6px; }
+    .field-label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 6px; color: var(--text); }
   </style>
 </head>
 <body>
 
 <header>
-  <h1 id="hdrTitle">Penilaian CBT</h1>
-  <button id="btnList" class="btn-nav-list" style="display:none;" onclick="openNavModal()">Daftar Soal</button>
+  <div class="hdr-inner">
+    <div class="hdr-title-wrap">
+      <div class="hdr-sub" id="hdrSub">PENILAIAN DIGITAL</div>
+      <h1 id="hdrTitle">Memuat Ujian...</h1>
+    </div>
+    <div class="hdr-actions">
+      <button class="btn-hdr" onclick="cycleFontSize()" title="Ubah Ukuran Huruf">Aa</button>
+      <button id="btnList" class="btn-hdr" style="display:none;" onclick="openNavModal()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        <span id="hdrProgressText">Soal</span>
+      </button>
+    </div>
+  </div>
+  <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
 </header>
 
 <div class="container" id="app">
-  <div class="card center-msg">Memuat halaman...</div>
+  <div class="card center-msg">Menyiapkan lembar soal...</div>
 </div>
 
-<div class="footer-bar" id="footerBar" style="display:none;"></div>
+<div class="footer-bar" id="footerBar" style="display:none;">
+  <div class="footer-inner" id="footerInner"></div>
+</div>
+
+<!-- Bottom Sheet Picker untuk Menjodohkan -->
+<div class="modal-bg sheet-mode" id="gridSheet" onclick="if(event.target===this) closeGridSheet()">
+  <div class="modal-box">
+    <div class="sheet-handle"></div>
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+      <strong style="font-size:15px;">Pilih Pasangan Jawaban</strong>
+      <button class="btn btn-outline" style="padding:5px 10px; font-size:12px;" onclick="closeGridSheet()">Tutup ✕</button>
+    </div>
+    <div class="sheet-context" id="sheetContext"></div>
+    <div id="sheetOptions"></div>
+  </div>
+</div>
 
 <!-- Modal Daftar Soal -->
 <div class="modal-bg" id="navModal" onclick="if(event.target===this) closeNavModal()">
   <div class="modal-box">
     <div style="display:flex; justify-content:space-between; align-items:center;">
       <strong style="font-size:16px;">Navigasi Nomor Soal</strong>
-      <button class="btn btn-outline" style="padding:5px 10px;" onclick="closeNavModal()">Tutup</button>
+      <button class="btn btn-outline" style="padding:5px 10px; font-size:12px;" onclick="closeNavModal()">Tutup ✕</button>
     </div>
-    <div style="font-size:12px; color:var(--muted); margin-top:6px;">
-      Hijau: Dijawab &nbsp;|&nbsp; Kuning: Ragu-ragu &nbsp;|&nbsp; Putih: Belum
-    </div>
+    <div class="nav-stats" id="navStats"></div>
     <div class="num-grid" id="numGrid"></div>
-    <button class="btn btn-success" style="width:100%;" onclick="closeNavModal(); confirmSubmit();">Selesai & Kirim Jawaban</button>
+    <button class="btn btn-success" style="width:100%; padding:13px;" onclick="closeNavModal(); confirmSubmit();">Selesai & Kirim Jawaban ✓</button>
   </div>
 </div>
 
 <!-- Modal Konfirmasi Kirim -->
 <div class="modal-bg" id="submitModal" onclick="if(event.target===this) closeSubmitModal()">
   <div class="modal-box">
-    <strong style="font-size:17px;">Kirim Jawaban?</strong>
-    <p id="submitSummary" style="font-size:14px; color:var(--muted);"></p>
-    <div style="display:flex; gap:10px; justify-content:flex-end; margin-top:16px;">
+    <strong style="font-size:17px;">Kirim Jawaban Sekarang?</strong>
+    <p id="submitSummary" style="font-size:14px; color:var(--text-sec); margin:10px 0 18px;"></p>
+    <div style="display:flex; gap:10px; justify-content:flex-end;">
       <button class="btn btn-outline" onclick="closeSubmitModal()">Cek Lagi</button>
-      <button class="btn btn-success" id="btnConfirmSend" onclick="doSubmit()">Ya, Kirim Sekarang</button>
+      <button class="btn btn-success" id="btnConfirmSend" onclick="doSubmit()">Ya, Kirim Jawaban</button>
     </div>
   </div>
 </div>
@@ -196,13 +375,29 @@
   let answers = {};
   let ragu = {};
   let step = 0;
-  let activeChip = null;
   let storageKey = '';
   let isDemo = false;
+  let fontStep = 0;
+
+  const FONT_PRESETS = [
+    { q: '16px', opt: '15px' },
+    { q: '18px', opt: '16.5px' },
+    { q: '20px', opt: '18px' }
+  ];
+
+  const TYPE_LABELS = {
+    MULTIPLE_CHOICE: 'Pilihan Ganda',
+    CHECKBOX: 'Pilihan Ganda Kompleks',
+    LIST: 'Pilihan Dropdown',
+    TEXT: 'Isian Singkat',
+    PARAGRAPH_TEXT: 'Uraian',
+    GRID: 'Menjodohkan / Kisi',
+    CHECKBOX_GRID: 'Petak Centang'
+  };
 
   const DEMO_DATA = {
     title: "Demo CBT & Menjodohkan",
-    description: "Ini hanya tampilan uji coba (tidak mengirim data ke mana pun).",
+    description: "Pratinjau tampilan ujian modern (mode demo tidak mengirim data).",
     formAction: "",
     pageHistory: "0,1",
     identitas: [
@@ -212,28 +407,31 @@
     soal: [
       {
         type: "MULTIPLE_CHOICE",
-        title: "Contoh Pilihan Ganda:\nManakah planet terbesar di tata surya kita?",
+        title: "Manakah planet terbesar di tata surya kita?",
         entryId: "demo_q1",
         choices: ["Mars", "Bumi", "Jupiter", "Saturnus"],
         required: true
       },
       {
         type: "GRID",
-        title: "Contoh Menjodohkan (Tap-to-Place):\nPasangkan besaran fisika berikut dengan satuan SI yang tepat!",
-        columns: ["Meter", "Kilogram", "Sekon", "Ampere"],
+        title: "Pasangkan besaran fisika berikut dengan satuan SI yang tepat!",
+        columns: ["Meter (m)", "Kilogram (kg)", "Sekon (s)", "Ampere (A)"],
         rows: [
-          { label: "1. Panjang", entryId: "demo_g1" },
-          { label: "2. Massa", entryId: "demo_g2" },
-          { label: "3. Waktu", entryId: "demo_g3" },
-          { label: "4. Kuat Arus Listrik", entryId: "demo_g4" }
+          { label: "Panjang lintasan", entryId: "demo_g1" },
+          { label: "Massa benda", entryId: "demo_g2" },
+          { label: "Selang waktu", entryId: "demo_g3" },
+          { label: "Kuat arus listrik", entryId: "demo_g4" }
         ],
         required: true
       },
       {
-        type: "CHECKBOX",
-        title: "Contoh Pilihan Ganda Kompleks:\nPilih semua bilangan prima di bawah ini!",
-        entryId: "demo_q3",
-        choices: ["2", "4", "7", "9", "11"],
+        type: "GRID",
+        title: "Tentukan apakah pernyataan berikut Benar atau Salah!",
+        columns: ["Benar", "Salah"],
+        rows: [
+          { label: "Air mendidih pada suhu 100°C pada tekanan 1 atm.", entryId: "demo_bs1" },
+          { label: "Cahaya merambat lebih cepat di dalam air dibanding ruang hampa.", entryId: "demo_bs2" }
+        ],
         required: true
       }
     ]
@@ -251,16 +449,26 @@
     return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 
+  function cycleFontSize() {
+    fontStep = (fontStep + 1) % FONT_PRESETS.length;
+    document.documentElement.style.setProperty('--q-size', FONT_PRESETS[fontStep].q);
+    document.documentElement.style.setProperty('--opt-size', FONT_PRESETS[fontStep].opt);
+  }
+
   async function init() {
     const params = new URLSearchParams(location.search);
     const soalFile = params.get('s');
 
     if (!soalFile) {
+      document.getElementById('hdrTitle').textContent = 'Portal Penilaian CBT';
       document.getElementById('app').innerHTML = `
         <div class="card center-msg">
-          <h2 style="margin-top:0;">Portal Penilaian Aktif</h2>
-          <p style="color:var(--muted);">Halaman siap digunakan. Buka melalui tautan soal dari aplikasi ujian.</p>
-          <button class="btn btn-primary" onclick="startDemo()">Coba Tampilan Demo</button>
+          <div style="width:54px; height:54px; border-radius:16px; background:var(--primary-soft); color:var(--primary); display:inline-flex; align-items:center; justify-content:center; margin-bottom:12px;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <h2 style="margin:0 0 8px; font-size:20px;">Portal Penilaian Siap</h2>
+          <p style="color:var(--text-sec); max-width:420px; margin:0 auto 20px;">Silakan buka tautan ujian melalui aplikasi resmi sekolah, atau coba pratinjau tampilan di bawah ini.</p>
+          <button class="btn btn-primary" onclick="startDemo()">Lihat Pratinjau Tampilan</button>
         </div>`;
       return;
     }
@@ -273,11 +481,12 @@
       loadSaved();
       startQuiz();
     } catch (e) {
+      document.getElementById('hdrTitle').textContent = 'Gagal Memuat';
       document.getElementById('app').innerHTML = `
         <div class="card center-msg">
           <h3 style="color:var(--danger); margin-top:0;">Gagal Memuat Soal</h3>
-          <p style="color:var(--muted);">${esc(e.message)}</p>
-          <button class="btn btn-primary" onclick="location.reload()">Coba Muat Ulang</button>
+          <p style="color:var(--text-sec);">${esc(e.message)}</p>
+          <button class="btn btn-primary" onclick="location.reload()">Muat Ulang</button>
         </div>`;
     }
   }
@@ -328,20 +537,36 @@
     return val !== undefined && String(val).trim() !== '';
   }
 
+  function updateProgressUI() {
+    if (!quiz || !quiz.soal) return;
+    const total = quiz.soal.length;
+    const done = quiz.soal.filter(q => isQuestionAnswered(q)).length;
+    const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+    document.getElementById('progressFill').style.width = pct + '%';
+    document.getElementById('hdrProgressText').textContent = `${done}/${total}`;
+  }
+
+  function isInlineGrid(q) {
+    return q.columns.length <= 3 && q.columns.every(c => String(c).trim().length <= 18);
+  }
+
   function render() {
     const app = document.getElementById('app');
     const footer = document.getElementById('footerBar');
+    const footerInner = document.getElementById('footerInner');
     const btnList = document.getElementById('btnList');
-    activeChip = null;
+
+    updateProgressUI();
 
     if (step === -1) {
       btnList.style.display = 'none';
       footer.style.display = 'none';
+      document.getElementById('hdrSub').textContent = 'DATA PESERTA';
       let html = `<div class="card">
-        <div class="badge">DATA PESERTA</div>
-        <h2 style="margin:0 0 6px; font-size:19px;">${esc(quiz.title)}</h2>
+        <div class="badge-num" style="display:inline-block; margin-bottom:10px;">IDENTITAS PESERTA</div>
+        <h2 style="margin:0 0 6px; font-size:20px;">${esc(quiz.title)}</h2>
         ${quiz.description ? `<p class="q-desc" style="margin-top:4px;">${esc(quiz.description)}</p>` : ''}
-        <hr style="border:none; border-top:1px solid var(--border); margin:14px 0;">`;
+        <hr style="border:none; border-top:1px solid var(--border); margin:16px 0;">`;
 
       quiz.identitas.forEach((f, idx) => {
         const val = answers[f.entryId] || '';
@@ -349,30 +574,34 @@
           <label class="field-label">${esc(f.title)}${f.required ? '<span class="req">*</span>' : ''}</label>`;
         if (f.type === 'LIST' || f.type === 'MULTIPLE_CHOICE') {
           html += `<select onchange="setIdentity(${idx}, this.value)">
-            <option value="">-- Pilih --</option>
+            <option value="">-- Pilih ${escPlain(f.title)} --</option>
             ${(f.choices || []).map(c => `<option value="${escPlain(c)}" ${val === c ? 'selected' : ''}>${escPlain(c)}</option>`).join('')}
           </select>`;
         } else {
-          html += `<input type="text" value="${escPlain(val)}" placeholder="Ketik jawaban..." oninput="setIdentity(${idx}, this.value)">`;
+          html += `<input type="text" value="${escPlain(val)}" placeholder="Masukkan ${escPlain(f.title)}..." oninput="setIdentity(${idx}, this.value)">`;
         }
         html += `</div>`;
       });
 
-      html += `<button class="btn btn-primary" style="width:100%; margin-top:8px;" onclick="finishIdentity()">Mulai Mengerjakan Soal</button></div>`;
+      html += `<button class="btn btn-primary" style="width:100%; padding:14px; font-size:15px; margin-top:8px;" onclick="finishIdentity()">Mulai Mengerjakan Soal →</button></div>`;
       app.innerHTML = html;
       window.scrollTo(0, 0);
       return;
     }
 
-    btnList.style.display = 'inline-block';
-    footer.style.display = 'flex';
+    btnList.style.display = 'inline-flex';
+    footer.style.display = 'block';
     const q = quiz.soal[step];
     const total = quiz.soal.length;
     const huruf = ['A','B','C','D','E','F','G','H'];
+    document.getElementById('hdrSub').textContent = `SOAL ${step + 1} DARI ${total}`;
 
     let html = `<div class="card">
-      <div class="badge">SOAL ${step + 1} DARI ${total}</div>
-      ${q.sectionTitle ? `<div style="font-size:12px; color:var(--muted); margin-bottom:6px; font-weight:600;">${esc(q.sectionTitle)}</div>` : ''}
+      <div class="card-top-bar">
+        <span class="badge-num">Nomor ${step + 1} / ${total}</span>
+        <span class="badge-type">${TYPE_LABELS[q.type] || 'Soal'}</span>
+      </div>
+      ${q.sectionTitle ? `<div class="sec-banner">${esc(q.sectionTitle)}</div>` : ''}
       ${q.image ? `<img class="q-img" src="${escPlain(q.image)}" alt="Gambar Soal">` : ''}
       <div class="q-title">${esc(q.title)}${q.required ? '<span class="req">*</span>' : ''}</div>
       ${q.description ? `<div class="q-desc">${esc(q.description)}</div>` : ''}`;
@@ -388,10 +617,10 @@
       });
     } else if (q.type === 'CHECKBOX') {
       const cur = Array.isArray(answers[q.entryId]) ? answers[q.entryId] : [];
-      html += `<div style="font-size:12px; color:var(--muted); margin-bottom:10px;">Boleh memilih lebih dari satu jawaban</div>`;
+      html += `<div class="grid-hint">Pilih lebih dari satu jawaban yang benar.</div>`;
       q.choices.forEach((c, i) => {
         const sel = cur.includes(c) ? 'selected' : '';
-        html += `<div class="opt-item checkbox ${sel}" onclick="pickCB(${step}, ${i})">
+        html += `<div class="opt-item ${sel}" onclick="pickCB(${step}, ${i})">
           <div class="opt-marker">${sel ? '✓' : ''}</div>
           <div class="opt-text">${esc(c)}</div>
         </div>`;
@@ -404,31 +633,49 @@
       </select>`;
     } else if (q.type === 'TEXT') {
       const cur = answers[q.entryId] || '';
-      html += `<input type="text" value="${escPlain(cur)}" placeholder="Ketik jawaban singkat..." oninput="pickText(${step}, this.value)">`;
+      html += `<input type="text" value="${escPlain(cur)}" placeholder="Ketik jawaban singkat Anda..." oninput="pickText(${step}, this.value)">`;
     } else if (q.type === 'PARAGRAPH_TEXT') {
       const cur = answers[q.entryId] || '';
-      html += `<textarea rows="5" placeholder="Ketik jawaban uraian..." oninput="pickText(${step}, this.value)">${escPlain(cur)}</textarea>`;
+      html += `<textarea rows="5" placeholder="Ketik jawaban uraian Anda..." oninput="pickText(${step}, this.value)">${escPlain(cur)}</textarea>`;
     } else if (q.type === 'GRID') {
-      html += `<div class="tap-guide" id="tapGuide">1. Tap pilihan jawaban di kotak biru, lalu 2. Tap kotak pasangan di bawahnya.</div>
-        <div class="chip-bank">
-          ${q.columns.map((col, ci) => `<div class="chip" id="chip_${ci}" onclick="selectChip(${step}, ${ci})">${esc(col)}</div>`).join('')}
-        </div>`;
+      const inlineMode = isInlineGrid(q);
+      html += `<div class="grid-hint">${inlineMode
+        ? 'Tap salah satu pilihan di setiap pernyataan.'
+        : 'Tap tombol <strong>"Pilih Pasangan"</strong> di tiap baris untuk menentukan jawabannya.'}</div>`;
+
       q.rows.forEach((r, ri) => {
         const cur = answers[r.entryId] || '';
-        html += `<div class="match-row">
-          <div class="match-label">${esc(r.label)}</div>
-          <div class="match-slot ${cur ? 'filled' : ''}" onclick="tapSlot(${step}, ${ri})">
-            <span>${cur ? esc(cur) : 'Tap di sini untuk menaruh jawaban...'}</span>
-            ${cur ? '<span class="match-clear">✕ Hapus</span>' : ''}
-          </div>
-        </div>`;
+        html += `<div class="grid-card ${cur ? 'answered' : ''}">
+          <div class="grid-row-head">
+            <div class="grid-row-num">${ri + 1}</div>
+            <div class="grid-row-label">${esc(r.label)}</div>
+          </div>`;
+
+        if (inlineMode) {
+          html += `<div class="inline-pills">
+            ${q.columns.map((col, ci) => `
+              <div class="inline-pill ${cur === col ? 'selected' : ''}" onclick="pickGridOption(${step}, ${ri}, ${ci})">${esc(col)}</div>
+            `).join('')}
+          </div>`;
+        } else {
+          const colIdx = cur ? q.columns.indexOf(cur) : -1;
+          const badgeTxt = colIdx >= 0 ? `Opsi ${huruf[colIdx] || (colIdx + 1)}` : 'Pilih ▾';
+          html += `<button type="button" class="match-trigger ${cur ? 'filled' : ''}" onclick="openGridSheet(${step}, ${ri})">
+            <span>${cur ? esc(cur) : 'Pilih pasangan jawaban...'}</span>
+            <span class="match-trigger-badge">${badgeTxt}</span>
+          </button>`;
+        }
+        html += `</div>`;
       });
     } else if (q.type === 'CHECKBOX_GRID') {
-      html += `<div style="font-size:12px; color:var(--muted); margin-bottom:10px;">Tap satu atau beberapa pilihan yang sesuai pada setiap baris</div>`;
+      html += `<div class="grid-hint">Tap satu atau beberapa pilihan yang sesuai pada setiap baris.</div>`;
       q.rows.forEach((r, ri) => {
         const curArr = Array.isArray(answers[r.entryId]) ? answers[r.entryId] : [];
-        html += `<div class="match-row">
-          <div class="match-label">${esc(r.label)}</div>
+        html += `<div class="grid-card ${curArr.length ? 'answered' : ''}">
+          <div class="grid-row-head">
+            <div class="grid-row-num">${ri + 1}</div>
+            <div class="grid-row-label">${esc(r.label)}</div>
+          </div>
           <div class="cb-grid-opts">
             ${q.columns.map((col, ci) => {
               const sel = curArr.includes(col) ? 'selected' : '';
@@ -444,14 +691,69 @@
 
     const isRagu = !!ragu[step];
     const isLast = step === total - 1;
-    footer.innerHTML = `
-      <button class="btn btn-outline" onclick="prevStep()" ${step === 0 && !(quiz.identitas && quiz.identitas.length) ? 'disabled' : ''}>‹ Kembali</button>
-      <button class="btn btn-warning ${isRagu ? 'active' : ''}" onclick="toggleRagu()">Ragu</button>
+    footerInner.innerHTML = `
+      <button class="btn btn-outline" onclick="prevStep()" ${step === 0 && !(quiz.identitas && quiz.identitas.length) ? 'disabled' : ''}>← Kembali</button>
+      <button class="btn btn-warning ${isRagu ? 'active' : ''}" onclick="toggleRagu()">⚑ Ragu</button>
       ${isLast
         ? `<button class="btn btn-success" onclick="confirmSubmit()">Selesai ✓</button>`
-        : `<button class="btn btn-primary" onclick="nextStep()">Lanjut ›</button>`
+        : `<button class="btn btn-primary" onclick="nextStep()">Lanjut →</button>`
       }`;
     window.scrollTo(0, 0);
+  }
+
+  /* Bottom Sheet untuk Menjodohkan */
+  function openGridSheet(qIdx, rIdx) {
+    const q = quiz.soal[qIdx];
+    const row = q.rows[rIdx];
+    const cur = answers[row.entryId] || '';
+    const huruf = ['A','B','C','D','E','F','G','H','I','J'];
+
+    // Cek opsi mana saja yang sudah dipakai di baris lain
+    const usedElsewhere = new Set();
+    q.rows.forEach((otherRow, idx) => {
+      if (idx !== rIdx && answers[otherRow.entryId]) {
+        usedElsewhere.add(answers[otherRow.entryId]);
+      }
+    });
+
+    document.getElementById('sheetContext').innerHTML = `<span style="color:var(--muted); font-size:12px; display:block;">Pernyataan ${rIdx + 1}:</span>${esc(row.label)}`;
+
+    let optsHtml = q.columns.map((col, ci) => {
+      const sel = cur === col ? 'selected' : '';
+      const isUsed = usedElsewhere.has(col);
+      return `<div class="sheet-opt ${sel}" onclick="pickGridOption(${qIdx}, ${rIdx}, ${ci}); closeGridSheet();">
+        <div class="sheet-opt-key">${sel ? '✓' : (huruf[ci] || (ci + 1))}</div>
+        <div class="sheet-opt-body">
+          <div>${esc(col)}</div>
+          ${isUsed && !sel ? '<span class="used-tag">Sudah dipilih di baris lain</span>' : ''}
+        </div>
+      </div>`;
+    }).join('');
+
+    if (cur) {
+      optsHtml += `<button class="btn btn-outline" style="width:100%; margin-top:6px; color:var(--danger); border-color:#fecaca;" onclick="clearGridOption(${qIdx}, ${rIdx}); closeGridSheet();">Kosongkan Pilihan Baris Ini</button>`;
+    }
+
+    document.getElementById('sheetOptions').innerHTML = optsHtml;
+    document.getElementById('gridSheet').classList.add('open');
+  }
+
+  function closeGridSheet() {
+    document.getElementById('gridSheet').classList.remove('open');
+  }
+
+  function pickGridOption(qIdx, rIdx, cIdx) {
+    const q = quiz.soal[qIdx];
+    answers[q.rows[rIdx].entryId] = q.columns[cIdx];
+    saveLocal();
+    render();
+  }
+
+  function clearGridOption(qIdx, rIdx) {
+    const q = quiz.soal[qIdx];
+    delete answers[q.rows[rIdx].entryId];
+    saveLocal();
+    render();
   }
 
   function setIdentity(idx, val) {
@@ -491,36 +793,7 @@
   function pickText(qIdx, val) {
     answers[quiz.soal[qIdx].entryId] = val;
     saveLocal();
-  }
-
-  function selectChip(qIdx, cIdx) {
-    const q = quiz.soal[qIdx];
-    document.querySelectorAll('.chip').forEach(el => el.classList.remove('active'));
-    if (activeChip && activeChip.cIdx === cIdx) {
-      activeChip = null;
-      document.getElementById('tapGuide').textContent = '1. Tap pilihan jawaban di kotak biru, lalu 2. Tap kotak pasangan di bawahnya.';
-      return;
-    }
-    activeChip = { qIdx, cIdx, text: q.columns[cIdx] };
-    document.getElementById('chip_' + cIdx).classList.add('active');
-    document.getElementById('tapGuide').textContent = 'Terpilih: "' + q.columns[cIdx] + '" — Sekarang tap kotak pasangan di bawah!';
-  }
-
-  function tapSlot(qIdx, rIdx) {
-    const q = quiz.soal[qIdx];
-    const row = q.rows[rIdx];
-    if (activeChip) {
-      answers[row.entryId] = activeChip.text;
-      saveLocal();
-      render();
-    } else if (answers[row.entryId]) {
-      delete answers[row.entryId];
-      saveLocal();
-      render();
-    } else {
-      const guide = document.getElementById('tapGuide');
-      guide.textContent = 'Pilih salah satu tombol jawaban biru di atas dulu, lalu tap kotak ini.';
-    }
+    updateProgressUI();
   }
 
   function toggleCBGrid(qIdx, rIdx, cIdx) {
@@ -540,14 +813,22 @@
   function nextStep() { if (step < quiz.soal.length - 1) { step++; render(); } }
 
   function openNavModal() {
+    let terjawab = 0, jumRagu = 0, belum = 0;
     const grid = document.getElementById('numGrid');
     grid.innerHTML = quiz.soal.map((q, i) => {
       let cls = 'num-btn';
-      if (ragu[i]) cls += ' ragu';
-      else if (isQuestionAnswered(q)) cls += ' answered';
+      if (ragu[i]) { cls += ' ragu'; jumRagu++; }
+      else if (isQuestionAnswered(q)) { cls += ' answered'; terjawab++; }
+      else { belum++; }
       if (i === step) cls += ' current';
       return `<button class="${cls}" onclick="step=${i}; closeNavModal(); render();">${i + 1}</button>`;
     }).join('');
+
+    document.getElementById('navStats').innerHTML = `
+      <div class="stat-box"><div class="stat-num" style="color:var(--success);">${terjawab}</div><div class="stat-lbl">Terjawab</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--warning);">${jumRagu}</div><div class="stat-lbl">Ragu-ragu</div></div>
+      <div class="stat-box"><div class="stat-num" style="color:var(--muted);">${belum}</div><div class="stat-lbl">Belum</div></div>
+    `;
     document.getElementById('navModal').classList.add('open');
   }
   function closeNavModal() { document.getElementById('navModal').classList.remove('open'); }
@@ -565,7 +846,7 @@
       return;
     }
     document.getElementById('submitSummary').textContent =
-      `Terjawab ${terjawab} dari ${quiz.soal.length} soal. Pastikan semua jawaban sudah benar sebelum dikirim.`;
+      `Anda telah menjawab ${terjawab} dari ${quiz.soal.length} soal. Jawaban yang sudah dikirim tidak dapat diubah kembali.`;
     document.getElementById('submitModal').classList.add('open');
   }
   function closeSubmitModal() { document.getElementById('submitModal').classList.remove('open'); }
@@ -578,7 +859,7 @@
     if (isDemo) {
       setTimeout(() => {
         closeSubmitModal();
-        showDone('Mode Demo Selesai!', 'Tampilan dan navigasi berjalan normal. Siap dihubungkan ke Google Forms asli.');
+        showDone('Mode Demo Selesai!', 'Tampilan dan navigasi berjalan normal. Siap digunakan pada soal asli.');
       }, 400);
       return;
     }
@@ -605,22 +886,23 @@
       });
       try { localStorage.removeItem(storageKey); } catch(e) {}
       closeSubmitModal();
-      showDone('Jawaban Berhasil Dikirim!', 'Terima kasih telah menyelesaikan penilaian. Silakan tutup aplikasi atau ikuti arahan pengawas.');
+      showDone('Jawaban Berhasil Dikirim!', 'Terima kasih telah menyelesaikan penilaian. Silakan tutup halaman atau ikuti arahan pengawas.');
     } catch (e) {
       alert('Gagal mengirim jawaban. Periksa koneksi internet lalu coba klik kirim lagi.');
       btn.disabled = false;
-      btn.textContent = 'Ya, Kirim Sekarang';
+      btn.textContent = 'Ya, Kirim Jawaban';
     }
   }
 
   function showDone(title, msg) {
     document.getElementById('btnList').style.display = 'none';
     document.getElementById('footerBar').style.display = 'none';
+    document.getElementById('hdrSub').textContent = 'SELESAI';
     document.getElementById('app').innerHTML = `
       <div class="card center-msg">
-        <div style="font-size:46px; color:var(--success); margin-bottom:8px;">✓</div>
-        <h2 style="margin:0 0 8px;">${esc(title)}</h2>
-        <p style="color:var(--muted); margin:0;">${esc(msg)}</p>
+        <div style="width:64px; height:64px; border-radius:999px; background:var(--success-soft); color:var(--success); display:inline-flex; align-items:center; justify-content:center; font-size:32px; font-weight:700; margin-bottom:14px;">✓</div>
+        <h2 style="margin:0 0 8px; font-size:21px;">${esc(title)}</h2>
+        <p style="color:var(--text-sec); max-width:420px; margin:0 auto;">${esc(msg)}</p>
       </div>`;
   }
 
