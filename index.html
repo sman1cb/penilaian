@@ -116,6 +116,38 @@
       font-size: 13px; font-weight: 600; color: var(--text-sec);
       margin-bottom: 14px;
     }
+
+    /* Kotak Wacana / Bacaan */
+    .wacana-box {
+      background: #f8fafc;
+      border: 1.5px solid #cbd5e1;
+      border-left: 4px solid var(--primary);
+      border-radius: 12px;
+      margin-bottom: 14px;
+      overflow: hidden;
+    }
+    .wacana-head {
+      display: flex; justify-content: space-between; align-items: center; gap: 10px;
+      padding: 10px 12px; background: #eff6ff;
+      border-bottom: 1px solid var(--primary-border);
+      cursor: pointer;
+    }
+    .wacana-title {
+      font-size: 13.5px; font-weight: 700; color: var(--primary-dark); flex: 1;
+      line-height: 1.3;
+    }
+    .wacana-toggle {
+      background: #fff; color: var(--primary);
+      border: 1px solid var(--primary-border);
+      border-radius: 7px; padding: 4px 9px;
+      font-size: 12px; font-weight: 700; cursor: pointer; flex-shrink: 0;
+    }
+    .wacana-body {
+      padding: 12px 14px;
+      font-size: var(--opt-size); line-height: 1.65;
+      color: var(--text); word-wrap: break-word;
+    }
+
     .q-title { font-size: var(--q-size); font-weight: 600; color: var(--text); margin: 0 0 12px; word-wrap: break-word; }
     .q-desc { font-size: 13.5px; color: var(--text-sec); margin: -4px 0 14px; word-wrap: break-word; }
     .req { color: var(--danger); margin-left: 3px; }
@@ -624,6 +656,15 @@
     syncModalBodyLock();
   }
 
+  function toggleWacana(idx) {
+    const body = document.getElementById('wacanaBody_' + idx);
+    const btn = document.getElementById('wacanaBtn_' + idx);
+    if (!body || !btn) return;
+    const hidden = body.style.display === 'none';
+    body.style.display = hidden ? 'block' : 'none';
+    btn.textContent = hidden ? 'Sembunyikan ▴' : 'Tampilkan ▾';
+  }
+
   function cycleFontSize() {
     fontStep = (fontStep + 1) % FONT_PRESETS.length;
     document.documentElement.style.setProperty('--q-size', FONT_PRESETS[fontStep].q);
@@ -751,8 +792,25 @@
       orderIndices.every(i => Number.isInteger(i) && i >= 0 && i < total);
 
     if (!validSavedOrder) {
-      const base = Array.from({ length: total }, (_, i) => i);
-      orderIndices = quiz.shuffleQuestions ? shuffleArray(base) : base;
+      if (!quiz.shuffleQuestions) {
+        orderIndices = Array.from({ length: total }, (_, i) => i);
+      } else {
+        // Acak di dalam masing-masing bagian agar soal dalam satu wacana tetap berdekatan
+        const groups = [];
+        const groupMap = {};
+        quiz.soal.forEach((q, i) => {
+          const key = (q.sectionId !== undefined && q.sectionId !== null) ? String(q.sectionId) : 'all';
+          if (!groupMap[key]) {
+            groupMap[key] = [];
+            groups.push(groupMap[key]);
+          }
+          groupMap[key].push(i);
+        });
+        orderIndices = [];
+        groups.forEach(g => {
+          orderIndices = orderIndices.concat(shuffleArray(g));
+        });
+      }
       saveSession(true);
     }
     orderedSoal = orderIndices.map(i => quiz.soal[i]);
@@ -990,6 +1048,46 @@
     return { cls, html };
   }
 
+  function renderWacana(q) {
+    let html = '';
+    const sec = (quiz.sections && q.sectionId !== undefined) ? quiz.sections[q.sectionId] : null;
+    const secTitle = (sec && sec.title) || q.sectionTitle || '';
+    const secDesc = (sec && sec.desc) || q.sectionDesc || '';
+
+    let boxIdx = 0;
+    if (secDesc) {
+      html += `<div class="wacana-box">
+        <div class="wacana-head" onclick="toggleWacana(${boxIdx})">
+          <span class="wacana-title">${esc(secTitle || 'Wacana / Bacaan')}</span>
+          <button type="button" id="wacanaBtn_${boxIdx}" class="wacana-toggle">Sembunyikan ▴</button>
+        </div>
+        <div class="wacana-body" id="wacanaBody_${boxIdx}">${esc(secDesc)}</div>
+      </div>`;
+      boxIdx++;
+    } else if (secTitle) {
+      html += `<div class="sec-banner">${esc(secTitle)}</div>`;
+    }
+
+    if (Array.isArray(q.passages) && q.passages.length > 0) {
+      q.passages.forEach(p => {
+        if (p.desc) {
+          html += `<div class="wacana-box">
+            <div class="wacana-head" onclick="toggleWacana(${boxIdx})">
+              <span class="wacana-title">${esc(p.title || 'Wacana / Bacaan')}</span>
+              <button type="button" id="wacanaBtn_${boxIdx}" class="wacana-toggle">Sembunyikan ▴</button>
+            </div>
+            <div class="wacana-body" id="wacanaBody_${boxIdx}">${esc(p.desc)}</div>
+          </div>`;
+          boxIdx++;
+        } else if (p.title) {
+          html += `<div class="sec-banner">${esc(p.title)}</div>`;
+        }
+      });
+    }
+
+    return html;
+  }
+
   function renderQuestionImages(q) {
     const imgs = [];
     if (Array.isArray(q.images)) {
@@ -1067,7 +1165,7 @@
         <span class="badge-num">Nomor ${step + 1} / ${total}</span>
         <span class="badge-type">${TYPE_LABELS[q.type] || 'Soal'}</span>
       </div>
-      ${q.sectionTitle ? `<div class="sec-banner">${esc(q.sectionTitle)}</div>` : ''}
+      ${renderWacana(q)}
       ${renderQuestionImages(q)}
       <div class="q-title">${esc(q.title)}${q.required ? '<span class="req">*</span>' : ''}</div>
       ${q.description ? `<div class="q-desc">${esc(q.description)}</div>` : ''}`;
