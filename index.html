@@ -44,7 +44,6 @@
     }
     body.modal-open { overflow: hidden; }
     body.kb-open { padding-bottom: 55vh; }
-    #submitModal.kb-modal { align-items: flex-start; padding-top: 24px; }
 
     /* Header */
     header {
@@ -76,8 +75,17 @@
     .progress-track { width: 100%; height: 4px; background: rgba(255,255,255,0.2); }
     .progress-fill { height: 100%; width: 0%; background: #34d399; transition: width 0.25s ease; }
 
-    /* Container & Card */
+    /* Container, Kop & Card */
     .container { max-width: 780px; margin: 16px auto; padding: 0 14px; }
+    .kop-card {
+      background: #ffffff; border-radius: 16px; padding: 8px;
+      border: 1px solid var(--border);
+      box-shadow: 0 1px 4px rgba(15, 23, 42, 0.04);
+      margin-bottom: 12px; overflow: hidden;
+    }
+    .kop-img {
+      width: 100%; height: auto; display: block; border-radius: 10px;
+    }
     .card {
       background: var(--card); border-radius: 16px; padding: 20px;
       border: 1px solid var(--border);
@@ -281,6 +289,7 @@
     }
     .modal-bg.open { display: flex; }
     .modal-bg.sheet-mode { align-items: flex-end; padding: 0; }
+    #submitModal { align-items: flex-start; padding-top: 28px; }
     .modal-box {
       background: #fff; border-radius: 18px; width: 100%; max-width: 460px;
       max-height: 85vh; overflow-y: auto; -webkit-overflow-scrolling: touch; padding: 20px;
@@ -466,15 +475,15 @@
   </div>
 </div>
 
-<!-- Modal Konfirmasi & Token Ujian -->
-<div class="modal-bg" id="submitModal" onclick="if(event.target===this) closeSubmitModal()">
+<!-- Modal Konfirmasi & Token Ujian (Terkunci dari klik backdrop agar tidak tertutup saat mengetik token) -->
+<div class="modal-bg" id="submitModal">
   <div class="modal-box">
     <strong style="font-size:17px;">Konfirmasi Pengiriman</strong>
     <p id="submitSummary" style="font-size:14px; color:var(--text-sec); margin:8px 0 12px;"></p>
     <div id="tokenContainer"></div>
     <div style="display:flex; gap:10px; justify-content:flex-end; margin-top:16px;">
-      <button class="btn btn-outline" onclick="closeSubmitModal()">Cek Lagi</button>
-      <button class="btn btn-success" id="btnConfirmSend" onclick="doSubmit()">Kirim Jawaban ✓</button>
+      <button type="button" class="btn btn-outline" onclick="closeSubmitModal()">Cek Lagi</button>
+      <button type="button" class="btn btn-success" id="btnConfirmSend" onclick="doSubmit()">Kirim Jawaban ✓</button>
     </div>
   </div>
 </div>
@@ -672,6 +681,9 @@
     if (!soalFile) {
       document.getElementById('hdrTitle').textContent = 'Portal Penilaian CBT';
       document.getElementById('app').innerHTML = `
+        <div class="kop-card" id="kopCard">
+          <img src="kop.png" alt="Kop Sekolah" class="kop-img" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='kop.jpg';}else{document.getElementById('kopCard').style.display='none';}">
+        </div>
         <div class="card center-msg">
           <h2 style="margin:0 0 8px; font-size:20px;">Portal Penilaian Siap</h2>
           <p style="color:var(--text-sec); max-width:420px; margin:0 auto;">Silakan buka tautan ujian melalui aplikasi resmi sekolah.</p>
@@ -973,7 +985,10 @@
       btnList.style.display = 'none';
       footer.style.display = 'none';
       document.getElementById('hdrSub').textContent = 'DATA PESERTA';
-      let html = `<div class="card">
+      let html = `<div class="kop-card" id="kopCard">
+        <img src="kop.png" alt="Kop Sekolah" class="kop-img" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='kop.jpg';}else{document.getElementById('kopCard').style.display='none';}">
+      </div>
+      <div class="card">
         <div class="badge-num" style="display:inline-block; margin-bottom:10px;">IDENTITAS PESERTA</div>
         <h2 style="margin:0 0 6px; font-size:20px;">${esc(quiz.title)}</h2>
         ${quiz.description ? `<p class="q-desc" style="margin-top:4px;">${esc(quiz.description)}</p>` : ''}
@@ -1557,8 +1572,7 @@
     syncModalBodyLock();
   }
   function closeSubmitModal() {
-    const sm = document.getElementById('submitModal');
-    sm.classList.remove('open', 'kb-modal');
+    document.getElementById('submitModal').classList.remove('open');
     syncModalBodyLock();
   }
 
@@ -1651,11 +1665,7 @@
     if (!el || (el.tagName !== 'INPUT' && el.tagName !== 'TEXTAREA')) return;
     if (kbBlurTimer) { clearTimeout(kbBlurTimer); kbBlurTimer = null; }
 
-    const inSubmitModal = el.closest('#submitModal');
-    if (inSubmitModal) {
-      inSubmitModal.classList.add('kb-modal');
-      return;
-    }
+    if (el.closest('#submitModal')) return;
 
     document.body.classList.add('kb-open');
     const geserKeAtas = () => {
@@ -1676,8 +1686,6 @@
       const active = document.activeElement;
       if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA')) return;
       document.body.classList.remove('kb-open');
-      const sm = document.getElementById('submitModal');
-      if (sm) sm.classList.remove('kb-modal');
     }, 250);
   });
 
