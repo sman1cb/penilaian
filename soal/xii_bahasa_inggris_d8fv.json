@@ -1,0 +1,787 @@
+{
+  "title": "ASESMEN SUMATIF AKHIR SEMESTER",
+  "description": "MATA PELAJARAN     : BAHASA INGGRIS\nKELAS                               : XII\nTAHUN PELAJARAN   : 2026-2027\n\nTATA CARA MENGERJAKAN ASAS :\n1. Sebelum memulai penilaian marilah membaca doa menurut agama dan kepercayaan masing-masing.\n2. Ulangan dapat dikerjakan menggunakan smartphone\n3. Pastikan kalian memiliki aplikasi sekolah terbaru\n4. Lengkapi isian biodata diri seperti nama lengkap dan kelas, gunakan huruf KAPITAL. \n5. Silahkan kerjakan soal ASAS  \n6. Link soal akan ditutup sesuai dengan waktu yang telah ditentukan.\n7. Jika sudah selesai mengerjakan, jangan lupa untuk klik tombol kirim.\n8. Selamat mengerjakan.\n\n\"Menyontek akan membawamu semakin dalam ke jurang kebodohan, jadi kalian harus malu jika mendapat nilai tinggi tapi hasil menyontek\".",
+  "formAction": "https://docs.google.com/forms/d/e/1FAIpQLSdkeRgfSJOF_10Ma6n1-6-qZ1pXrWVx5xaWWyG-Z8IDNnaXRA/formResponse",
+  "pageHistory": "0,1",
+  "shuffleQuestions": true,
+  "sections": {
+    "1": {
+      "title": "Choose the Correct Answers",
+      "desc": ""
+    }
+  },
+  "identitas": [
+    {
+      "title": "Name",
+      "description": "",
+      "type": "TEXT",
+      "entryId": "entry.1059641202",
+      "required": true
+    },
+    {
+      "title": "Class",
+      "description": "",
+      "type": "LIST",
+      "entryId": "entry.750194701",
+      "choices": [
+        "XII-A",
+        "XII-B",
+        "XII-C",
+        "XII-D",
+        "XII-E",
+        "XII-F",
+        "XII-G",
+        "XII-H",
+        "XII-I",
+        "XII-J",
+        "XII-K"
+      ],
+      "required": true
+    },
+    {
+      "title": "PARTICIPANTS'S NUMBER",
+      "description": "",
+      "type": "TEXT",
+      "entryId": "entry.1622360385",
+      "required": true
+    }
+  ],
+  "soal": [
+    {
+      "title": "Empowering Village with Downpour for Sustainable Living\n                In a cozy village named Aqua Heaven-surrounded  by green hills, there was a special blessing . The village was given with lots of water. The villagers saw its potential and decided to use it in smart ways. With the help of the leader and everyone working together, they used the water for farming and fishing. The village became famous for its beauty and attracted tourists.\n                Even though the village was doing well with water projects, the leader noticed that some homes still did not have electricity. To fix this,  they came up with an idea to use the power of water current-they named it hydropower. They wanted to set up small generators in the rivers to make electricity. The community liked the plan because it would bring light to dark homes and make the village more sustainable.\n                With help from local experts, they carefully set up the hydropower   project. Turbines in the water turned the energy from flowing water into electricity. It surprisingly worked well! Homes that used to have no lights now had electricity, making life better for everyone.\n                The success of the hydropower project did not only lit up homes, but also brought hope to the villagers. People who did not have electricity before now had the same benefits as others. The whole village got better with more jobs and a higher quality of life.\n                The village’s journey from having lots of water to using it wisely and then making hydropower became an inspiration for nearby villages. It shows us how nature and technology can work together, and how a united community can make positive changes for everyone.\n1.       What issue did the leader notice in Aqua-heaven despite the success of water projects?",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.674641152",
+      "choices": [
+        "Lack of water resources",
+        "Insufficient sustainable",
+        "The limitation of water use",
+        "No access to clean water",
+        "Lack of electricity in several houses"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Empowering Village with Downpour for Sustainable Living\n                In a cozy village named Aqua Heaven-surrounded  by green hills, there was a special blessing . The village was given with lots of water. The villagers saw its potential and decided to use it in smart ways. With the help of the leader and everyone working together, they used the water for farming and fishing. The village became famous for its beauty and attracted tourists.\n                Even though the village was doing well with water projects, the leader noticed that some homes still did not have electricity. To fix this,  they came up with an idea to use the power of water current-they named it hydropower. They wanted to set up small generators in the rivers to make electricity. The community liked the plan because it would bring light to dark homes and make the village more sustainable.\n                With help from local experts, they carefully set up the hydropower   project. Turbines in the water turned the energy from flowing water into electricity. It surprisingly worked well! Homes that used to have no lights now had electricity, making life better for everyone.\n                The success of the hydropower project did not only lit up homes, but also brought hope to the villagers. People who did not have electricity before now had the same benefits as others. The whole village got better with more jobs and a higher quality of life.\n                The village’s journey from having lots of water to using it wisely and then making hydropower became an inspiration for nearby villages. It shows us how nature and technology can work together, and how a united community can make positive changes for everyone.\n2.       Tick (√) T if the statement is true or F if the statement is false.",
+      "description": "",
+      "type": "GRID",
+      "columns": [
+        "TRUE",
+        "FALSE"
+      ],
+      "rows": [
+        {
+          "label": "Aqua Heaven was surrounded by mountains",
+          "entryId": "entry.478127756"
+        },
+        {
+          "label": "The villagers decided to use water for farming and fishing",
+          "entryId": "entry.844092058"
+        },
+        {
+          "label": "The leader decided to use solar power to generate electricity within the village",
+          "entryId": "entry.667781436"
+        },
+        {
+          "label": "The hydropower project had been impactful on the quality of the villagers’ lives",
+          "entryId": "entry.943505687"
+        },
+        {
+          "label": "The advancement of technology in empowering water resources made the villagers lack of job opportunities",
+          "entryId": "entry.1903608186"
+        }
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Empowering Village with Downpour for Sustainable Living\n                In a cozy village named Aqua Heaven-surrounded  by green hills, there was a special blessing . The village was given with lots of water. The villagers saw its potential and decided to use it in smart ways. With the help of the leader and everyone working together, they used the water for farming and fishing. The village became famous for its beauty and attracted tourists.\n                Even though the village was doing well with water projects, the leader noticed that some homes still did not have electricity. To fix this,  they came up with an idea to use the power of water current-they named it hydropower. They wanted to set up small generators in the rivers to make electricity. The community liked the plan because it would bring light to dark homes and make the village more sustainable.\n                With help from local experts, they carefully set up the hydropower   project. Turbines in the water turned the energy from flowing water into electricity. It surprisingly worked well! Homes that used to have no lights now had electricity, making life better for everyone.\n                The success of the hydropower project did not only lit up homes, but also brought hope to the villagers. People who did not have electricity before now had the same benefits as others. The whole village got better with more jobs and a higher quality of life.\n                The village’s journey from having lots of water to using it wisely and then making hydropower became an inspiration for nearby villages. It shows us how nature and technology can work together, and how a united community can make positive changes for everyone.\n 3. Match column A and column B",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Orientation",
+        "Complication",
+        "Resolution",
+        "Coda"
+      ],
+      "rows": [
+        {
+          "label": " With help from local experts, they carefully set up the hydropower   project. Turbines in the water turned the energy from flowing water nto electricity. It surprisingly worked well!",
+          "entryId": "entry.1736810169"
+        },
+        {
+          "label": "It shows us how nature and technology can work together, and how a united community can make positive changes for everyone.",
+          "entryId": "entry.170064618"
+        },
+        {
+          "label": " In a cozy village named Aqua Heaven-surrounded  by green hills, there was a special blessing . The village was given with lots of water.",
+          "entryId": "entry.1917952717"
+        },
+        {
+          "label": " Even though the village was doing well with water projects, the leader noticed that some homes still did not have electricity",
+          "entryId": "entry.1530144933"
+        }
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Empowering Village with Downpour for Sustainable Living\n                In a cozy village named Aqua Heaven-surrounded  by green hills, there was a special blessing . The village was given with lots of water. The villagers saw its potential and decided to use it in smart ways. With the help of the leader and everyone working together, they used the water for farming and fishing. The village became famous for its beauty and attracted tourists.\n                Even though the village was doing well with water projects, the leader noticed that some homes still did not have electricity. To fix this,  they came up with an idea to use the power of water current-they named it hydropower. They wanted to set up small generators in the rivers to make electricity. The community liked the plan because it would bring light to dark homes and make the village more sustainable.\n                With help from local experts, they carefully set up the hydropower   project. Turbines in the water turned the energy from flowing water into electricity. It surprisingly worked well! Homes that used to have no lights now had electricity, making life better for everyone.\n                The success of the hydropower project did not only lit up homes, but also brought hope to the villagers. People who did not have electricity before now had the same benefits as others. The whole village got better with more jobs and a higher quality of life.\n                The village’s journey from having lots of water to using it wisely and then making hydropower became an inspiration for nearby villages. It shows us how nature and technology can work together, and how a united community can make positive changes for everyone.\n4. Turbines in the water turned the energy from  ………………  into electricity.",
+      "description": "",
+      "type": "TEXT",
+      "entryId": "entry.1957802371",
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Empowering Village with Downpour for Sustainable Living\n                In a cozy village named Aqua Heaven-surrounded  by green hills, there was a special blessing . The village was given with lots of water. The villagers saw its potential and decided to use it in smart ways. With the help of the leader and everyone working together, they used the water for farming and fishing. The village became famous for its beauty and attracted tourists.\n                Even though the village was doing well with water projects, the leader noticed that some homes still did not have electricity. To fix this,  they came up with an idea to use the power of water current-they named it hydropower. They wanted to set up small generators in the rivers to make electricity. The community liked the plan because it would bring light to dark homes and make the village more sustainable.\n                With help from local experts, they carefully set up the hydropower   project. Turbines in the water turned the energy from flowing water into electricity. It surprisingly worked well! Homes that used to have no lights now had electricity, making life better for everyone.\n                The success of the hydropower project did not only lit up homes, but also brought hope to the villagers. People who did not have electricity before now had the same benefits as others. The whole village got better with more jobs and a higher quality of life.\n                The village’s journey from having lots of water to using it wisely and then making hydropower became an inspiration for nearby villages. It shows us how nature and technology can work together, and how a united community can make positive changes for everyone.\n5. What are the benefits of hydropower for villagers?\nChoose  3  correct answer. Click on every correct answer.",
+      "description": "",
+      "type": "CHECKBOX",
+      "entryId": "entry.2048665076",
+      "choices": [
+        "hydropower project lit up homes.",
+        "The whole village got better with more jobs",
+        "Hydropower is cheap for villagers.",
+        "The villagers lack water sources",
+        "The villagers got higher quality of life."
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Once upon a time in a humble city, the people decided to switch things up. Instead of using old, dirty ways to power their homes, they chose something cool. They named it solar panels as sunny catchers. During the day, they grab sunlight and turn it into electricity. This clean energy lit up the city without any of the smoke or noise.\n                Rows of solar panels like shiny soldiers standing on the outskirts of the city. Even the roofs of houses joined the party, with special tiles that saved sunlight for later. The place sparkled with a new kind of energy, all thanks to the power of the sun. the leader of this solar party was Mayor Alia. She knew that not everyone was on board with these changes, so she worked hard to teach everyone why it mattered. She explained that using the sun’s energy was not only good for the city but also for our big home, Earth.\n                As things changed, the city started thinking differently. Kids learned that they were like little superheroes for the Earth. Even the older folks, who were used to the old ways, began to see how great the solar panel were. News about this marvelous place spread like wildfire. People from other places came to check out the solar panels and learned from the residents. The humble city became famous for showing that taking care of the planet wasn’t hard--it just needed community working together.\n                In the end, the city with the solar panels became shining example. It proved that even in the tiniest places, big changes can happen when people decide to protect the Earth. And so, the little city and its solar panels has became a tale of how everyone can make a difference, one sunny idea at a time for a brighter future. \n6 .Tick (√)  the statement  TRUE or FALSE ",
+      "description": "",
+      "type": "GRID",
+      "columns": [
+        "TRUE",
+        "FALSE"
+      ],
+      "rows": [
+        {
+          "label": "The city initially utilized the old methods to power their homes",
+          "entryId": "entry.1209243773"
+        },
+        {
+          "label": "The residents built solar panels on their own houses",
+          "entryId": "entry.859611589"
+        },
+        {
+          "label": "The residents should thank Miss Alia who initiated the significant changes into their lives",
+          "entryId": "entry.810191714"
+        },
+        {
+          "label": "All the residents agreed with Miss Alia’s idea of building solar panels since the beginning",
+          "entryId": "entry.1482602343"
+        },
+        {
+          "label": "The residents spread their innovation by presenting it in other villages.",
+          "entryId": "entry.2036216877"
+        }
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Once upon a time in a humble city, the people decided to switch things up. Instead of using old, dirty ways to power their homes, they chose something cool. They named it solar panels as sunny catchers. During the day, they grab sunlight and turn it into electricity. This clean energy lit up the city without any of the smoke or noise.\n                Rows of solar panels like shiny soldiers standing on the outskirts of the city. Even the roofs of houses joined the party, with special tiles that saved sunlight for later. The place sparkled with a new kind of energy, all thanks to the power of the sun. the leader of this solar party was Mayor Alia. She knew that not everyone was on board with these changes, so she worked hard to teach everyone why it mattered. She explained that using the sun’s energy was not only good for the city but also for our big home, Earth.\n                As things changed, the city started thinking differently. Kids learned that they were like little superheroes for the Earth. Even the older folks, who were used to the old ways, began to see how great the solar panel were. News about this marvelous place spread like wildfire. People from other places came to check out the solar panels and learned from the residents. The humble city became famous for showing that taking care of the planet wasn’t hard--it just needed community working together.\n                In the end, the city with the solar panels became shining example. It proved that even in the tiniest places, big changes can happen when people decide to protect the Earth. And so, the little city and its solar panels has became a tale of how everyone can make a difference, one sunny idea at a time for a brighter future.\n 7.       What can you conclude about solar panels? Tick 3 (three) correct answer.",
+      "description": "",
+      "type": "CHECKBOX",
+      "entryId": "entry.100004219",
+      "choices": [
+        "They contribute to save Earth",
+        "They create energy without polluting the air",
+        "They open opportunities to work in power plants",
+        "They trigger young villagers to keep innovating and creative",
+        "They work very well when the day is sunny"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Once upon a time in a humble city, the people decided to switch things up. Instead of using old, dirty ways to power their homes, they chose something cool. They named it solar panels as sunny catchers. During the day, they grab sunlight and turn it into electricity. This clean energy lit up the city without any of the smoke or noise.\n                Rows of solar panels like shiny soldiers standing on the outskirts of the city. Even the roofs of houses joined the party, with special tiles that saved sunlight for later. The place sparkled with a new kind of energy, all thanks to the power of the sun. the leader of this solar party was Mayor Alia. She knew that not everyone was on board with these changes, so she worked hard to teach everyone why it mattered. She explained that using the sun’s energy was not only good for the city but also for our big home, Earth.\n                As things changed, the city started thinking differently. Kids learned that they were like little superheroes for the Earth. Even the older folks, who were used to the old ways, began to see how great the solar panel were. News about this marvelous place spread like wildfire. People from other places came to check out the solar panels and learned from the residents. The humble city became famous for showing that taking care of the planet wasn’t hard--it just needed community working together.\n                In the end, the city with the solar panels became shining example. It proved that even in the tiniest places, big changes can happen when people decide to protect the Earth. And so, the little city and its solar panels has became a tale of how everyone can make a difference, one sunny idea at a time for a brighter future.\n 8. The humble city became famous for showing that taking care of the planet\nThe word “humble” is synonymous with",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1632238819",
+      "choices": [
+        "crumble",
+        "terrible",
+        "couple",
+        "triple",
+        "unpretentious"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Once upon a time in a humble city, the people decided to switch things up. Instead of using old, dirty ways to power their homes, they chose something cool. They named it solar panels as sunny catchers. During the day, they grab sunlight and turn it into electricity. This clean energy lit up the city without any of the smoke or noise.\n                Rows of solar panels like shiny soldiers standing on the outskirts of the city. Even the roofs of houses joined the party, with special tiles that saved sunlight for later. The place sparkled with a new kind of energy, all thanks to the power of the sun. the leader of this solar party was Mayor Alia. She knew that not everyone was on board with these changes, so she worked hard to teach everyone why it mattered. She explained that using the sun’s energy was not only good for the city but also for our big home, Earth.\n                As things changed, the city started thinking differently. Kids learned that they were like little superheroes for the Earth. Even the older folks, who were used to the old ways, began to see how great the solar panel were. News about this marvelous place spread like wildfire. People from other places came to check out the solar panels and learned from the residents. The humble city became famous for showing that taking care of the planet wasn’t hard--it just needed community working together.\n                In the end, the city with the solar panels became shining example. It proved that even in the tiniest places, big changes can happen when people decide to protect the Earth. And so, the little city and its solar panels has became a tale of how everyone can make a difference, one sunny idea at a time for a brighter future.\n 9.       Rows of solar panels like shiny soldiers ………………..  the outskirts of the city",
+      "description": "",
+      "type": "TEXT",
+      "entryId": "entry.1990435916",
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Cryptocurrency Phenomenon : Proceed With Caution\n                Cryptocurrency, like Bitcoin and Ethereum, has gained widespread attention as a current and exciting form of funding. While the potential for high returns might be tempting, it is essential to recognize that investing in cryptocurrencies comes with inherent risks that should not be overlooked.\n                One of the primary reasons why cryptocurrency is risky is its extreme price volatility. Unlike traditional investments such as stocks or bonds, the value of cryptocurrencies can swing dramatically in a short period. This volatility can lead to substantial gains, but it also exposes investors to the risk of significant losses.\n                Cryptocurrencies operate in a decentralized environment, meaning they are not regulated by any central authority like a government or financial institution. While this decentralization is one of the key features of cryptoccurencies, it also means that there is less oversight and protection for investors. Without regulation, fraudulent activities, scams, and market manipulation become more prevalent.\n                The security of cryptocurrency investments is another critical issue. Hacking and cyber-attacks on crypyocurrency exchanges have been on the rise. When these platforms are compromised, investors can lose their holdings, leading to financial losses. The lack of insurance coverage for cryptocurrency holdings further exacerbates the risk.\n                While the potential for significant returns might be engaging, it is crucial to approach cryptocuurency investments with caution. The high volatility, lack of regulation, and security concerns, contribute to the inherent risks associated with this emerging asset class. Investors should thoroughly research and understand these risks before diving into the world of cryptocurrencies, making informed decisions to safeguard their financial well-being.    \n10.       The text talks about…",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1779997719",
+      "choices": [
+        "The benefits of investing in cryptocurrencies",
+        "The risks associated with cryptocurrency investments",
+        "The potential for high returns in a cryptocurrency market",
+        "A caution to avoid investing in cryptocurrency",
+        "The decentralized and intransparent features of cryptocurrencies"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Cryptocurrency Phenomenon : Proceed With Caution\n                Cryptocurrency, like Bitcoin and Ethereum, has gained widespread attention as a current and exciting form of funding. While the potential for high returns might be tempting, it is essential to recognize that investing in cryptocurrencies comes with inherent risks that should not be overlooked.\n                One of the primary reasons why cryptocurrency is risky is its extreme price volatility. Unlike traditional investments such as stocks or bonds, the value of cryptocurrencies can swing dramatically in a short period. This volatility can lead to substantial gains, but it also exposes investors to the risk of significant losses.\n                Cryptocurrencies operate in a decentralized environment, meaning they are not regulated by any central authority like a government or financial institution. While this decentralization is one of the key features of cryptoccurencies, it also means that there is less oversight and protection for investors. Without regulation, fraudulent activities, scams, and market manipulation become more prevalent.\n                The security of cryptocurrency investments is another critical issue. Hacking and cyber-attacks on crypyocurrency exchanges have been on the rise. When these platforms are compromised, investors can lose their holdings, leading to financial losses. The lack of insurance coverage for cryptocurrency holdings further exacerbates the risk.\n                While the potential for significant returns might be engaging, it is crucial to approach cryptocuurency investments with caution. The high volatility, lack of regulation, and security concerns, contribute to the inherent risks associated with this emerging asset class. Investors should thoroughly research and understand these risks before diving into the world of cryptocurrencies, making informed decisions to safeguard their financial well-being.   \n 11.       Match the paragraphs and their suitable topics\n ",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Decentralization system and its lack of regulation",
+        "The outline of main risks associated  with crypto currency investments",
+        "Crypto currency as the new choice of investment",
+        "The riskiness of crypto currency investments",
+        "Little interest in  crypto currency investments",
+        "Security concern in crypto currency"
+      ],
+      "rows": [
+        {
+          "label": "Paragraph 1",
+          "entryId": "entry.1109746121"
+        },
+        {
+          "label": "Paragraph 2",
+          "entryId": "entry.642716709"
+        },
+        {
+          "label": "Paragraph 3",
+          "entryId": "entry.1387362003"
+        },
+        {
+          "label": "Paragraph 4",
+          "entryId": "entry.938510432"
+        },
+        {
+          "label": "Paragraph 5",
+          "entryId": "entry.2063462618"
+        }
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Cryptocurrency Phenomenon : Proceed With Caution\n                Cryptocurrency, like Bitcoin and Ethereum, has gained widespread attention as a current and exciting form of funding. While the potential for high returns might be tempting, it is essential to recognize that investing in cryptocurrencies comes with inherent risks that should not be overlooked.\n                One of the primary reasons why cryptocurrency is risky is its extreme price volatility. Unlike traditional investments such as stocks or bonds, the value of cryptocurrencies can swing dramatically in a short period. This volatility can lead to substantial gains, but it also exposes investors to the risk of significant losses.\n                Cryptocurrencies operate in a decentralized environment, meaning they are not regulated by any central authority like a government or financial institution. While this decentralization is one of the key features of cryptoccurencies, it also means that there is less oversight and protection for investors. Without regulation, fraudulent activities, scams, and market manipulation become more prevalent.\n                The security of cryptocurrency investments is another critical issue. Hacking and cyber-attacks on crypyocurrency exchanges have been on the rise. When these platforms are compromised, investors can lose their holdings, leading to financial losses. The lack of insurance coverage for cryptocurrency holdings further exacerbates the risk.\n                While the potential for significant returns might be engaging, it is crucial to approach cryptocuurency investments with caution. The high volatility, lack of regulation, and security concerns, contribute to the inherent risks associated with this emerging asset class. Investors should thoroughly research and understand these risks before diving into the world of cryptocurrencies, making informed decisions to safeguard their financial well-being.   \n 12.       What is the primary reason  cryptocurrency is risky?",
+      "description": "",
+      "type": "TEXT",
+      "entryId": "entry.1576460211",
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "A Green Business Person\nAlika is a 20-year-old vocational school graduate who studied Renewable Energy Technology. Today, she runs a successful eco-friendly start-up company in her hometown. Alika and her team design affordable solar-powered charging stations. People can easily find these stations in public parks and traditional night markets. To support the environment, she uses recycled plastics to build the station frames, and she installs smart sensors to prevent electricity waste.\n                Many local street vendors love using her solar stations. By using this technology, they can save money on electricity bills and replace their noisy generators. In addition, her innovative work successfully reduces air pollution and promotes clean energy in daily community activities.\n                However, running this green business is not always easy. Alike often faces serious challenges because high-quality solar cells are still very expensive and hard to find locally. Furthermore, she needs to educate older vendors who are still afraid of using new technology. To solve these problems, Alika actively creates simple tutorial videos on social media to show how safe and easy her products are.\n                She strongly believes that young tech professionals must create useful solutions for green environments and local economies. Fortunately, her hard work is paying off. Now, several small villages are interested in her project, so she must prepare more materials for the next months. She proves that young people can build successful businesses while protecting our planet at the same time.\n13    The writer wants to add a specific fact to the third paragraph to make Alika’s business challenge more persuasive, interesting, and informative for readers. Which fact is the most appropriate to add?",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1382338191",
+      "choices": [
+        "High-quality solar cells must be imported, which increases Alika’s production cost by 40%.",
+        "The price of regular electricity for commercial street vendors has risen over the past two years.",
+        "Local government data show that 75% of older street vendors prefer traditional ways of working.",
+        "Solar cell production in European countries has reached an all-time high due to advanced automation.",
+        "Many young vocational school graduates choose to work in big cities rather than their own hometown."
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "A Green Business Person\nAlika is a 20-year-old vocational school graduate who studied Renewable Energy Technology. Today, she runs a successful eco-friendly start-up company in her hometown. Alika and her team design affordable solar-powered charging stations. People can easily find these stations in public parks and traditional night markets. To support the environment, she uses recycled plastics to build the station frames, and she installs smart sensors to prevent electricity waste.\n                Many local street vendors love using her solar stations. By using this technology, they can save money on electricity bills and replace their noisy generators. In addition, her innovative work successfully reduces air pollution and promotes clean energy in daily community activities.\n                However, running this green business is not always easy. Alike often faces serious challenges because high-quality solar cells are still very expensive and hard to find locally. Furthermore, she needs to educate older vendors who are still afraid of using new technology. To solve these problems, Alika actively creates simple tutorial videos on social media to show how safe and easy her products are.\n                She strongly believes that young tech professionals must create useful solutions for green environments and local economies. Fortunately, her hard work is paying off. Now, several small villages are interested in her project, so she must prepare more materials for the next months. She proves that young people can build successful businesses while protecting our planet at the same time.\n14.       Which details from the text directly support the claim that Alika’s charging stations are designed with environmental sustainability in mind?\nChoose 2 correct answers",
+      "description": "",
+      "type": "CHECKBOX",
+      "entryId": "entry.1631224458",
+      "choices": [
+        "Alika uses recycled plastics to build the station frames.",
+        "Alike and her team design affordable charging stations.",
+        "People can easily find Alika’s stations in public parks.",
+        "Alika runs a successful eco-friendly start-up company.",
+        "Alika installs smart sensors to prevent electricity waste."
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "A Green Business Person\nAlika is a 20-year-old vocational school graduate who studied Renewable Energy Technology. Today, she runs a successful eco-friendly start-up company in her hometown. Alika and her team design affordable solar-powered charging stations. People can easily find these stations in public parks and traditional night markets. To support the environment, she uses recycled plastics to build the station frames, and she installs smart sensors to prevent electricity waste.\n                Many local street vendors love using her solar stations. By using this technology, they can save money on electricity bills and replace their noisy generators. In addition, her innovative work successfully reduces air pollution and promotes clean energy in daily community activities.\n                However, running this green business is not always easy. Alike often faces serious challenges because high-quality solar cells are still very expensive and hard to find locally. Furthermore, she needs to educate older vendors who are still afraid of using new technology. To solve these problems, Alika actively creates simple tutorial videos on social media to show how safe and easy her products are.\n                She strongly believes that young tech professionals must create useful solutions for green environments and local economies. Fortunately, her hard work is paying off. Now, several small villages are interested in her project, so she must prepare more materials for the next months. She proves that young people can build successful businesses while protecting our planet at the same time.\n15.       She strongly believes that young tech professionals must ….. useful solutions for green environments.",
+      "description": "",
+      "type": "TEXT",
+      "entryId": "entry.388462820",
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "A Green Business Person\nAlika is a 20-year-old vocational school graduate who studied Renewable Energy Technology. Today, she runs a successful eco-friendly start-up company in her hometown. Alika and her team design affordable solar-powered charging stations. People can easily find these stations in public parks and traditional night markets. To support the environment, she uses recycled plastics to build the station frames, and she installs smart sensors to prevent electricity waste.\n                Many local street vendors love using her solar stations. By using this technology, they can save money on electricity bills and replace their noisy generators. In addition, her innovative work successfully reduces air pollution and promotes clean energy in daily community activities.\n                However, running this green business is not always easy. Alike often faces serious challenges because high-quality solar cells are still very expensive and hard to find locally. Furthermore, she needs to educate older vendors who are still afraid of using new technology. To solve these problems, Alika actively creates simple tutorial videos on social media to show how safe and easy her products are.\n                She strongly believes that young tech professionals must create useful solutions for green environments and local economies. Fortunately, her hard work is paying off. Now, several small villages are interested in her project, so she must prepare more materials for the next months. She proves that young people can build successful businesses while protecting our planet at the same time.\n16.       Alika and her team design affordable solar-powered charging stations.\nWord “affordable” can be replaced by",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1303351775",
+      "choices": [
+        "Challenge",
+        "Build",
+        "Low-priced",
+        "Expensive",
+        "difficult"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "As the scientists delved deeper into their research, they discovered that the coastal town was facing an electric shortage due to its remote location. With traditional power sources limited, they realized the urgent need for alternative energy solutions to meet the growing electricity demand.\n        Determined to address the electric shortage and harness the untapped power of the ocean waves, the scientists set out to develop a wave power generator. However, they encountered a major challenge: finding a way to safely transmit the electricity generated by the waves back to shore without risking damage from the water.\n        Undeterred by the obstacles in their path, the scientists collaborated to create waterproof electric cables that could withstand the  harsh marine environment. After numerous experiments and prototypes, they successfully integrated these cables into their wave power generator, allowing for efficient and reliable transmission of electricity from the ocean waves to the shore.\n        With their wave power generator  successfully operational, the scientist were hailed as pioneers in renewable energy technology. The government recognized their innovative solution, patented their findings, and published it. The government also ensured that their invention would benefit not only their community but also future generations. As a token of appreciation for their groundbreaking work, the scientists were awarded medals of science, cementing their legacy as champions of sustainability and environmental stewardship.\n17.       What was the major challenge encountered by the scientists in developing the wave power generator?",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.744368814",
+      "choices": [
+        "Finding suitable land for installation.",
+        "Securing funding for the project.",
+        "Protecting the generator from vandalism",
+        "Transmitting electricity safely from the waves to the shore",
+        "Overcoming resistance from the local community."
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "As the scientists delved deeper into their research, they discovered that the coastal town was facing an electric shortage due to its remote location. With traditional power sources limited, they realized the urgent need for alternative energy solutions to meet the growing electricity demand.\n        Determined to address the electric shortage and harness the untapped power of the ocean waves, the scientists set out to develop a wave power generator. However, they encountered a major challenge: finding a way to safely transmit the electricity generated by the waves back to shore without risking damage from the water.\n        Undeterred by the obstacles in their path, the scientists collaborated to create waterproof electric cables that could withstand the  harsh marine environment. After numerous experiments and prototypes, they successfully integrated these cables into their wave power generator, allowing for efficient and reliable transmission of electricity from the ocean waves to the shore.\n        With their wave power generator  successfully operational, the scientist were hailed as pioneers in renewable energy technology. The government recognized their innovative solution, patented their findings, and published it. The government also ensured that their invention would benefit not only their community but also future generations. As a token of appreciation for their groundbreaking work, the scientists were awarded medals of science, cementing their legacy as champions of sustainability and environmental stewardship.\n18.       What recognition did the scientists probably receive for their work? Tick 2 (two) correct answers.",
+      "description": "",
+      "type": "CHECKBOX",
+      "entryId": "entry.7832786",
+      "choices": [
+        "Monetary compensation",
+        "Medals of science",
+        "International fame",
+        "Political positions",
+        "Copyright for their work"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "In a world where financial security is paramount, the method of storing money becomes crucial. Recent incidents highlight the risks associated with traditional cash hoarding methods, such as fire damage or insect infestation , prompting a re-evaluation of safekeeping practices.\n                One compelling reason to reconsider cash storage is the threat of physical damage. Fires and insects can destroy savings hidden at home, leaving individuals financially vulnerable.\n                Additionally, storing money in safe deposit boxes or banks offers protection against theft. Banks provide advanced security measures,  deterring burglary and ensuring peace of mind.\n                Furthermore, digital banking presents cyber security risks, making traditional banks a safer option for protecting  personal information and digital assets.\n                Lastly, storing money in banks encourages financial  responsibility by promoting active account monitoring and effective financial management.\n                To conclude, safeguarding money in secured places like banks offers enhanced security and fosters financial responsibility, making it a prudent choice in today’s uncertain times.\n21.       Why does the text suggest we keep money in safe deposit boxes or banks?",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1261545434",
+      "choices": [
+        "To encourage digital banking",
+        "To promote financial responsibility",
+        "To discourage traditional storage methods",
+        "To persuade people to go to a conventional bank",
+        "To provide protection against theft and enhanced security"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "In a world where financial security is paramount, the method of storing money becomes crucial. Recent incidents highlight the risks associated with traditional cash hoarding methods, such as fire damage or insect infestation , prompting a re-evaluation of safekeeping practices.\n                One compelling reason to reconsider cash storage is the threat of physical damage. Fires and insects can destroy savings hidden at home, leaving individuals financially vulnerable.\n                Additionally, storing money in safe deposit boxes or banks offers protection against theft. Banks provide advanced security measures,  deterring burglary and ensuring peace of mind.\n                Furthermore, digital banking presents cyber security risks, making traditional banks a safer option for protecting  personal information and digital assets.\n                Lastly, storing money in banks encourages financial  responsibility by promoting active account monitoring and effective financial management.\n                To conclude, safeguarding money in secured places like banks offers enhanced security and fosters financial responsibility, making it a prudent choice in today’s uncertain times.\n22.       Which statements are true based on the text? Tick 3 (three) correct statements.",
+      "description": "",
+      "type": "CHECKBOX",
+      "entryId": "entry.1609404386",
+      "choices": [
+        "One of the risks associated with traditional cash hoarding methods is insect infestation.",
+        "The text suggests that digital banking is entirely risk-free and doesn’t pose any cyber security threats.",
+        "Keeping money at home is not the safest option in the digital age.",
+        "Keeping money in safe deposit boxes or banks offers protection against theft.",
+        "Fires and insects cannot cause any harm to money kept in safe deposit boxes or banks."
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "In a world where financial security is paramount, the method of storing money becomes crucial. Recent incidents highlight the risks associated with traditional cash hoarding methods, such as fire damage or insect infestation , prompting a re-evaluation of safekeeping practices.\n                One compelling reason to reconsider cash storage is the threat of physical damage. Fires and insects can destroy savings hidden at home, leaving individuals financially vulnerable.\n                Additionally, storing money in safe deposit boxes or banks offers protection against theft. Banks provide advanced security measures,  deterring burglary and ensuring peace of mind.\n                Furthermore, digital banking presents cyber security risks, making traditional banks a safer option for protecting  personal information and digital assets.\n                Lastly, storing money in banks encourages financial  responsibility by promoting active account monitoring and effective financial management.\n                To conclude, safeguarding money in secured places like banks offers enhanced security and fosters financial responsibility, making it a prudent choice in today’s uncertain times.\n23.       Cyber security in digital banking offers security against _________________",
+      "description": "",
+      "type": "TEXT",
+      "entryId": "entry.1264161050",
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "In a world where financial security is paramount, the method of storing money becomes crucial. Recent incidents highlight the risks associated with traditional cash hoarding methods, such as fire damage or insect infestation , prompting a re-evaluation of safekeeping practices.\n                One compelling reason to reconsider cash storage is the threat of physical damage. Fires and insects can destroy savings hidden at home, leaving individuals financially vulnerable.\n                Additionally, storing money in safe deposit boxes or banks offers protection against theft. Banks provide advanced security measures,  deterring burglary and ensuring peace of mind.\n                Furthermore, digital banking presents cyber security risks, making traditional banks a safer option for protecting  personal information and digital assets.\n                Lastly, storing money in banks encourages financial  responsibility by promoting active account monitoring and effective financial management.\n                To conclude, safeguarding money in secured places like banks offers enhanced security and fosters financial responsibility, making it a prudent choice in today’s uncertain times.\n24.       How many arguments are there in the text?",
+      "description": "",
+      "type": "TEXT",
+      "entryId": "entry.241418714",
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "In a world where financial security is paramount, the method of storing money becomes crucial. Recent incidents highlight the risks associated with traditional cash hoarding methods, such as fire damage or insect infestation , prompting a re-evaluation of safekeeping practices.\n                One compelling reason to reconsider cash storage is the threat of physical damage. Fires and insects can destroy savings hidden at home, leaving individuals financially vulnerable.\n                Additionally, storing money in safe deposit boxes or banks offers protection against theft. Banks provide advanced security measures,  deterring burglary and ensuring peace of mind.\n                Furthermore, digital banking presents cyber security risks, making traditional banks a safer option for protecting  personal information and digital assets.\n                Lastly, storing money in banks encourages financial  responsibility by promoting active account monitoring and effective financial management.\n                To conclude, safeguarding money in secured places like banks offers enhanced security and fosters financial responsibility, making it a prudent choice in today’s uncertain times.\n25.       Match each paragraph with the topic of the paragraph",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Providing cyber security for digital banking",
+        "Protection against theft provided by safe deposit boxes",
+        "Safeguarding money in secure places",
+        "Cash storage to avoid physical damage",
+        "Promoting active account in monitoring a physical bank",
+        "The crucial of  the method of storing money."
+      ],
+      "rows": [
+        {
+          "label": "Paragraph 1",
+          "entryId": "entry.747327061"
+        },
+        {
+          "label": "Paragraph 2",
+          "entryId": "entry.1589127112"
+        },
+        {
+          "label": "Paragraph 3",
+          "entryId": "entry.1531543901"
+        },
+        {
+          "label": "Paragraph 4",
+          "entryId": "entry.425468817"
+        },
+        {
+          "label": "Paragraph 5",
+          "entryId": "entry.791931278"
+        },
+        {
+          "label": "Paragraph  6",
+          "entryId": "entry.1825857386"
+        }
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Mobile banking has become a convenient way  for many people to manage their money, but one aspect that often raises eyebrows is the administration fee for transferring money. While it might seem like a small amount, these fees can add up over time and impact the pockets of everyday users.\n                Firstly, it’s important to recognize that technology has made banking more-efficient. Mobile banking saves banks money by reducing the need for physical branches and paperwork. With these cost savings, one might wonder why users are still burdened with additional fees for simply transferring their own money.\n                Moreover, the administration fee can disproportionately affect those who rely on mobile banking for everyday transactions, including lower-income individuals and students. For them, every penny count, and these fees can make a dent in their limited budgets.\n                In the spirit of fairness, it’s reasonable to question why these fees exist when other industries have adapted to digital transactions without imposing extra charges. Online shopping and social media, for example, have seamlessly integrated digital processes without burdening users with additional fees.\n                To wrap things up, the administration fee for mobile banking transfers seems counterintuitive in an era where technology is supposed to make our lives more convenient and affordable. By re-evaluating these fees, banks could not only enhance the user experience but also contribute to financial inclusivity by making mobile banking truly accessible to everyone.\n \n26.       Tick (√) the statements True or False based on the text",
+      "description": "",
+      "type": "GRID",
+      "columns": [
+        "TRUE",
+        "FALSE"
+      ],
+      "rows": [
+        {
+          "label": "Mobile banking administration fees are often overlooked by users.",
+          "entryId": "entry.192292381"
+        },
+        {
+          "label": "The administration fee for mobile banking transfers affects everyone equally",
+          "entryId": "entry.145816120"
+        },
+        {
+          "label": "Online shopping and social media have integrated digital processes without imposing extra charges.",
+          "entryId": "entry.1723467086"
+        },
+        {
+          "label": "Mobile banking should be accessible to everyone  without additional fees",
+          "entryId": "entry.36864960"
+        },
+        {
+          "label": "Banks could enhance the user’s experience  by maintaining administration  fees",
+          "entryId": "entry.1880154713"
+        }
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Mobile banking has become a convenient way  for many people to manage their money, but one aspect that often raises eyebrows is the administration fee for transferring money. While it might seem like a small amount, these fees can add up over time and impact the pockets of everyday users.\n                Firstly, it’s important to recognize that technology has made banking more-efficient. Mobile banking saves banks money by reducing the need for physical branches and paperwork. With these cost savings, one might wonder why users are still burdened with additional fees for simply transferring their own money.\n                Moreover, the administration fee can disproportionately affect those who rely on mobile banking for everyday transactions, including lower-income individuals and students. For them, every penny count, and these fees can make a dent in their limited budgets.\n                In the spirit of fairness, it’s reasonable to question why these fees exist when other industries have adapted to digital transactions without imposing extra charges. Online shopping and social media, for example, have seamlessly integrated digital processes without burdening users with additional fees.\n                To wrap things up, the administration fee for mobile banking transfers seems counterintuitive in an era where technology is supposed to make our lives more convenient and affordable. By re-evaluating these fees, banks could not only enhance the user experience but also contribute to financial inclusivity by making mobile banking truly accessible to everyone.\n 27.       Match the ‘cause’ on the left and the correct ‘effect’ on the right.\n ",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Mobile banking has reduced the need for physical branches and paperwork, resulting in cost savings for banks.",
+        "This convenience has led to an increase in the  popularity of mobile banking among users.",
+        "Users may feel burdened by these additional fees,  impacting their financial situation over time.",
+        "Banks could potentially enhance the user experience and contribute to financial inclusively by making mobile banking more accessible to everyone",
+        "The administration fee from mobile banking is for paying the bank employees.",
+        "Users may question why mobile banking imposes additional fees when other digital platforms do not."
+      ],
+      "rows": [
+        {
+          "label": "Mobile banking has become a convenient way for many people to manage their money.",
+          "entryId": "entry.1901394173"
+        },
+        {
+          "label": "The administration fee for transferring money exists.",
+          "entryId": "entry.505337547"
+        },
+        {
+          "label": "Technology has made banking most efficient",
+          "entryId": "entry.354392369"
+        },
+        {
+          "label": "Other industries, such as online shopping and social media, have adapted to digital  transactions without imposing extra charges.",
+          "entryId": "entry.1536524265"
+        },
+        {
+          "label": "Re-evaluating administration fees for mobile banking transfers",
+          "entryId": "entry.1833998857"
+        }
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Mobile banking has become a convenient way  for many people to manage their money, but one aspect that often raises eyebrows is the administration fee for transferring money. While it might seem like a small amount, these fees can add up over time and impact the pockets of everyday users.\n                Firstly, it’s important to recognize that technology has made banking more-efficient. Mobile banking saves banks money by reducing the need for physical branches and paperwork. With these cost savings, one might wonder why users are still burdened with additional fees for simply transferring their own money.\n                Moreover, the administration fee can disproportionately affect those who rely on mobile banking for everyday transactions, including lower-income individuals and students. For them, every penny count, and these fees can make a dent in their limited budgets.\n                In the spirit of fairness, it’s reasonable to question why these fees exist when other industries have adapted to digital transactions without imposing extra charges. Online shopping and social media, for example, have seamlessly integrated digital processes without burdening users with additional fees.\n                To wrap things up, the administration fee for mobile banking transfers seems counterintuitive in an era where technology is supposed to make our lives more convenient and affordable. By re-evaluating these fees, banks could not only enhance the user experience but also contribute to financial inclusivity by making mobile banking truly accessible to everyone.\n28     it’s important to recognize that technology has made banking more-efficient.\nThe word “recognize” has synonymous with",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1008964350",
+      "choices": [
+        "acknowledge",
+        "knowledge",
+        "deny",
+        "ignore",
+        "avoid"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Mobile banking has become a convenient way  for many people to manage their money, but one aspect that often raises eyebrows is the administration fee for transferring money. While it might seem like a small amount, these fees can add up over time and impact the pockets of everyday users.\n                Firstly, it’s important to recognize that technology has made banking more-efficient. Mobile banking saves banks money by reducing the need for physical branches and paperwork. With these cost savings, one might wonder why users are still burdened with additional fees for simply transferring their own money.\n                Moreover, the administration fee can disproportionately affect those who rely on mobile banking for everyday transactions, including lower-income individuals and students. For them, every penny count, and these fees can make a dent in their limited budgets.\n                In the spirit of fairness, it’s reasonable to question why these fees exist when other industries have adapted to digital transactions without imposing extra charges. Online shopping and social media, for example, have seamlessly integrated digital processes without burdening users with additional fees.\n                To wrap things up, the administration fee for mobile banking transfers seems counterintuitive in an era where technology is supposed to make our lives more convenient and affordable. By re-evaluating these fees, banks could not only enhance the user experience but also contribute to financial inclusivity by making mobile banking truly accessible to everyone.\n29.       Technology can …………….  our lives more convenient and affordable",
+      "description": "",
+      "type": "TEXT",
+      "entryId": "entry.1529532392",
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Mobile banking has become a convenient way  for many people to manage their money, but one aspect that often raises eyebrows is the administration fee for transferring money. While it might seem like a small amount, these fees can add up over time and impact the pockets of everyday users.\n                Firstly, it’s important to recognize that technology has made banking more-efficient. Mobile banking saves banks money by reducing the need for physical branches and paperwork. With these cost savings, one might wonder why users are still burdened with additional fees for simply transferring their own money.\n                Moreover, the administration fee can disproportionately affect those who rely on mobile banking for everyday transactions, including lower-income individuals and students. For them, every penny count, and these fees can make a dent in their limited budgets.\n                In the spirit of fairness, it’s reasonable to question why these fees exist when other industries have adapted to digital transactions without imposing extra charges. Online shopping and social media, for example, have seamlessly integrated digital processes without burdening users with additional fees.\n                To wrap things up, the administration fee for mobile banking transfers seems counterintuitive in an era where technology is supposed to make our lives more convenient and affordable. By re-evaluating these fees, banks could not only enhance the user experience but also contribute to financial inclusivity by making mobile banking truly accessible to everyone.\n30.       conclusion of the texts are….(Tick 2 correct answers)",
+      "description": "",
+      "type": "CHECKBOX",
+      "entryId": "entry.1325617610",
+      "choices": [
+        "Mobile banking saves banks money by reducing the need for physical branches and paperwork.",
+        "the administration fee for mobile banking transfers seems counterintuitive in an technology era",
+        "For students, every penny count, and these fees can make a dent in their limited budgets.",
+        "banks could not only enhance the user experience but also contribute to financial inclusivity",
+        "In the spirit of fairness, it’s reasonable to question why these fees exist.",
+        "Opsi 1"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Online shopping revolutionizes consumer  purchases, offering unparalleled convenience and accessibility. Shoppers can effortlessly browse a wide range of products from home, eliminating the need to visit physical stores. This convenience is especially beneficial for busy people or those with limited mobility.\nFurthermore, online shopping provides a broader selection of products compared to traditional stores. Consumers can easily compare prices, read reviews, and access product information, empowering them to make informed decisions and fostering healthy competition among retailers.\nDespite its convenience, online shopping poses significant environmental challenges. The packaging and shipping processes generate carbon emissions and excessive waste. Free returns have also increased return rates, contributing to higher transportation and packaging waste.\nAdditionally, the focus on convenience over sustainability has reshaped consumer behavior. The demand for fast delivery options has led to rushed logistics and increased emissions from transportation, further expanding the environmental footprint of online shopping.\nWhile online shopping offers undeniable benefits, it’s crucial to address its environmental impact. Prioritizing sustainable practices, such as eco-friendly packaging and efficient transportation, is essential to reduce carbon emissions and waste. Consumers can also play a role by adopting mindful consumption habits and supporting sustainable retailers. Balancing convenience with environmental responsibility will ensure the continued growth of online shopping while minimizing its negative effects on the planet.\n \n31.       Match each paragraph of the text with a suitable topic",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Argument about environment challenges posed by online shopping",
+        "Argument about balancing convenience with environmental responsibility in online shopping",
+        "Argument about extensive product selection and informed decision making in online shopping",
+        "Argument about convenience and accessibility of online shopping",
+        "Argument about reshaping of consumer behavior and increased environmental footprint",
+        "Improved vehicle’s technologies"
+      ],
+      "rows": [
+        {
+          "label": "Paragraph 1",
+          "entryId": "entry.1130295629"
+        },
+        {
+          "label": "Paragraph 2",
+          "entryId": "entry.786941982"
+        },
+        {
+          "label": "Paragraph 3",
+          "entryId": "entry.1520759411"
+        },
+        {
+          "label": "Paragraph 4",
+          "entryId": "entry.1608557075"
+        },
+        {
+          "label": "Paragraph 5",
+          "entryId": "entry.879369613"
+        }
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Online shopping revolutionizes consumer  purchases, offering unparalleled convenience and accessibility. Shoppers can effortlessly browse a wide range of products from home, eliminating the need to visit physical stores. This convenience is especially beneficial for busy people or those with limited mobility.\nFurthermore, online shopping provides a broader selection of products compared to traditional stores. Consumers can easily compare prices, read reviews, and access product information, empowering them to make informed decisions and fostering healthy competition among retailers.\nDespite its convenience, online shopping poses significant environmental challenges. The packaging and shipping processes generate carbon emissions and excessive waste. Free returns have also increased return rates, contributing to higher transportation and packaging waste.\nAdditionally, the focus on convenience over sustainability has reshaped consumer behavior. The demand for fast delivery options has led to rushed logistics and increased emissions from transportation, further expanding the environmental footprint of online shopping.\nWhile online shopping offers undeniable benefits, it’s crucial to address its environmental impact. Prioritizing sustainable practices, such as eco-friendly packaging and efficient transportation, is essential to reduce carbon emissions and waste. Consumers can also play a role by adopting mindful consumption habits and supporting sustainable retailers. Balancing convenience with environmental responsibility will ensure the continued growth of online shopping while minimizing its negative effects on the planet.\n32.       According to the text, what do people usually consider before buying products online?",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1329166740",
+      "choices": [
+        "Interesting product pictures",
+        "Sellers’ response on messages",
+        "Affordable prices of the products",
+        "Font style used in the product description",
+        "Name of the street of the online store is located"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Online shopping revolutionizes consumer  purchases, offering unparalleled convenience and accessibility. Shoppers can effortlessly browse a wide range of products from home, eliminating the need to visit physical stores. This convenience is especially beneficial for busy people or those with limited mobility.\nFurthermore, online shopping provides a broader selection of products compared to traditional stores. Consumers can easily compare prices, read reviews, and access product information, empowering them to make informed decisions and fostering healthy competition among retailers.\nDespite its convenience, online shopping poses significant environmental challenges. The packaging and shipping processes generate carbon emissions and excessive waste. Free returns have also increased return rates, contributing to higher transportation and packaging waste.\nAdditionally, the focus on convenience over sustainability has reshaped consumer behavior. The demand for fast delivery options has led to rushed logistics and increased emissions from transportation, further expanding the environmental footprint of online shopping.\nWhile online shopping offers undeniable benefits, it’s crucial to address its environmental impact. Prioritizing sustainable practices, such as eco-friendly packaging and efficient transportation, is essential to reduce carbon emissions and waste. Consumers can also play a role by adopting mindful consumption habits and supporting sustainable retailers. Balancing convenience with environmental responsibility will ensure the continued growth of online shopping while minimizing its negative effects on the planet.\n 33.       Online shopping provides a broader selection of products …….. to traditional stores.",
+      "description": "",
+      "type": "TEXT",
+      "entryId": "entry.788273266",
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Online shopping revolutionizes consumer  purchases, offering unparalleled convenience and accessibility. Shoppers can effortlessly browse a wide range of products from home, eliminating the need to visit physical stores. This convenience is especially beneficial for busy people or those with limited mobility.\nFurthermore, online shopping provides a broader selection of products compared to traditional stores. Consumers can easily compare prices, read reviews, and access product information, empowering them to make informed decisions and fostering healthy competition among retailers.\nDespite its convenience, online shopping poses significant environmental challenges. The packaging and shipping processes generate carbon emissions and excessive waste. Free returns have also increased return rates, contributing to higher transportation and packaging waste.\nAdditionally, the focus on convenience over sustainability has reshaped consumer behavior. The demand for fast delivery options has led to rushed logistics and increased emissions from transportation, further expanding the environmental footprint of online shopping.\nWhile online shopping offers undeniable benefits, it’s crucial to address its environmental impact. Prioritizing sustainable practices, such as eco-friendly packaging and efficient transportation, is essential to reduce carbon emissions and waste. Consumers can also play a role by adopting mindful consumption habits and supporting sustainable retailers. Balancing convenience with environmental responsibility will ensure the continued growth of online shopping while minimizing its negative effects on the planet.\n 34.       This convenience is especially beneficial for busy people or those with limited mobility.\nThe word “convenience” can be replaced by",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.11799342",
+      "choices": [
+        "Confidence",
+        "Excellence",
+        "Difference",
+        "Interference",
+        "comfort"
+      ],
+      "required": false,
+      "sectionId": 1
+    },
+    {
+      "title": "Tick (√) the statements True or False based on the text",
+      "description": "",
+      "type": "GRID",
+      "columns": [
+        "TRUE",
+        "FALSE"
+      ],
+      "rows": [
+        {
+          "label": "The packaging and shipping processes do not cause carbon emissions and excessive waste",
+          "entryId": "entry.2127566431"
+        },
+        {
+          "label": "online shopping provides a broader selection of products compared to traditional stores",
+          "entryId": "entry.820593540"
+        },
+        {
+          "label": "The demand for fast delivery options has led to rushed logistics and increased emissions from transportation,",
+          "entryId": "entry.1820330055"
+        },
+        {
+          "label": "It is not essential to reduce carbon emissions and waste.",
+          "entryId": "entry.1983834304"
+        },
+        {
+          "label": "While online shopping offers undeniable benefits, it’s crucial to address its environmental impact.",
+          "entryId": "entry.1692880566"
+        }
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Money management application offer students numerous advantages in managing their finances. These apps provide convenience and accessibility, making it easy for students to track their expenses., set budgets, and monitor their spending habits.  Moreover, many of these applications come with educational resources. They are aimed at enhancing financial literacy among students. For example, they may offer tips on saving money and investing wisely. With these features, students can develop a better understanding of financial principles and cultivate responsible money habits.\n          Despite the benefits, there are also concerns associated with money management apps that students should be aware of. One major concern is the issue of security risks. Since these apps deal with sensitive financial information, such as a bank account details and transaction history, there is a risk of data breaches or unauthorized access. Additionally, there is a potential downside to overreliance on automation. Relying too heavily on these apps to handle financial tasks may lead to a lack of active involvement in financial decision making. Students might become disconnected from their finances and miss out on valuable learning opportunities.\n          Therefore, while money management apps offer valuable tools for students, it’s crucial for them to approach their use mindfully. Alongside using these applications, students should also supplement their financial management practices with hands-on education and awareness. By combining the convenience of money management apps with a proactive approach to financial education, students can develop strong financial skills and make informed decisions about their money.\n36      Match the questions and their correct answers.  \n ",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "By allowing easy tracking of expenses.",
+        "Educational resources.",
+        "Overreliance on automation",
+        "Hands-on financial education and awareness.",
+        "Security risks.",
+        "Financial skills",
+        "Kolom 6"
+      ],
+      "rows": [
+        {
+          "label": "Which aspect of money management application enhances financial literacy?",
+          "entryId": "entry.1252631691"
+        },
+        {
+          "label": "What potential drawback is associated with the use of these apps?",
+          "entryId": "entry.1996886988"
+        },
+        {
+          "label": "How do money management apps contribute to convenience for students?",
+          "entryId": "entry.416553380"
+        },
+        {
+          "label": "What might undermine students’ active involvement in financial decision-making?",
+          "entryId": "entry.716662521"
+        },
+        {
+          "label": "What supplementary action is recommended alongside using these apps?",
+          "entryId": "entry.1682512529"
+        }
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Money management application offer students numerous advantages in managing their finances. These apps provide convenience and accessibility, making it easy for students to track their expenses., set budgets, and monitor their spending habits.  Moreover, many of these applications come with educational resources. They are aimed at enhancing financial literacy among students. For example, they may offer tips on saving money and investing wisely. With these features, students can develop a better understanding of financial principles and cultivate responsible money habits.\n          Despite the benefits, there are also concerns associated with money management apps that students should be aware of. One major concern is the issue of security risks. Since these apps deal with sensitive financial information, such as a bank account details and transaction history, there is a risk of data breaches or unauthorized access. Additionally, there is a potential downside to overreliance on automation. Relying too heavily on these apps to handle financial tasks may lead to a lack of active involvement in financial decision making. Students might become disconnected from their finances and miss out on valuable learning opportunities.\n          Therefore, while money management apps offer valuable tools for students, it’s crucial for them to approach their use mindfully. Alongside using these applications, students should also supplement their financial management practices with hands-on education and awareness. By combining the convenience of money management apps with a proactive approach to financial education, students can develop strong financial skills and make informed decisions about their money.\n37.       The advantages of money management application for students  in managing their finances.,., \nTick 3 (three) correct answers.",
+      "description": "",
+      "type": "CHECKBOX",
+      "entryId": "entry.281443594",
+      "choices": [
+        "These apps provide convenience and accessibility.",
+        "There is a risk of data breaches or unauthorized access",
+        "These apps making it easy for students to track their expenses",
+        "Money management application make students are able to monitor their spending habits.",
+        "Relying too heavily on these apps to handle financial tasks may lead to a lack of active involvement in financial decision making"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Money management application offer students numerous advantages in managing their finances. These apps provide convenience and accessibility, making it easy for students to track their expenses., set budgets, and monitor their spending habits.  Moreover, many of these applications come with educational resources. They are aimed at enhancing financial literacy among students. For example, they may offer tips on saving money and investing wisely. With these features, students can develop a better understanding of financial principles and cultivate responsible money habits.\n          Despite the benefits, there are also concerns associated with money management apps that students should be aware of. One major concern is the issue of security risks. Since these apps deal with sensitive financial information, such as a bank account details and transaction history, there is a risk of data breaches or unauthorized access. Additionally, there is a potential downside to overreliance on automation. Relying too heavily on these apps to handle financial tasks may lead to a lack of active involvement in financial decision making. Students might become disconnected from their finances and miss out on valuable learning opportunities.\n          Therefore, while money management apps offer valuable tools for students, it’s crucial for them to approach their use mindfully. Alongside using these applications, students should also supplement their financial management practices with hands-on education and awareness. By combining the convenience of money management apps with a proactive approach to financial education, students can develop strong financial skills and make informed decisions about their money.\n38.       Money management application offer tips on saving money and ………… wisely.",
+      "description": "",
+      "type": "TEXT",
+      "entryId": "entry.122445411",
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Money management application offer students numerous advantages in managing their finances. These apps provide convenience and accessibility, making it easy for students to track their expenses., set budgets, and monitor their spending habits.  Moreover, many of these applications come with educational resources. They are aimed at enhancing financial literacy among students. For example, they may offer tips on saving money and investing wisely. With these features, students can develop a better understanding of financial principles and cultivate responsible money habits.\n          Despite the benefits, there are also concerns associated with money management apps that students should be aware of. One major concern is the issue of security risks. Since these apps deal with sensitive financial information, such as a bank account details and transaction history, there is a risk of data breaches or unauthorized access. Additionally, there is a potential downside to overreliance on automation. Relying too heavily on these apps to handle financial tasks may lead to a lack of active involvement in financial decision making. Students might become disconnected from their finances and miss out on valuable learning opportunities.\n          Therefore, while money management apps offer valuable tools for students, it’s crucial for them to approach their use mindfully. Alongside using these applications, students should also supplement their financial management practices with hands-on education and awareness. By combining the convenience of money management apps with a proactive approach to financial education, students can develop strong financial skills and make informed decisions about their money.\n39.       These apps provide convenience and accessibility, making it easy for students to track their expenses.\nThe word expenses has synonymous with",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.271524978",
+      "choices": [
+        "involve",
+        "concern",
+        "connect",
+        "expenditure",
+        "develop"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Money management application offer students numerous advantages in managing their finances. These apps provide convenience and accessibility, making it easy for students to track their expenses., set budgets, and monitor their spending habits.  Moreover, many of these applications come with educational resources. They are aimed at enhancing financial literacy among students. For example, they may offer tips on saving money and investing wisely. With these features, students can develop a better understanding of financial principles and cultivate responsible money habits.\n          Despite the benefits, there are also concerns associated with money management apps that students should be aware of. One major concern is the issue of security risks. Since these apps deal with sensitive financial information, such as a bank account details and transaction history, there is a risk of data breaches or unauthorized access. Additionally, there is a potential downside to overreliance on automation. Relying too heavily on these apps to handle financial tasks may lead to a lack of active involvement in financial decision making. Students might become disconnected from their finances and miss out on valuable learning opportunities.\n          Therefore, while money management apps offer valuable tools for students, it’s crucial for them to approach their use mindfully. Alongside using these applications, students should also supplement their financial management practices with hands-on education and awareness. By combining the convenience of money management apps with a proactive approach to financial education, students can develop strong financial skills and make informed decisions about their money.\n40.       Tick (√) the statements True or False based on the text",
+      "description": "",
+      "type": "GRID",
+      "columns": [
+        "TRUE",
+        "FALSE"
+      ],
+      "rows": [
+        {
+          "label": "Money management apps provide convenience and accessibility, making it easy for students to track their expenses.,  budgets, and monitor their spending habits.",
+          "entryId": "entry.1398063786"
+        },
+        {
+          "label": "students should not supplement their financial management practices with hands-on education and awareness.",
+          "entryId": "entry.1708782489"
+        },
+        {
+          "label": "Money management application help student set budget and monitor their spending habits.",
+          "entryId": "entry.1827493772"
+        },
+        {
+          "label": "students should not be aware of the issue of security risks",
+          "entryId": "entry.935159510"
+        },
+        {
+          "label": "Relying too heavily on these apps to handle financial tasks may lead to a lack of active involvement in financial decision making",
+          "entryId": "entry.333938937"
+        }
+      ],
+      "required": true,
+      "sectionId": 1
+    }
+  ],
+  "tokenField": {
+    "title": "TOKEN",
+    "description": "Masukkan token dari panitia/pengawas untuk mengirim jawaban.",
+    "entryId": "entry.1094673649",
+    "required": true,
+    "hash": "694e1695fedd743fe7668219b99da3678cb6ee519ffa6cea8ae7e29cf4c5a97d"
+  }
+}
