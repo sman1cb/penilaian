@@ -441,14 +441,19 @@
     .num-btn.ragu { background: var(--warning); border-color: var(--warning); color: #fff; }
     .num-btn.current { box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.35); border-color: var(--primary); }
 
-    /* Box Token di Modal Kirim */
+    /* Box Token Masuk & Token Selesai */
     .token-box {
       background: var(--primary-soft); border: 1.5px solid var(--primary-border);
       border-radius: 12px; padding: 14px; margin: 14px 0;
     }
+    .token-verified {
+      background: var(--success-soft); border: 1.5px solid var(--success-border);
+      color: #065f46; border-radius: 12px; padding: 11px 14px;
+      font-size: 13.5px; font-weight: 600; margin: 14px 0 8px;
+    }
     .token-input {
       text-align: center; font-size: 18px !important; font-weight: 700;
-      letter-spacing: 2px;
+      letter-spacing: 2px; text-transform: uppercase;
     }
     .err-msg {
       color: var(--danger); background: var(--danger-soft);
@@ -514,7 +519,7 @@
   </div>
 </div>
 
-<!-- Modal Konfirmasi & Token Ujian -->
+<!-- Modal Konfirmasi & Token Selesai -->
 <div class="modal-bg" id="submitModal">
   <div class="modal-box">
     <strong style="font-size:17px;">Konfirmasi Pengiriman</strong>
@@ -558,6 +563,7 @@
   let answers = {};
   let ragu = {};
   let orderIndices = [];
+  let entryUnlocked = false;
   let step = 0;
   let savedStep = null;
   let storageKey = '';
@@ -795,7 +801,6 @@
       if (!quiz.shuffleQuestions) {
         orderIndices = Array.from({ length: total }, (_, i) => i);
       } else {
-        // Acak di dalam masing-masing bagian agar soal dalam satu wacana tetap berdekatan
         const groups = [];
         const groupMap = {};
         quiz.soal.forEach((q, i) => {
@@ -820,11 +825,16 @@
     document.title = quiz.title || 'Penilaian CBT';
     document.getElementById('hdrTitle').textContent = quiz.title || 'Penilaian CBT';
     const hasIdentitas = quiz.identitas && quiz.identitas.length > 0;
+    const needsIntro = hasIdentitas || Boolean(quiz.entryTokenHash);
 
     if (typeof savedStep === 'number' && savedStep >= 0 && savedStep < orderedSoal.length) {
-      step = savedStep;
+      if (!quiz.entryTokenHash || entryUnlocked) {
+        step = savedStep;
+      } else {
+        step = -1;
+      }
     } else {
-      step = hasIdentitas ? -1 : 0;
+      step = needsIntro ? -1 : 0;
     }
     render();
   }
@@ -833,7 +843,13 @@
     if (!storageKey) return;
     const write = () => {
       try {
-        sessionStorage.setItem(storageKey, JSON.stringify({ answers, ragu, order: orderIndices, step }));
+        sessionStorage.setItem(storageKey, JSON.stringify({
+          answers,
+          ragu,
+          order: orderIndices,
+          step,
+          entryUnlocked
+        }));
       } catch (e) {}
     };
     if (saveTimer) { clearTimeout(saveTimer); saveTimer = null; }
@@ -849,6 +865,7 @@
         answers = parsed.answers || {};
         ragu = parsed.ragu || {};
         orderIndices = parsed.order || [];
+        entryUnlocked = Boolean(parsed.entryUnlocked);
         savedStep = typeof parsed.step === 'number' ? parsed.step : null;
       }
     } catch(e) {}
@@ -1120,19 +1137,20 @@
     if (step === -1) {
       btnList.style.display = 'none';
       footer.style.display = 'none';
-      document.getElementById('hdrSub').textContent = 'DATA PESERTA';
+      const hasIdentitas = quiz.identitas && quiz.identitas.length > 0;
+      document.getElementById('hdrSub').textContent = hasIdentitas ? 'DATA PESERTA' : 'MULAI UJIAN';
       fitHeaderTitle();
 
       let html = `<div class="kop-card" id="kopCard">
         <img src="kop.png" alt="Kop Sekolah" class="kop-img" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='kop.jpg';}else{document.getElementById('kopCard').style.display='none';}">
       </div>
       <div class="card">
-        <div class="badge-num" style="display:inline-block; margin-bottom:10px;">IDENTITAS PESERTA</div>
+        <div class="badge-num" style="display:inline-block; margin-bottom:10px;">${hasIdentitas ? 'IDENTITAS PESERTA' : 'KONFIRMASI UJIAN'}</div>
         <h2 style="margin:0 0 6px; font-size:20px;">${esc(quiz.title)}</h2>
         ${quiz.description ? `<p class="q-desc" style="margin-top:4px;">${esc(quiz.description)}</p>` : ''}
         <hr style="border:none; border-top:1px solid var(--border); margin:16px 0;">`;
 
-      quiz.identitas.forEach((f, idx) => {
+      (quiz.identitas || []).forEach((f, idx) => {
         const val = answers[f.entryId] || '';
         html += `<div class="field-group">
           <label class="field-label">${esc(f.title)}${f.required ? '<span class="req">*</span>' : ''}</label>`;
@@ -1146,6 +1164,18 @@
         }
         html += `</div>`;
       });
+
+      if (quiz.entryTokenHash) {
+        if (entryUnlocked) {
+          html += `<div class="token-verified">✓ Token masuk sudah terverifikasi.</div>`;
+        } else {
+          html += `<div class="token-box">
+            <label class="field-label" style="color:var(--primary-dark);">Token Masuk<span class="req">*</span></label>
+            <div style="font-size:12.5px; color:var(--text-sec); margin-bottom:8px;">Masukkan token dari pengawas untuk mulai mengerjakan soal.</div>
+            <input type="text" id="entryTokenInput" class="token-input" placeholder="Ketik Token Masuk" autocomplete="off" autocapitalize="characters" onkeydown="if(event.key==='Enter') finishIdentity()">
+          </div>`;
+        }
+      }
 
       html += `<button class="btn btn-primary" style="width:100%; padding:14px; font-size:15px; margin-top:8px;" onclick="finishIdentity()">Mulai Mengerjakan Soal →</button></div>`;
       app.innerHTML = html;
@@ -1546,7 +1576,7 @@
   }
 
   async function finishIdentity() {
-    for (const f of quiz.identitas) {
+    for (const f of (quiz.identitas || [])) {
       const val = String(answers[f.entryId] || '').trim();
       if (f.required && !val) {
         showNotif(`Isi ${f.title} terlebih dahulu.`);
@@ -1561,6 +1591,22 @@
         answers[f.entryId] = matched;
       }
     }
+
+    if (quiz.entryTokenHash && !entryUnlocked) {
+      const inp = document.getElementById('entryTokenInput');
+      const tokenVal = inp ? inp.value.trim() : '';
+      if (!tokenVal) {
+        showNotif('Isi Token Masuk terlebih dahulu.');
+        return;
+      }
+      const matched = await matchTokenHash(tokenVal, quiz.entryTokenHash);
+      if (matched === null) {
+        showNotif('Token masuk salah.');
+        return;
+      }
+      entryUnlocked = true;
+    }
+
     step = 0;
     saveSession(true);
     render();
@@ -1695,12 +1741,20 @@
       `Terjawab ${terjawab} dari ${orderedSoal.length} soal. Pastikan semua jawaban sudah dicek kembali sebelum dikirim.`;
 
     const tokenContainer = document.getElementById('tokenContainer');
-    if (quiz.tokenField) {
+    if (quiz.exitTokenHash) {
+      tokenContainer.innerHTML = `
+        <div class="token-box">
+          <label class="field-label" style="color:var(--primary-dark);">Token Selesai<span class="req">*</span></label>
+          <div style="font-size:12.5px; color:var(--text-sec); margin-bottom:8px;">Masukkan token selesai dari pengawas untuk mengirim jawaban.</div>
+          <input type="text" id="examTokenInput" class="token-input" placeholder="Ketik Token Selesai" autocomplete="off" autocapitalize="characters" onkeydown="if(event.key==='Enter') doSubmit()">
+          <div id="tokenErr" class="err-msg" style="display:none;"></div>
+        </div>`;
+    } else if (quiz.tokenField) {
       tokenContainer.innerHTML = `
         <div class="token-box">
           <label class="field-label" style="color:var(--primary-dark);">${esc(quiz.tokenField.title)}<span class="req">*</span></label>
           <div style="font-size:12.5px; color:var(--text-sec); margin-bottom:8px;">${esc(quiz.tokenField.description)}</div>
-          <input type="text" id="examTokenInput" class="token-input" placeholder="Ketik Token" autocomplete="off" onkeydown="if(event.key==='Enter') doSubmit()">
+          <input type="text" id="examTokenInput" class="token-input" placeholder="Ketik Token" autocomplete="off" autocapitalize="characters" onkeydown="if(event.key==='Enter') doSubmit()">
           <div id="tokenErr" class="err-msg" style="display:none;"></div>
         </div>`;
     } else {
@@ -1718,26 +1772,43 @@
   async function doSubmit() {
     if (isSubmitting) return;
     const btn = document.getElementById('btnConfirmSend');
-    let tokenVal = '';
+    let legacyTokenVal = '';
 
-    if (quiz.tokenField) {
+    if (quiz.exitTokenHash) {
       const inp = document.getElementById('examTokenInput');
       const errEl = document.getElementById('tokenErr');
-      tokenVal = inp ? inp.value.trim() : '';
+      const tokenVal = inp ? inp.value.trim() : '';
 
-      if (quiz.tokenField.required && !tokenVal) {
+      if (!tokenVal) {
+        errEl.textContent = 'Token selesai wajib diisi.';
+        errEl.style.display = 'block';
+        return;
+      }
+      const matched = await matchTokenHash(tokenVal, quiz.exitTokenHash);
+      if (matched === null) {
+        errEl.textContent = 'Token selesai salah.';
+        errEl.style.display = 'block';
+        return;
+      }
+      errEl.style.display = 'none';
+    } else if (quiz.tokenField) {
+      const inp = document.getElementById('examTokenInput');
+      const errEl = document.getElementById('tokenErr');
+      legacyTokenVal = inp ? inp.value.trim() : '';
+
+      if (quiz.tokenField.required && !legacyTokenVal) {
         errEl.textContent = 'Token wajib diisi.';
         errEl.style.display = 'block';
         return;
       }
-      if (quiz.tokenField.hash && tokenVal) {
-        const matched = await matchTokenHash(tokenVal, quiz.tokenField.hash);
+      if (quiz.tokenField.hash && legacyTokenVal) {
+        const matched = await matchTokenHash(legacyTokenVal, quiz.tokenField.hash);
         if (matched === null) {
           errEl.textContent = 'Token salah.';
           errEl.style.display = 'block';
           return;
         }
-        tokenVal = matched;
+        legacyTokenVal = matched;
       }
       errEl.style.display = 'none';
     }
@@ -1764,8 +1835,8 @@
       }
     });
 
-    if (quiz.tokenField && tokenVal) {
-      params.append(quiz.tokenField.entryId, tokenVal);
+    if (!quiz.exitTokenHash && quiz.tokenField && legacyTokenVal) {
+      params.append(quiz.tokenField.entryId, legacyTokenVal);
     }
 
     try {
