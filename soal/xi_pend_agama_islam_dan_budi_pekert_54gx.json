@@ -1,0 +1,858 @@
+{
+  "title": "ASESMEN SUMATIF AKHIR SEMESTER",
+  "description": "MATA PELAJARAN     : PENDIDIKAN AGAMA DAN BUDI PEKERTI\nKELAS                            : XI\nTAHUN PELAJARAN   : 2026-2027\n\nTATA CARA MENGERJAKAN ASAS :\n1. Sebelum memulai penilaian marilah membaca doa menurut agama dan kepercayaan masing-masing.\n2. Ulangan dapat dikerjakan menggunakan smartphone\n3. Pastikan kalian memiliki aplikasi sekolah terbaru\n4. Lengkapi isian biodata diri seperti nama lengkap dan kelas, gunakan huruf KAPITAL. \n5. Silahkan kerjakan soal ASAS sebanyak 40 soal \n6. Link soal akan ditutup sesuai dengan waktu yang telah ditentukan.\n7. Jika sudah selesai mengerjakan, jangan lupa untuk klik tombol kirim.\n8. Selamat mengerjakan.\n\n\"Menyontek akan membawamu semakin dalam ke jurang kebodohan, jadi kalian harus malu jika mendapat nilai tinggi tapi hasil menyontek\".",
+  "formAction": "https://docs.google.com/forms/d/e/1FAIpQLSdOHBx3Ax21OWn_wXu4QZ-1bFc6l0iZhfRqeWpjH_TIBPDcfg/formResponse",
+  "pageHistory": "0,1,2,3,4",
+  "shuffleQuestions": true,
+  "entryTokenHash": "09fde9765c7d88a983c64e90d25cbc34d84c2d59cb440939f51e7ce563f19850",
+  "exitTokenHash": "9a11e54ddfea3e87af1978cf3fe1bb349d978c4533d3d24e664368dccfd99c49",
+  "sections": {
+    "1": {
+      "title": "PILIHAN GANDA",
+      "desc": "Pilihlah jawaban yang paling tepat dan benar !"
+    },
+    "2": {
+      "title": "KOTAK CENTANG",
+      "desc": "Pilihlah semua jawaban yang tepat dan benar !"
+    },
+    "3": {
+      "title": "KISI PILIHAN GANDA",
+      "desc": "Pilihlah jawaban yang tepat dan benar untuk masing-masing baris !"
+    },
+    "4": {
+      "title": "PETAK KOTAK CENTANG",
+      "desc": "Pilihlah semua jawaban yang tepat dan benar untuk masing-masing baris !"
+    }
+  },
+  "identitas": [
+    {
+      "title": "NAMA",
+      "description": "",
+      "type": "TEXT",
+      "entryId": "entry.723324499",
+      "required": true
+    },
+    {
+      "title": "KELAS",
+      "description": "",
+      "type": "LIST",
+      "entryId": "entry.870520201",
+      "choices": [
+        "XI A",
+        "XI B",
+        "XI C",
+        "XI D",
+        "XI E",
+        "XI F",
+        "XI G",
+        "XI H",
+        "XI I",
+        "XI J",
+        "XI K"
+      ],
+      "required": true
+    },
+    {
+      "title": "NO PESERTA",
+      "description": "",
+      "type": "TEXT",
+      "entryId": "entry.956455343",
+      "required": true
+    }
+  ],
+  "soal": [
+    {
+      "title": "Berdasarkan tingkatan berpikir, apabila suatu pengetahuan didukung oleh bukti-bukti yang sangat kuat dan meyakinkan, maka pengetahuan tersebut masuk ke dalam tingkatan...",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1332708828",
+      "choices": [
+        "Wahm",
+        "Syakk",
+        "Dhann",
+        "Ilm",
+        "Fikr"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Seseorang membicarakan keburukan temannya kepada orang lain. Jika hal buruk yang dibicarakan tersebut memang benar adanya, maka dalam Islam perbuatan itu dikategorikan sebagai...",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1278791278",
+      "choices": [
+        "Fitnah",
+        "Buhtan",
+        "Ghibah",
+        "Namimah",
+        "Su'udzon"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Perhatikan penggalan Q.S. Ali 'Imran/3: 191 berikut!\n\n وَيَتَفَكَّرُوْنَ فِي خَلْقِ السَّمَوتِ وَالْأَرْضِ رَبَّنَا مَا خَلَقْتَ هَذَا بَاطِلًا \n\n...dan mereka memikirkan tentang penciptaan langit dan bumi (seraya berkata), \"Ya Tuhan kami, tidaklah Engkau menciptakan semua ini sia-sia;\"\nBerdasarkan penggalan ayat tersebut, objek utama yang diperintahkan untuk dipikirkan dan ditelaah oleh ulil albab adalah...",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.2077990255",
+      "choices": [
+        "Sifat-sifat gaib dari malaikat",
+        "Ciptaan Allah di alam semesta",
+        "Dzat Allah Yang Maha Esa",
+        "Rahasia hari kiamat",
+        "Cara beribadah umat terdahulu"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Sebuah perkelahian pelajar terjadi karena mereka bergabung dalam suatu geng yang memiliki aturan dan kebiasaan tertentu yang mewajibkan anggotanya untuk berkelahi dan melukai. Kenakalan remaja dengan motif ini disebut...",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1205769287",
+      "choices": [
+        "Delikuensi situasional",
+        "Delikuensi sistematik",
+        "Rational choice",
+        "Social disorganization",
+        "Male phenomenon"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Dakwah Islam harus dilakukan secara persuasif (damai dan menenteramkan) serta edukatif (memberikan pengajaran dan pelajaran hidup). \nMetode dakwah ini dikenal dengan istilah...",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.230087762",
+      "choices": [
+        "Mujadalah",
+        "Uswatun hasanah",
+        "Hikmah",
+        "Mauidzatul hasanah",
+        "Tabligh"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Imam al-Ghazali membagi wujud syukur menjadi tiga bagian utama. Ketika seseorang menyatakan kegembiraan dalam hatinya atas nikmat Allah, hal ini termasuk ke dalam syukur pada ranah...",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.447839559",
+      "choices": [
+        "Ilmu",
+        "Hal (keadaan)",
+        "Amal (perbuatan)",
+        "Lisan",
+        "Fisik"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Perhatikan penggalan sabda Rasulullah Saw. berikut!\n وَلَا تَفَكَّرُوا فِي ذَاتِ اللَّهِ فَتَهْلِكُوا \n...tetapi janganlah kalian memikirkan tentang Dzat Allah, karena kalian akan rusak. \nKonsekuensi logis dari melanggar larangan yang tercantum pada kalimat fatahlaku dalam hadis tersebut adalah...",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.979040818",
+      "choices": [
+        "Manusia akan mudah ditaklukkan oleh godaan setan dari golongan jin",
+        "Manusia akan dijauhi oleh orang-orang berilmu di sekitarnya",
+        "Manusia akan mengalami kesesatan pikir karena akalnya tidak mampu menjangkau hal tersebut",
+        "Manusia akan kehilangan minat untuk menuntut ilmu duniawi",
+        "Manusia akan cenderung mengabaikan ibadah-ibadah sunah"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Kegiatan penyampaian nasihat yang diikat oleh syarat dan rukun tertentu, serta erat kaitannya dengan sah atau sunahnya ibadah (seperti pada ibadah Jumat), disebut...",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.128105764",
+      "choices": [
+        "Dakwah",
+        "Khutbah",
+        "Tabligh",
+        "Tausiyah",
+        "Majelis taklim"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Perhatikan firman Allah Swt. dalam Q.S. al-Maidah/5: 90 berikut!\n\n إِنَّمَا الْخَمْرُ وَالْمَيْسِرُ وَالْأَنْصَابُ وَالْأَزْلَامُ رِجْسٌ مِنْ عَمَلِ الشَّيْطَنِ فَاجْتَنِبُوهُ\n\nSesungguhnya minuman keras, berjudi, (berkurban untuk) berhala, dan mengundi nasib dengan anak panah, adalah perbuatan keji dan termasuk perbuatan setan. Maka jauhilah... \nRiwayat yang melatarbelakangi (asbabun nuzul) turunnya larangan tegas pada ayat tersebut adalah...",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1917829643",
+      "choices": [
+        "Ada kaum Muhajirin yang menjadi imam shalat dalam keadaan mabuk khamr sehingga salah membaca Al-Qur'an",
+        "Sekelompok pemuda Makkah yang menolak perintah sujud kepada Allah yang Maha Pengasih",
+        "Terjadinya perkelahian berdarah antarsuku di Madinah akibat sengketa harta judi",
+        "Adanya kaum Yahudi yang mengolok-olok tata cara ibadah umat Islam",
+        "Kekalahan umat Islam dalam peperangan akibat hilangnya kesadaran pasukan"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Menurut M. Quraish Shihab, Q.S. Ar-Rahman/55: 33 turun sebagai respons atas sikap tertentu yang ditunjukkan oleh kaum musyrik Makkah. Sikap yang dimaksud adalah...",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1909538120",
+      "choices": [
+        "Keinginan mereka menandingi keindahan bahasa Al-Qur'an",
+        "Upaya mereka menghentikan dakwah Nabi dengan tawaran harta",
+        "Tanggapan negatif mereka saat diperintah untuk sujud kepada Allah yang ar-Rahman",
+        "Kesombongan mereka yang menganggap bisa melintasi ruang angkasa",
+        "Penolakan mereka terhadap hari pembalasan amal"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Perhatikan penggalan Q.S. al-A'raf/7: 172 berikut!\n\n أَلَسْتُ بِرَبِّكُمْ قَالُوْا بَلَى شَهِدْنَا \n\n... \"Bukankah Aku ini Tuhanmu?\" Mereka menjawab, \"Betul (Engkau Tuhan kami), kami bersaksi.\" \nKesaksian yang diucapkan manusia dalam ayat tersebut merupakan bentuk...",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.289032788",
+      "choices": [
+        "Janji kepada sesama manusia untuk saling menjaga",
+        "Syukur atas nikmat jasmani yang diberikan",
+        "Janji setia kepada Allah untuk bertauhid saat ruh berada di alam rahim",
+        "Permintaan ampunan atas dosa di masa lalu",
+        "Ikrar untuk menyebarkan dakwah Islam"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Berdasarkan jenis-jenisnya, kokain, ganja (marijuana), dan putaw (heroin) diklasifikasikan ke dalam kategori...",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.2140587343",
+      "choices": [
+        "Psikotropika",
+        "Inhalansia",
+        "Zat adiktif",
+        "Narkotika",
+        "Amphetamine"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Perhatikan sabda Rasulullah Saw. berikut!\n\n إِنَّ اللهَ لَا يَقْبِضُ الْعِلْمَ انْتِرَاعًا يَنْتَزِعُهُ مِنَ النَّاسِ وَلَكِنْ يَقْبِضُ الْعِلْمَ بِقَبْضِ الْعُلَمَاءِ \n\nSesungguhnya, Allah tidak mencabut ilmu dengan melenyapkannya dari dada manusia, tetapi dengan mewafatkan ulama... \nBerdasarkan hadis tersebut, dampak paling fatal dari fenomena diwafatkannya para ulama bagi kehidupan masyarakat adalah...",
+      "description": "",
+      "type": "MULTIPLE_CHOICE",
+      "entryId": "entry.1880424244",
+      "choices": [
+        "Masyarakat akan mengangkat pemimpin bodoh yang berfatwa tanpa ilmu sehingga menyesatkan banyak orang",
+        "Teknologi dan ilmu pengetahuan alam akan berhenti berkembang",
+        "Masyarakat akan melupakan seluruh hafalan Al-Qur'an secara tiba-tiba",
+        "Generasi muda akan kesulitan mempelajari ilmu-ilmu umum dan sains",
+        "Terhentinya seluruh kegiatan perdagangan dan ekonomi umat"
+      ],
+      "required": true,
+      "sectionId": 1
+    },
+    {
+      "title": "Seseorang yang selalu menepati janjinya akan mendapatkan berbagai manfaat dalam kehidupan. Manfaat memenuhi janji tersebut antara lain...",
+      "description": "",
+      "type": "CHECKBOX",
+      "entryId": "entry.750464686",
+      "choices": [
+        "Mendapatkan predikat dan sifat sebagai orang yang bertakwa (muttaqin)",
+        "Menjadi sebab datangnya keamanan, ketenteraman, dan keberhasilan",
+        "Dijauhkan dari kewajiban berdakwah di jalan Allah",
+        "Menghindari pertumpahan darah dan terjaga dari mengambil hak orang lain",
+        "Menjadikan seseorang kebal terhadap segala penyakit fisik"
+      ],
+      "required": true,
+      "sectionId": 2
+    },
+    {
+      "title": "Ayat Al-Qur'an surah Ar-Rahman ayat 33 memberikan penegasan kepada golongan jin dan manusia. \nIsi kandungan yang tepat dari ayat tersebut adalah...",
+      "description": "",
+      "type": "CHECKBOX",
+      "entryId": "entry.994811457",
+      "choices": [
+        "Jin dan manusia tidak bisa mengelak dari pertanggungjawaban atas nikmat Allah di akhirat kelak",
+        "Allah menantang manusia untuk berlomba dengan jin dalam menciptakan bahasa baru",
+        "Isyarat ilmiah bahwa kekuatan dan penguasaan ilmu mutlak dimiliki untuk meraih kesuksesan dunia",
+        "Kemajuan suatu negara membutuhkan investasi besar pada kualitas sumber daya manusia (SDM)",
+        "Umat Islam dilarang mempelajari ilmu astronomi karena merupakan rahasia Tuhan"
+      ],
+      "required": true,
+      "sectionId": 2
+    },
+    {
+      "title": "Menurut para sosiolog, terdapat beberapa faktor penting yang memicu terjadinya perkelahian antarpelajar. Faktor-faktor tersebut di antaranya adalah...",
+      "description": "",
+      "type": "CHECKBOX",
+      "entryId": "entry.900217183",
+      "choices": [
+        "Rational Choice (kemauan dan pilihan individu)",
+        "Social Disorganization (faktor kekacauan lingkungan)",
+        "Mauidzatul Hasanah (pola asuh orang tua)",
+        "Differential Association (faktor salah pergaulan)",
+        "Labbeling (terbiasa dicap sebagai pelajar nakal)",
+        "Qanaah (menerima keadaan apa adanya)"
+      ],
+      "required": true,
+      "sectionId": 2
+    },
+    {
+      "title": "Untuk menjadi seorang khatib dalam shalat Jumat, seseorang harus memenuhi syarat-syarat tertentu agar khutbahnya sah. Syarat seorang khatib meliputi...",
+      "description": "",
+      "type": "CHECKBOX",
+      "entryId": "entry.914254422",
+      "choices": [
+        "Laki-laki muslim yang sudah balig dan berakal sehat",
+        "Suci dari hadas maupun najis serta auratnya tertutup",
+        "Harus memiliki gelar pendidikan akademik ilmu agama",
+        "Mengetahui dan memahami syarat, rukun, dan sunah khutbah",
+        "Memiliki kekuasaan politik di wilayah tempat tinggalnya"
+      ],
+      "required": true,
+      "sectionId": 2
+    },
+    {
+      "title": "Memelihara lisan adalah bukti keimanan seorang muslim. Bentuk implementasi dari upaya memelihara lisan dalam kehidupan sehari-hari adalah...",
+      "description": "",
+      "type": "CHECKBOX",
+      "entryId": "entry.1462286204",
+      "choices": [
+        "Menjauhi pembicaraan yang batil, kotor, jorok, dan dusta",
+        "Menjawab panggilan orang tua dengan sopan dan santun",
+        "Mengoreksi aib orang lain secara terbuka agar ia jera",
+        "Tidak mengadu domba atau menghasut perselisihan antarteman",
+        "Berdebat dengan suara keras untuk menunjukkan kebenaran"
+      ],
+      "required": true,
+      "sectionId": 2
+    },
+    {
+      "title": "Penyalahgunaan narkoba dibagi ke dalam berbagai kategori zat. Berikut ini yang tergolong ke dalam zat Psikotropika adalah...",
+      "description": "",
+      "type": "CHECKBOX",
+      "entryId": "entry.1354892189",
+      "choices": [
+        "Amphetamine (stimulan susunan syaraf)",
+        "Shabu (nama lain dari amfetamin)",
+        "Opium (getah dari biji Papaver)",
+        "Obat tidur penenang seperti Nipam dan Megadon",
+        "Ganja (Cannabis Sativa)"
+      ],
+      "required": true,
+      "sectionId": 2
+    },
+    {
+      "title": "Setiap pelaksanaan kegiatan dakwah Islam memiliki tujuan yang mulia. Tujuan dari pelaksanaan dakwah tersebut adalah...",
+      "description": "",
+      "type": "CHECKBOX",
+      "entryId": "entry.471642813",
+      "choices": [
+        "Menghindarkan umat manusia dari perbuatan musyrik (akidah)",
+        "Menjadikan seluruh aktivitas sebagai ibadah hanya kepada Allah Swt. (syariah)",
+        "Mengumpulkan kekuatan massa untuk menguasai negara",
+        "Mengerjakan amal saleh dan berakhlak mulia sesuai teladan Rasulullah Saw.",
+        "Mendapatkan popularitas dan pengakuan dari tokoh agama lain"
+      ],
+      "required": true,
+      "sectionId": 2
+    },
+    {
+      "title": "Syarat pelaksanaan (syarat dua khutbah) shalat Jumat sangat mengikat dan tidak boleh diabaikan. \nSyarat pelaksanaan dua khutbah Jumat meliputi...",
+      "description": "",
+      "type": "CHECKBOX",
+      "entryId": "entry.311036906",
+      "choices": [
+        "Dilaksanakan sesudah masuk waktu Zuhur dan sebelum shalat Jumat dimulai",
+        "Khutbah dilakukan dengan cara berdiri bagi yang mampu",
+        "Khatib harus duduk sebentar di antara khutbah pertama dan kedua",
+        "Khutbah dilaksanakan tepat setelah shalat Jumat selesai",
+        "Khatib harus berjalan mengelilingi jamaah sambil berkhutbah"
+      ],
+      "required": true,
+      "sectionId": 2
+    },
+    {
+      "title": "Dalam Q.S. Ali 'Imran/3: 190-191, Allah menyebut orang yang mau memikirkan penciptaan alam semesta sebagai Ulil Albab. \nCiri dan karakteristik Ulil Albab adalah...",
+      "description": "",
+      "type": "CHECKBOX",
+      "entryId": "entry.418182090",
+      "choices": [
+        "Memiliki nurani bersih dan akal pikiran lurus yang selalu digunakan untuk merenungkan penciptaan Allah",
+        "Mampu mengambil maslahat dari ciptaan Allah dalam kondisi apa pun untuk diri maupun masyarakat",
+        "Menyendiri di dalam gua dan menjauh dari segala aktivitas kehidupan duniawi",
+        "Melakukan pemikiran kritis, utuh, objektif, dan seimbang terhadap segala problema hidup",
+        "Hanya mengandalkan akal rasional dan menolak penjelasan ayat suci"
+      ],
+      "required": true,
+      "sectionId": 2
+    },
+    {
+      "title": "Adab dalam melakukan dakwah sangat diutamakan agar pesan Islam dapat diterima dengan baik. \nCara-cara berdakwah yang beradab menurut pedoman syariat adalah...",
+      "description": "",
+      "type": "CHECKBOX",
+      "entryId": "entry.1034913266",
+      "choices": [
+        "Disampaikan dengan hikmah (ucapan yang jelas, tegas, dan bijaksana)",
+        "Disampaikan dengan mauidzatul hasanah (nasihat baik dan persuasif)",
+        "Menggunakan pendekatan mujadalah (diskusi santun menghargai pendapat)",
+        "Dilakukan dengan cara buhtan (membuat kebohongan yang mengejutkan)",
+        "Menjadikan diri sendiri sebagai uswatun hasanah (teladan yang baik)",
+        "Menyebarkan ghibah (menggunjing) untuk menjatuhkan lawan"
+      ],
+      "required": true,
+      "sectionId": 2
+    },
+    {
+      "title": "Sebagai ikhtiar dan langkah pencegahan agar pelajar tidak terjerumus pada perkelahian atau perilaku menyimpang, langkah yang dapat diambil adalah...",
+      "description": "",
+      "type": "CHECKBOX",
+      "entryId": "entry.985609151",
+      "choices": [
+        "Mewujudkan kehidupan keluarga yang harmonis di rumah",
+        "Memberi banyak kesempatan bagi pelajar untuk mengembangkan minat dan bakatnya",
+        "Membiarkan pelajar mencari jati diri di jalanan tanpa aturan",
+        "Membentuk lembaga atau organisasi positif yang mewadahi aktivitas pelajar",
+        "Menyamaratakan standar dan potensi anak dengan anak lain agar selalu bersaing"
+      ],
+      "required": true,
+      "sectionId": 2
+    },
+    {
+      "title": "Dalam ajaran agama Islam, aib (keburukan/cacat) sangat dilarang untuk disebarluaskan. \nHal-hal yang berkaitan dengan pemahaman mengenai aib adalah...",
+      "description": "",
+      "type": "CHECKBOX",
+      "entryId": "entry.1761317630",
+      "choices": [
+        "Aib Dzahir adalah aib yang tampak dan dapat diketahui secara lahir (misal: cacat pada barang dagangan)",
+        "Aib Tersembunyi adalah aib rahasia yang tidak tampak karena disembunyikan pemiliknya",
+        "Menyebarkan aib orang lain di media sosial dibolehkan jika bertujuan untuk hiburan",
+        "Setiap muslim yang menutupi aib saudaranya di dunia, Allah akan menutupi aibnya di dunia dan akhirat",
+        "Aib hanyalah keburukan yang diciptakan oleh hukum positif negara"
+      ],
+      "required": true,
+      "sectionId": 2
+    },
+    {
+      "title": "Pasangkan kosa kata Arab (mufradat) dari Q.S. Ali 'Imran/3: 190-191 berikut dengan makna bahasa Indonesianya yang tepat!",
+      "description": "",
+      "validation": {
+        "onePerCol": true
+      },
+      "type": "GRID",
+      "columns": [
+        "Penciptaan",
+        "Pergantian",
+        "Orang yang berakal"
+      ],
+      "rows": [
+        {
+          "label": "خَلْقِ",
+          "entryId": "entry.1293228745"
+        },
+        {
+          "label": "اخْتِلَافِ",
+          "entryId": "entry.982718429"
+        },
+        {
+          "label": "لِأُولى الْأَلْبَابِ",
+          "entryId": "entry.391792730"
+        }
+      ],
+      "required": true,
+      "sectionId": 3
+    },
+    {
+      "title": "Syariat Islam memberikan panduan komprehensif dalam menyikapi benda-benda merusak seperti khamr dan narkoba. Tentukan sikap yang tepat berdasarkan tinjauan hukum Islam berikut! ",
+      "description": "",
+      "type": "GRID",
+      "columns": [
+        "Benar",
+        "Salah"
+      ],
+      "rows": [
+        {
+          "label": "Narkoba hukumnya haram dengan cara diqiyaskan (disamakan) dengan khamr karena sama-sama merusak dan memabukkan",
+          "entryId": "entry.1437201344"
+        },
+        {
+          "label": "Mencoba khamr dalam jumlah sedikit diperbolehkan asalkan belum sampai mabuk total",
+          "entryId": "entry.1351779526"
+        },
+        {
+          "label": "Khamr (minuman keras) dikategorikan sebagai rijs atau najis yang bersumber dari perbuatan setan",
+          "entryId": "entry.182021260"
+        },
+        {
+          "label": "Membiasakan diri perlahan-lahan mengonsumsi narkoba untuk alasan pergaulan agar tidak dikucilkan",
+          "entryId": "entry.452802125"
+        }
+      ],
+      "required": true,
+      "sectionId": 3
+    },
+    {
+      "title": "Tentukan hukum tajwid yang tepat berdasarkan penggalan lafaz Al-Qur'an berikut!  ",
+      "description": "",
+      "type": "GRID",
+      "columns": [
+        "Ghunnah",
+        "Qalqalah",
+        "Idgham Bighunnah"
+      ],
+      "rows": [
+        {
+          "label": "إِنَّ فِي",
+          "entryId": "entry.310410053"
+        },
+        {
+          "label": "خَلَقْتَ",
+          "entryId": "entry.1899900809"
+        },
+        {
+          "label": "قِيَامًا وَقُعُودًا",
+          "entryId": "entry.770467979"
+        }
+      ],
+      "required": true,
+      "sectionId": 3
+    },
+    {
+      "title": "Penyalahgunaan lisan dapat menimbulkan berbagai dosa besar. Pasangkan istilah dosa lisan berikut dengan perbuatannya!",
+      "description": "",
+      "type": "GRID",
+      "columns": [
+        "Fitnah",
+        "Ghibah",
+        "Buhtan"
+      ],
+      "rows": [
+        {
+          "label": "Membicarakan keburukan orang lain yang tidak sesuai dengan kenyataan / berbohong",
+          "entryId": "entry.1203983291"
+        },
+        {
+          "label": "Membicarakan keburukan atau aib orang lain yang memang benar adanya (fakta)",
+          "entryId": "entry.585290965"
+        },
+        {
+          "label": "Perkataan bohong untuk menjelekkan orang lain secara keji hingga memicu kekacauan",
+          "entryId": "entry.88361651"
+        }
+      ],
+      "required": true,
+      "sectionId": 3
+    },
+    {
+      "title": "Cocokkan istilah penyebaran syariat Islam dengan pengertian khususnya!  ",
+      "description": "",
+      "validation": {
+        "onePerCol": true
+      },
+      "type": "GRID",
+      "columns": [
+        "Dakwah",
+        "Khutbah",
+        "Tabligh"
+      ],
+      "rows": [
+        {
+          "label": "Ceramah / nasihat yang diikat oleh syarat dan rukun tertentu yang berkaitan dengan sahnya ibadah",
+          "entryId": "entry.1854370583"
+        },
+        {
+          "label": "Mengajak orang lain meyakini dan mengamalkan syariat Islam secara luas dengan berbagai media",
+          "entryId": "entry.1840402001"
+        },
+        {
+          "label": "Menyampaikan / memberitahukan pesan atau ajaran agama secara lisan (berasal dari kata ballagha)",
+          "entryId": "entry.1605346005"
+        }
+      ],
+      "required": true,
+      "sectionId": 3
+    },
+    {
+      "title": "Sosiolog mengkategorikan penyebab kenakalan atau perkelahian pelajar ke dalam beberapa teori. Pasangkan teori tersebut dengan pengertiannya!",
+      "description": "",
+      "type": "GRID",
+      "columns": [
+        "Rational Choice",
+        "Labbeling",
+        "Differential Association"
+      ],
+      "rows": [
+        {
+          "label": "Perkelahian disebabkan oleh faktor salah pergaulan yang terus-menerus",
+          "entryId": "entry.510428867"
+        },
+        {
+          "label": "Perkelahian timbul karena faktor motivasi, pilihan, dan kemauan individu itu sendiri",
+          "entryId": "entry.1797281067"
+        },
+        {
+          "label": "Kenakalan terjadi karena pelajar tersebut sudah telanjur diberi cap / stempel sebagai anak nakal",
+          "entryId": "entry.931624917"
+        }
+      ],
+      "required": true,
+      "sectionId": 3
+    },
+    {
+      "title": "Narkoba terbagi menjadi beberapa kelompok besar. Cocokkan nama kelompok narkoba tersebut dengan definisinya!",
+      "description": "",
+      "validation": {
+        "onePerCol": true
+      },
+      "type": "GRID",
+      "columns": [
+        "Narkotika",
+        "Psikotropika",
+        "Zat Adiktif"
+      ],
+      "rows": [
+        {
+          "label": "Zat atau obat dari tanaman yang menurunkan kesadaran dan menghilangkan rasa nyeri",
+          "entryId": "entry.1818483588"
+        },
+        {
+          "label": "Zat yang berkhasiat psikoaktif pada susunan saraf pusat pengubah aktivitas mental",
+          "entryId": "entry.571681860"
+        },
+        {
+          "label": "Bahan aktif yang jika dikonsumsi menyebabkan ketergantungan biologi / adiksi terus-menerus",
+          "entryId": "entry.229317859"
+        }
+      ],
+      "required": true,
+      "sectionId": 3
+    },
+    {
+      "title": "Aib atau noda keburukan dibagi ke dalam aib dzahir dan aib tersembunyi. Centang kategori yang tepat untuk jenis aib di bawah ini!",
+      "description": "",
+      "type": "GRID",
+      "columns": [
+        "Aib Dzahir (Tampak Lahir)",
+        "Aib Tersembunyi (Rahasia)"
+      ],
+      "rows": [
+        {
+          "label": "Keburukan masa lalu seseorang yang tidak pernah diceritakan kepada siapa pun",
+          "entryId": "entry.42756346"
+        },
+        {
+          "label": "Cacat fisik pada produk perdagangan yang dijual di etalase toko",
+          "entryId": "entry.1474578975"
+        },
+        {
+          "label": "Penyakit atau kelainan genetik yang secara sengaja ditutupi oleh keluarganya",
+          "entryId": "entry.649703716"
+        }
+      ],
+      "required": true,
+      "sectionId": 3
+    },
+    {
+      "title": "Tingkatan penerimaan informasi di dalam otak memiliki istilah khusus dalam bahasa Arab. Pasangkan istilah berpikir tersebut dengan definisinya! ",
+      "description": "",
+      "validation": {
+        "onePerCol": true
+      },
+      "type": "GRID",
+      "columns": [
+        "Ilm",
+        "Dhann (Dugaan)",
+        "Syakk (Keraguan)",
+        "Wahm"
+      ],
+      "rows": [
+        {
+          "label": "Pengetahuan yang didukung bukti meyakinkan",
+          "entryId": "entry.1926169780"
+        },
+        {
+          "label": "Pengetahuan dengan kemungkinan benar dan salah yang seimbang",
+          "entryId": "entry.1481750064"
+        },
+        {
+          "label": "Buktinya belum meyakinkan, namun kebenarannya dirasa lebih dominan",
+          "entryId": "entry.555437363"
+        },
+        {
+          "label": "Tidak didukung bukti, atau buktinya sangat lemah (kemungkinan salahnya besar)",
+          "entryId": "entry.1687846337"
+        }
+      ],
+      "required": true,
+      "sectionId": 3
+    },
+    {
+      "title": "Jenis kenakalan pelajar dapat dikelompokkan ke dalam delikuensi situasional dan delikuensi sistematik. Centang jenis delikuensi yang tepat untuk kasus berikut!",
+      "description": "",
+      "type": "GRID",
+      "columns": [
+        "Delikuensi Situasional",
+        "Delikuensi Sistematik"
+      ],
+      "rows": [
+        {
+          "label": "Berkelahi karena dituntut oleh tradisi atau aturan geng motor yang diikutinya",
+          "entryId": "entry.1138869311"
+        },
+        {
+          "label": "Berkelahi seketika di jalan raya karena terprovokasi insiden senggolan kendaraan",
+          "entryId": "entry.1304200190"
+        },
+        {
+          "label": "Melukai siswa sekolah lain sebagai bentuk ujian masuk ke dalam organisasi liar",
+          "entryId": "entry.441283097"
+        }
+      ],
+      "required": true,
+      "sectionId": 3
+    },
+    {
+      "title": "Menurut Imam al-Ghazali, perwujudan syukur dibagi ke dalam tiga tahap: Ilmu, Hal (Keadaan), dan Amal. Kategorisasikan perbuatan berikut ke dalam tahap yang tepat! ",
+      "description": "",
+      "type": "GRID",
+      "columns": [
+        "Tahap Ilmu",
+        "Tahap Hal",
+        "Tahap Amal"
+      ],
+      "rows": [
+        {
+          "label": "Memfungsikan anggota tubuh sesuai dengan tujuan nikmat itu diberikan",
+          "entryId": "entry.597447447"
+        },
+        {
+          "label": "Menyadari dan meyakini penuh bahwa segala nikmat hanya berasal dari Allah Swt.",
+          "entryId": "entry.922469987"
+        },
+        {
+          "label": "Hati merasakan kepuasan dan luapan kegembiraan atas anugerah yang diterima",
+          "entryId": "entry.300090587"
+        }
+      ],
+      "required": true,
+      "sectionId": 3
+    },
+    {
+      "title": "Identifikasi hukum tajwid yang terdapat dalam penggalan lafaz Al-Qur'an berikut! \n\n(Satu penggalan bisa memiliki lebih dari satu hukum tajwid jika lafaznya panjang)",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Ghunnah",
+        "Ikhfa",
+        "Qalqalah"
+      ],
+      "rows": [
+        {
+          "label": "أَنْ تَنْفُذُوا",
+          "entryId": "entry.2071627656"
+        },
+        {
+          "label": "إِنَّ فِي خَلْقِ",
+          "entryId": "entry.2076062760"
+        },
+        {
+          "label": "مِنَ الْإِنْسِ",
+          "entryId": "entry.1728866014"
+        }
+      ],
+      "required": true,
+      "sectionId": 4
+    },
+    {
+      "title": "Analisislah komponen pelaksanaan Khutbah berikut dengan mencentang kolom Syarat, Rukun, atau Sunah secara tepat!  ",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Syarat Pelaksanaan Khutbah / Khatib",
+        "Rukun Khutbah",
+        "Sunah Khutbah"
+      ],
+      "rows": [
+        {
+          "label": "Khatib suci dari hadas dan najis, serta auratnya tertutup rapat",
+          "entryId": "entry.104522455"
+        },
+        {
+          "label": "Membaca hamdalah, bershalawat, berwasiat takwa, dan membaca ayat Al-Qur'an",
+          "entryId": "entry.1355308489"
+        },
+        {
+          "label": "Menyampaikan salam di awal, serta memegang tongkat atau khutbah di atas mimbar",
+          "entryId": "entry.761536658"
+        },
+        {
+          "label": "Berdoa pada khutbah kedua memohon ampunan bagi kaum muslimin",
+          "entryId": "entry.1640810258"
+        }
+      ],
+      "required": true,
+      "sectionId": 4
+    },
+    {
+      "title": "Berdasarkan jenis pembagian narkoba (Narkotika, Psikotropika, Zat Adiktif), centanglah nama zat yang sesuai dengan golongannya!  ",
+      "description": "",
+      "validation": {
+        "onePerCol": true
+      },
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Golongan Narkotika",
+        "Golongan Psikotropika",
+        "Golongan Zat Adiktif"
+      ],
+      "rows": [
+        {
+          "label": "Nikotin (pada rokok) dan Etanol (pada alkohol)",
+          "entryId": "entry.751444754"
+        },
+        {
+          "label": "Amphetamine, Shabu, obat tidur (Pil BK)",
+          "entryId": "entry.1342229877"
+        },
+        {
+          "label": "Morfin, Kokain, Ganja, dan Putaw",
+          "entryId": "entry.1293233905"
+        }
+      ],
+      "required": true,
+      "sectionId": 4
+    },
+    {
+      "title": "Dakwah membutuhkan manajemen dan sarana penyampaian yang baik. Tentukan kategori yang tepat (Media Dakwah, Metode Dakwah, Tujuan Dakwah) dari elemen-elemen berikut! ",
+      "description": "",
+      "type": "CHECKBOX_GRID",
+      "columns": [
+        "Bagian Media Dakwah",
+        "Bagian Metode Dakwah",
+        "Bagian Tujuan Dakwah"
+      ],
+      "rows": [
+        {
+          "label": "Menggunakan internet, media sosial, TV, jurnal, dan buku cetak",
+          "entryId": "entry.304608146"
+        },
+        {
+          "label": "Menjadikan masyarakat memiliki akidah tauhid dan beramal saleh",
+          "entryId": "entry.1440114266"
+        },
+        {
+          "label": "Menggunakan cara mujadalah (diskusi) dan mauidzatul hasanah (nasihat baik)",
+          "entryId": "entry.498457293"
+        }
+      ],
+      "required": true,
+      "sectionId": 4
+    }
+  ],
+  "tokenField": null
+}
